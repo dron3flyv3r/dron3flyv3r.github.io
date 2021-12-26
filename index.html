@@ -11,34 +11,691 @@
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "jquery.museresponsive.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
   
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=3781221102" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=3975008227" id="pagesheet"/>
+  <!-- IE-only CSS -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=533445308" id="nomq_pagesheet"/>
+  <![endif]-->
   <!-- JS includes -->
-  <script src="https://use.typekit.net/ik/ko8iTzPI3kj31IpHlJF_uOTo2UZx3SwkLwMGQ7t25hbfeGSgfVOsXyqPHQ9DFD6kFDS3Wh9DjQ9aFRsKwRStjQM3jh9twRM3FcbujcFywRB8jc9ueKj7OclySag8Sc30dWqC-hBDSemkdfolpPUaiaS0-hBDSemkdfolpPJJj14ziey8S1w7f6KKa3IbMg6IJMJ7f6KRa3IbMg6YJM4HgIuuShAbMLkwGtte.js" type="text/javascript"></script>
+  <script src="https://use.typekit.net/ik/PYoF26NXf1hKg1_m10iSvp_e8i2SJwbtl7urEXZ9y2jfe1CJvlYPesJTFQwa52JaFDgLwhwhwcjD5A9kjAwkFh4KZRF8jhbuZ2SXZ2mK5ejkjAI-4KG0-hBDSemkdfolZPUnjWF3ZW4COcu8OYiaikonjWF3ZW4COcu8J6yKScNX-emkSkGHfHVLMsMMeMS6MqGIQWmDZZMg0ifRR6j.js" type="text/javascript"></script>
   <!-- Other scripts -->
   <script type="text/javascript">
    try {Typekit.load();} catch(e) {}
 </script>
-   </head>
+    <!--HTML Widget code-->
+  
+		<style>
+		
+
+		#menu {
+			height: 100%;
+			position: fixed;
+			background-color: #1E1E1E;
+			width: 200px;
+			transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
+			transform: translateX(-100%);
+			left: 60px;
+		}
+
+		#menu.expanded {
+			transform: translateX(0%);
+			left: 0px;
+		}
+
+		.menu-inner {
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+
+		#blob {
+			top: 0;
+			z-index: -1;
+			right: 60px;
+			transform: translateX(100%);
+			height: 100%;
+			position: absolute;
+            width: 200px;
+		}
+
+		#blob-path {
+			height: 100%;
+			fill:  #FFD447;
+		}
+
+		.hamburger {
+			right: 20px;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			margin-top: calc(-20px / 2);	
+		}
+
+		.hamburger .line {
+			width: 100%;
+			height: 4px;
+			background-color: #1E1E1E;
+			position: absolute;
+            border-radius: 20px;
+		}
+
+.hamb{padding-top:12px;}
+        .posterline{
+            display:block;
+            margin: 5px auto 0 auto;
+            width: 60%;
+			height: 2px;
+			background-color: #1E1E1E;
+            border-radius: 20px;
+        }
+
+		.hamburger .line:nth-child(2) {
+			top: 50%;
+			margin-top: calc(-4px / 2);
+		}
+
+		.hamburger .line:nth-child(3) {
+			bottom: 0;
+		}
+
+		.textClass {
+			padding: 0;
+			list-style: none;
+			width: 80%;
+			margin-left: 10%;
+			position: absolute;
+			top: 30px;
+		}
+
+		.textClass .lineClass {
+			color: #FFFFFF;
+			padding: 20px 0;
+		}
+        .linkClass {
+            color: #FFFFFF !important;
+            text-decoration:none !important;
+        }
+        
+</style>
+	
+<style>
+.u589 { padding: 25px 40px; display: inline-block; letter-spacing: 6px; outline: 0; position: relative; -webkit-animation: anim 3s ease-in infinite; animation: anim 3s ease-in infinite; transition: all .3s; background: #4786B5; color: #fff!important; overflow: hidden; text-decoration: none;  transform-origin:center center; text-transform: uppercase; border-radius: 3px;}
+.u589:hover { background: #0074BD; }
+ @-webkit-keyframes anim {
+ 5% {
+ -webkit-transform: scale(1.1, .9);
+ transform: scale(1.1, .9);
+}
+10% {
+ -webkit-transform: scale(.9, 1.1) translateY(-.5rem);
+ transform: scale(.9, 1.1) translateY(-.5rem);
+}
+15% {
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+}
+@keyframes anim {
+ 5% {
+ -webkit-transform: scale(1.1, .9);
+ transform: scale(1.1, .9);
+}
+10% {
+ -webkit-transform: scale(.9, 1.1) translateY(-.5rem);
+ transform: scale(.9, 1.1) translateY(-.5rem);
+}
+15% {
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+}
+</style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<style>
+
+.u1129effect {
+  width: 96px;
+  
+}
+.u1129effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+
+}
+.u1129effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.u1129effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.u1129effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.u1129effect a {
+  text-decoration: none !important;
+  width: 96px;
+  height: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 70px;
+  overflow: hidden;
+
+  color: #1E1E1E;
+  border: 1px solid #1E1E1E;
+}
+.u1129effect a i {
+  position: relative;
+  z-index: 3;
+  color: #FFC60C;
+}
+.u1129effect a:last-child {
+  margin-right: 0px;
+}
+.u1129effect a:before {
+  content: "";
+  display: inline-block;
+  height: 96px;
+  vertical-align: middle;
+}
+.u1129effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.u1129effect.lavinia a {
+  -webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.u1129effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.u1129effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 96px;
+  height: 96px;
+  top: 0px;
+  left: 0px;
+  border: 1px dashed #1E1E1E;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* amiens effect */
+.effect.amiens a {
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+.u1129effect.amiens a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.u1129effect.amiens a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.u1129effect.amiens a:hover i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+
+</style>
+	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<style>
+
+.u1177effect {
+  width: 104px;
+  
+}
+.u1177effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+
+}
+.u1177effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.u1177effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.u1177effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.u1177effect a {
+  text-decoration: none !important;
+  width: 104px;
+  height: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 70px;
+  overflow: hidden;
+
+  color: #1E1E1E;
+  border: 1px solid #1E1E1E;
+}
+.u1177effect a i {
+  position: relative;
+  z-index: 3;
+  color: #FFC60C;
+}
+.u1177effect a:last-child {
+  margin-right: 0px;
+}
+.u1177effect a:before {
+  content: "";
+  display: inline-block;
+  height: 104px;
+  vertical-align: middle;
+}
+.u1177effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.u1177effect.lavinia a {
+  -webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.u1177effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.u1177effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 104px;
+  height: 104px;
+  top: 0px;
+  left: 0px;
+  border: 1px dashed #1E1E1E;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* amiens effect */
+.effect.amiens a {
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+.u1177effect.amiens a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.u1177effect.amiens a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.u1177effect.amiens a:hover i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+
+</style>
+	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<style>
+
+.u1177effect {
+  width: 96px;
+  
+}
+.u1177effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+
+}
+.u1177effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.u1177effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.u1177effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.u1177effect a {
+  text-decoration: none !important;
+  width: 96px;
+  height: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 70px;
+  overflow: hidden;
+
+  color: #1E1E1E;
+  border: 1px solid #1E1E1E;
+}
+.u1177effect a i {
+  position: relative;
+  z-index: 3;
+  color: #FFC60C;
+}
+.u1177effect a:last-child {
+  margin-right: 0px;
+}
+.u1177effect a:before {
+  content: "";
+  display: inline-block;
+  height: 96px;
+  vertical-align: middle;
+}
+.u1177effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.u1177effect.lavinia a {
+  -webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.u1177effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.u1177effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 96px;
+  height: 96px;
+  top: 0px;
+  left: 0px;
+  border: 1px dashed #1E1E1E;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* amiens effect */
+.effect.amiens a {
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+.u1177effect.amiens a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.u1177effect.amiens a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.u1177effect.amiens a:hover i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+
+</style>
+	
+ </head>
  <body>
 
-  <div class="clearfix borderbox" id="page"><!-- column -->
-   <div class="clearfix colelem" id="u100-4"><!-- content -->
-    <p>Hi</p>
-   </div>
-   <div class="clearfix colelem" id="u94-4"><!-- content -->
-    <h1>I am Kasper</h1>
-   </div>
-   <div class="clearfix colelem" id="u110-4"><!-- content -->
-    <p>Designer, Programmer &amp; Photographer</p>
-   </div>
-   <div class="verticalspacer" data-offset-top="319" data-content-above-spacer="319" data-content-below-spacer="181" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+  <div class="breakpoint active" id="bp_infinity" data-min-width="1281"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox" id="page"><!-- group -->
+    <a class="anchor_item grpelem shared_content" id="some-of-me" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="some-of-me_content"></a>
+    <div class="size_fixed shared_content" id="u1056" data-sizePolicy="fixed" data-pintopage="topleft" data-content-guid="u1056_content"><!-- custom html -->
+     
+ <div id="menu">
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<div class="menu-inner">
+			
+			<ul class="textClass">
+<li class="lineClass" id="menuLink1"><a class="linkClass" href="#">Home</a></li>
+<li class="lineClass" id="menuLink1"><a class="linkClass" href="#">About</a></li>
+<li class="lineClass" id="menuLink1"><a class="linkClass" href="#">Code</a></li>
+<li class="lineClass" id="menuLink1"><a class="linkClass" href="#">Contact</a></li>
+			</ul>
+		</div>
+		<svg version="1.1" id="blob"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/>
+		</svg>
+	</div>
+
+    </div>
+    <div class="clearfix grpelem" id="pppu100-4"><!-- column -->
+     <div class="clearfix colelem" id="ppu100-4"><!-- group -->
+      <div class="clearfix grpelem" id="pu100-4"><!-- column -->
+       <div class="clearfix colelem shared_content" id="u100-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u100-4_content"><!-- content -->
+        <p>Hi</p>
+       </div>
+       <div class="clearfix colelem shared_content" id="u94-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u94-4_content"><!-- content -->
+        <h1>I am Kasper</h1>
+       </div>
+       <div class="clearfix colelem shared_content" id="pu110-5" data-content-guid="pu110-5_content"><!-- group -->
+        <div class="clearfix grpelem shared_content" id="u110-5" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u110-5_content"><!-- content -->
+         <p>I'm <span id="u110-2">a</span></p>
+        </div>
+        <div class="size_fixed grpelem shared_content" id="u178" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u178_content"><!-- custom html -->
+         
+<!-- This Adobe Muse widget was created by the team at MuseFree.com -->
+  <span class="typewrite" data-period="2000" data-type="[ &quot;Designer&quot;, &quot;Programmer&quot;, &quot;Photographer&quot;, &quot;&quot;, &quot;&quot; ]"></span>
+
+        </div>
+       </div>
+       <a class="nonblock nontext anim_swing size_fixed colelem shared_content" id="u589" href="index.html#some-of-me" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u589_content"><!-- custom html -->
+<!-- This Adobe Muse widget was created by the team at MuseFree.com -->
+<p class="u589">more</p>
+ 	</a>
+       <div class="clearfix colelem" id="pu1129"><!-- group -->
+        <div class="size_fixed grpelem shared_content" id="u1129" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="u1129_content"><!-- custom html -->
+         
+<div class="u1129effect amiens">
+    
+      <a href="https://github.com/dron3flyv3r"><i class="fa fa-github" aria-hidden="true"></i></a>
+   
   </div>
+
+
+        </div>
+        <div class="size_fixed grpelem shared_content" id="u1177" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="u1177_content"><!-- custom html -->
+         
+<div class="u1177effect amiens">
+    
+      <a href="instagram.com/kasper_larsen_official/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+   
+  </div>
+
+
+        </div>
+       </div>
+      </div>
+      <div class="rounded-corners grpelem shared_content" id="u602" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fixedRight" data-content-guid="u602_content"><!-- simple frame -->
+       <div class="fluid_height_spacer"></div>
+      </div>
+      <div class="rounded-corners clip_frame grpelem" id="u207" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fixedRight"><!-- image -->
+       <img class="block temp_no_img_src" id="u207_img" data-orig-src="images/img_4645-2-crop-u207.jpg?crc=4122905133" alt="" data-heightwidthratio="1.1630434782608696" data-image-width="552" data-image-height="642" src="images/blank.gif?crc=4208392903"/>
+      </div>
+     </div>
+     <div class="browser_width colelem" id="u819-bw">
+      <div id="u819"><!-- group -->
+       <div class="clearfix" id="u819_align_to_page">
+        <div class="rounded-corners clip_frame grpelem" id="u905"><!-- image -->
+         <img class="block temp_no_img_src" id="u905_img" data-orig-src="images/img_4645-2-crop-u905.jpg?crc=3994083607" alt="" data-heightwidthratio="1.4518664047151277" data-image-width="509" data-image-height="739" src="images/blank.gif?crc=4208392903"/>
+        </div>
+        <div class="clearfix grpelem shared_content" id="pu910" data-content-guid="pu910_content"><!-- column -->
+         <div class="rounded-corners colelem shared_content" id="u910" data-content-guid="u910_content"><!-- simple frame --></div>
+         <div class="rounded-corners colelem shared_content" id="u915" data-content-guid="u915_content"><!-- simple frame --></div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="2209" data-content-above-spacer="2208" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="clearfix grpelem shared_content" id="u1916-4" data-content-guid="u1916-4_content"><!-- content -->
+     <p>Copyright © 2021 Dron3fkyv3r. All Rights Reserved</p>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_1280" data-min-width="933" data-max-width="1280"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
+    <div class="clearfix grpelem" id="pu1056"><!-- column -->
+     <span class="size_fluid_width colelem placeholder" data-placeholder-for="u1056_content"><!-- placeholder node --></span>
+     <span class="anchor_item colelem placeholder" data-placeholder-for="some-of-me_content"><!-- placeholder node --></span>
+    </div>
+    <div class="browser_width temp_no_id shared_content" data-orig-id="u819-bw" data-content-guid="u819-bw_content">
+     <div class="temp_no_id" data-orig-id="u819"><!-- simple frame --></div>
+    </div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu100-4"><!-- column -->
+     <span class="clearfix colelem placeholder" data-placeholder-for="u100-4_content"><!-- placeholder node --></span>
+     <span class="clearfix colelem placeholder" data-placeholder-for="u94-4_content"><!-- placeholder node --></span>
+     <span class="clearfix colelem placeholder" data-placeholder-for="pu110-5_content"><!-- placeholder node --></span>
+     <span class="nonblock nontext anim_swing size_fixed colelem placeholder" data-placeholder-for="u589_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem" id="pu1177"><!-- group -->
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u1177_content"><!-- placeholder node --></span>
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u1129_content"><!-- placeholder node --></span>
+     </div>
+     <div class="rounded-corners clip_frame colelem temp_no_id" data-orig-id="u905"><!-- image -->
+      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9052.jpg?crc=125155999" alt="" data-heightwidthratio="1.4498834498834499" data-image-width="429" data-image-height="622" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
+     </div>
+    </div>
+    <div class="clearfix grpelem" id="pu602"><!-- column -->
+     <div class="rounded-corners clearfix colelem temp_no_id" data-orig-id="u602"><!-- group -->
+      <div class="rounded-corners clip_frame clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u207"><!-- image -->
+       <img class="position_content temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2428x428.jpg?crc=4120931930" alt="" width="428" height="428" data-orig-id="u207_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+     </div>
+     <span class="rounded-corners colelem placeholder" data-placeholder-for="u910_content"><!-- placeholder node --></span>
+     <span class="rounded-corners colelem placeholder" data-placeholder-for="u915_content"><!-- placeholder node --></span>
+    </div>
+    <div class="verticalspacer" data-offset-top="1497" data-content-above-spacer="1497" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <span class="clearfix grpelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_932" data-max-width="932"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
+    <span class="nonblock nontext anim_swing size_fixed grpelem placeholder" data-placeholder-for="u589_content"><!-- placeholder node --></span>
+    <span class="anchor_item grpelem placeholder" data-placeholder-for="some-of-me_content"><!-- placeholder node --></span>
+    <span class="browser_width placeholder" data-placeholder-for="u819-bw_content"><!-- placeholder node --></span>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu100-4"><!-- column -->
+     <span class="clearfix colelem placeholder" data-placeholder-for="u100-4_content"><!-- placeholder node --></span>
+     <span class="clearfix colelem placeholder" data-placeholder-for="u94-4_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu110-5"><!-- group -->
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u110-5_content"><!-- placeholder node --></span>
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u178_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem" id="ppu1129"><!-- group -->
+      <div class="clearfix grpelem temp_no_id" data-orig-id="pu1129"><!-- column -->
+       <span class="size_fixed colelem placeholder" data-placeholder-for="u1129_content"><!-- placeholder node --></span>
+       <span class="size_fixed colelem placeholder" data-placeholder-for="u1177_content"><!-- placeholder node --></span>
+      </div>
+      <span class="rounded-corners grpelem placeholder" data-placeholder-for="u602_content"><!-- placeholder node --></span>
+      <div class="rounded-corners clip_frame grpelem temp_no_id" data-orig-id="u207"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u2072.jpg?crc=4280063106" alt="" data-heightwidthratio="1.1630434782608696" data-image-width="368" data-image-height="428" data-orig-id="u207_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+     </div>
+     <div class="clearfix colelem" id="pu905"><!-- group -->
+      <div class="rounded-corners clip_frame grpelem temp_no_id" data-orig-id="u905"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9053.jpg?crc=259362381" alt="" data-heightwidthratio="1.4472843450479234" data-image-width="313" data-image-height="453" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="pu910_content"><!-- placeholder node --></span>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="1792" data-content-above-spacer="1791" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <span class="size_fluid_width grpelem placeholder" data-placeholder-for="u1056_content"><!-- placeholder node --></span>
+    <span class="clearfix grpelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
+   </div>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
+</script>
   <!-- Other scripts -->
   <script type="text/javascript">
    // Decide whether to suppress missing file error or not based on preference setting
@@ -50,18 +707,123 @@ var suppressMissingFileError = false
 k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
 g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
 setTimeout(function(){f(!0)},5E3):f()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch"],function(c){var $ = c;$(document).ready(function(){try{
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch","jquery.museresponsive"],function(c){var $ = c;$(document).ready(function(){try{
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
 Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
+$( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
 
 </script>
   <!-- RequireJS script -->
   <script src="scripts/require.js?crc=4177726516" type="text/javascript" async data-main="scripts/museconfig.js?crc=128606099" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  
+  <!--HTML Widget code-->
+  
+<script>
+$(window).load(function(){
+	var height = window.innerHeight,
+    x= 0, y= 200,
+	curveX = 10,
+	curveY = 0,
+	targetX = 0,
+	xitteration = 0,
+	yitteration = 0,
+	menuExpanded = false;
+	
+	blob = $('#blob'),
+	blobPath = $('#blob-path'),
+
+	hamburger = $('.hamburger');
+    
+    $('.lineClass a:empty').parent().hide()
+
+	$(this).on('mousemove', function(e){
+		x = e.pageX;
+		
+		y = e.pageY - $('#menu').offset().top;
+	});
+
+	$('.hamburger, .menu-inner').on('mouseenter', function(){
+		$(this).parent().addClass('expanded');
+		menuExpanded = true;
+	});
+
+	$('.menu-inner').on('mouseleave', function(){
+		menuExpanded = false;
+		$(this).parent().removeClass('expanded');
+	});
+
+	function easeOutExpo(currentIteration, startValue, changeInValue, totalIterations) {
+		return changeInValue * (-Math.pow(2, -10 * currentIteration / totalIterations) + 1) + startValue;
+	}
+
+	var hoverZone = 150;
+	var expandAmount = 20;
+	
+	function svgCurve() {
+		if ((curveX > x-1) && (curveX < x+1) && (y >0)) {
+			xitteration = 0;
+		} else {
+			if (menuExpanded || y<0) {
+				targetX = 0;
+			} else {
+				xitteration = 0;
+				if (x > hoverZone  && (y >0)) {
+					targetX = 0;
+				} else {
+					targetX = -(((60+expandAmount)/100)*(x-hoverZone));
+				}			
+			}
+			xitteration++;
+		}
+
+		if ((curveY > y-1) && (curveY< (y - $('#menu').offset().top ))) {
+			yitteration = 0;
+		} else {
+			yitteration = 0;
+			yitteration++;	
+		}
+ 
+		curveX = easeOutExpo(xitteration, curveX, targetX-curveX, 100);
+		curveY = easeOutExpo(yitteration, curveY, y-curveY, 100);
+
+		var anchorDistance = 200;
+		var curviness = anchorDistance - 40;
+
+		var newCurve2 = "M60,"+height+"H0V0h60v"+(curveY-anchorDistance)+"c0,"+curviness+","+curveX+","+curviness+","+curveX+","+anchorDistance+"S60,"+(curveY)+",60,"+(curveY+(anchorDistance*2))+"V"+height+"z";
+
+		blobPath.attr('d', newCurve2);
+
+		blob.width(curveX+60);
+        if(y>20){       
+            hamburger.css('transform', 'translate('+curveX+'px, '+curveY+'px)');
+        } else{
+            hamburger.css('transform', 'translate('+0+'px, '+20+'px)');
+        }
+    $('h2').css('transform', 'translateY('+curveY+'px)');
+		window.requestAnimationFrame(svgCurve);
+
+	}
+
+	window.requestAnimationFrame(svgCurve);
+	
+});
+</script>
+	
+<script>
+var TxtType=function(t,e,i){this.toRotate=e,this.el=t,this.loopNum=0,this.period=parseInt(i,10)||2e3,this.txt="",this.tick(),this.isDeleting=!1};TxtType.prototype.tick=function(){var t=this.loopNum%this.toRotate.length,e=this.toRotate[t];this.isDeleting?this.txt=e.substring(0,this.txt.length-1):this.txt=e.substring(0,this.txt.length+1),this.el.innerHTML='<span class="wrap">'+this.txt+"</span>";var i=this,s=200-100*Math.random();this.isDeleting&&(s/=3),this.isDeleting||this.txt!==e?this.isDeleting&&""===this.txt&&(this.isDeleting=!1,this.loopNum++,s=500):(s=this.period,this.isDeleting=!0),setTimeout(function(){i.tick()},s)},window.onload=function(){for(var t=document.getElementsByClassName("typewrite"),e=0;e<t.length;e++){var i=t[e].getAttribute("data-type"),s=t[e].getAttribute("data-period");i&&new TxtType(t[e],JSON.parse(i),s)}var n=document.createElement("style");n.type="text/css",n.innerHTML=".typewrite > .wrap { border-right: none}",document.body.appendChild(n)};
+</script>
+	
+<script>
+
+
+</script>
+	
    </body>
 </html>
