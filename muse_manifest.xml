@@ -1,8 +1,8 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640559907556">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640560307070">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="4010689075" ref="index"/>
-    <file name="nomq_index.css" crc="289732440" ref="index"/>
+    <file name="index.css" crc="3940168014" ref="index"/>
+    <file name="nomq_index.css" crc="4181938077" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
@@ -40,5 +40,5 @@
     </file>
     <file name="blank.gif" crc="4208392903" ref="index"/>
   </folder>
-  <file name="index.html" crc="4247642793" seo="true" mt="1640559875798" redirect="true"/>
+  <file name="index.html" crc="355127444" seo="true" mt="1640560279915" redirect="true"/>
 </manifest>
