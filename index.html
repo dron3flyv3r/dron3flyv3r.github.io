@@ -17,13 +17,13 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=454884403" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=4150366" id="pagesheet"/>
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
-  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=4086384686" id="nomq_pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=3773783787" id="nomq_pagesheet"/>
   <![endif]-->
   <!-- JS includes -->
-  <script src="https://use.typekit.net/ik/BtT4JXpJGc3N3EbmhWAy2PVfnbNIo7Axu6BPSa6XVAwfe1CJvlYPesJTFQwa52JaFDgLwhwhwcjD5A9kjAwkFh4KZRF8jhbuZ2SXZ2mK5ejkjAI-4KG0-hBDSemkdfolZPUnjWF3ZW4COcu8OYiaikonjWF3ZW4COcu8J6yKScNX-emkSkGHfHVLMsMMeMS6MqGIQWmDZZMgzzeRR6j.js" type="text/javascript"></script>
+  <script src="https://use.typekit.net/ik/qYRz-JG0terdH9lZcon8dGiMN7dTt9Q_MoUtanhtTvtfe1CJvlYPesJTFQwa52JaFDgLwhwhwcjD5A9kjAwkFh4KZRF8jhbuZ2SXZ2mK5ejkjAI-4KG0-hBDSemkdfolZPUnjWF3ZW4COcu8OYiaikonjWF3ZW4COcu8J6yKScNX-emkSkGHfHVLMsMMeMS6MqGIQWmDZZMg8C51R6j.js" type="text/javascript"></script>
   <!-- Other scripts -->
   <script type="text/javascript">
    try {Typekit.load();} catch(e) {}
@@ -125,9 +125,315 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
         
 </style>
 	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<style>
+
+.u1129effect {
+  width: 167px;
+  
+}
+.u1129effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+
+}
+.u1129effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.u1129effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.u1129effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.u1129effect a {
+  text-decoration: none !important;
+  width: 167px;
+  height: 164px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 70px;
+  overflow: hidden;
+
+  color: #1E1E1E;
+  border: 1px solid #1E1E1E;
+}
+.u1129effect a i {
+  position: relative;
+  z-index: 3;
+  color: #FFC60C;
+}
+.u1129effect a:last-child {
+  margin-right: 0px;
+}
+.u1129effect a:before {
+  content: "";
+  display: inline-block;
+  height: 164px;
+  vertical-align: middle;
+}
+.u1129effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.u1129effect.lavinia a {
+  -webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.u1129effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.u1129effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 167px;
+  height: 164px;
+  top: 0px;
+  left: 0px;
+  border: 1px dashed #1E1E1E;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* amiens effect */
+.effect.amiens a {
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+.u1129effect.amiens a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.u1129effect.amiens a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.u1129effect.amiens a:hover i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+
+</style>
+	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<style>
+
+.u1177effect {
+  width: 161px;
+  
+}
+.u1177effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+
+}
+.u1177effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.u1177effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.u1177effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.u1177effect a {
+  text-decoration: none !important;
+  width: 161px;
+  height: 161px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 70px;
+  overflow: hidden;
+
+  color: #1E1E1E;
+  border: 1px solid #1E1E1E;
+}
+.u1177effect a i {
+  position: relative;
+  z-index: 3;
+  color: #FFC60C;
+}
+.u1177effect a:last-child {
+  margin-right: 0px;
+}
+.u1177effect a:before {
+  content: "";
+  display: inline-block;
+  height: 161px;
+  vertical-align: middle;
+}
+.u1177effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.u1177effect.lavinia a {
+  -webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.u1177effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.u1177effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 161px;
+  height: 161px;
+  top: 0px;
+  left: 0px;
+  border: 1px dashed #1E1E1E;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* amiens effect */
+.effect.amiens a {
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+.u1177effect.amiens a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.u1177effect.amiens a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.u1177effect.amiens a:hover i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+
+</style>
+	
 <style>
 .u589 { padding: 25px 40px; display: inline-block; letter-spacing: 6px; outline: 0; position: relative; -webkit-animation: anim 3s ease-in infinite; animation: anim 3s ease-in infinite; transition: all .3s; background: #4786B5; color: #fff!important; overflow: hidden; text-decoration: none;  transform-origin:center center; text-transform: uppercase; border-radius: 3px;}
 .u589:hover { background: #0074BD; }
+ @-webkit-keyframes anim {
+ 5% {
+ -webkit-transform: scale(1.1, .9);
+ transform: scale(1.1, .9);
+}
+10% {
+ -webkit-transform: scale(.9, 1.1) translateY(-.5rem);
+ transform: scale(.9, 1.1) translateY(-.5rem);
+}
+15% {
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+}
+@keyframes anim {
+ 5% {
+ -webkit-transform: scale(1.1, .9);
+ transform: scale(1.1, .9);
+}
+10% {
+ -webkit-transform: scale(.9, 1.1) translateY(-.5rem);
+ transform: scale(.9, 1.1) translateY(-.5rem);
+}
+15% {
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+}
+</style>
+
+<style>
+.u7037 { padding: 25px 40px; display: inline-block; letter-spacing: 6px; outline: 0; position: relative; -webkit-animation: anim 3s ease-in infinite; animation: anim 3s ease-in infinite; transition: all .3s; background: #4786B5; color: #fff!important; overflow: hidden; text-decoration: none;  transform-origin:center center; text-transform: uppercase; border-radius: 3px;}
+.u7037:hover { background: #0074BD; }
+ @-webkit-keyframes anim {
+ 5% {
+ -webkit-transform: scale(1.1, .9);
+ transform: scale(1.1, .9);
+}
+10% {
+ -webkit-transform: scale(.9, 1.1) translateY(-.5rem);
+ transform: scale(.9, 1.1) translateY(-.5rem);
+}
+15% {
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+}
+@keyframes anim {
+ 5% {
+ -webkit-transform: scale(1.1, .9);
+ transform: scale(1.1, .9);
+}
+10% {
+ -webkit-transform: scale(.9, 1.1) translateY(-.5rem);
+ transform: scale(.9, 1.1) translateY(-.5rem);
+}
+15% {
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+}
+</style>
+
+<style>
+.u7062 { padding: 25px 40px; display: inline-block; letter-spacing: 6px; outline: 0; position: relative; -webkit-animation: anim 3s ease-in infinite; animation: anim 3s ease-in infinite; transition: all .3s; background: #4786B5; color: #fff!important; overflow: hidden; text-decoration: none;  transform-origin:center center; text-transform: uppercase; border-radius: 3px;}
+.u7062:hover { background: #0074BD; }
  @-webkit-keyframes anim {
  5% {
  -webkit-transform: scale(1.1, .9);
@@ -641,10 +947,10 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
  </head>
  <body>
 
-  <div class="breakpoint active" id="bp_infinity" data-min-width="1281"><!-- responsive breakpoint node -->
+  <div class="breakpoint active" id="bp_infinity" data-min-width="1921"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox" id="page"><!-- group -->
     <div class="clearfix grpelem" id="ppu4331-4"><!-- column -->
-     <div class="clearfix colelem" id="pu4331-4"><!-- group -->
+     <div class="clearfix colelem shared_content" id="pu4331-4" data-content-guid="pu4331-4_content"><!-- group -->
       <div class="clearfix grpelem shared_content" id="u4331-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u4331-4_content"><!-- content -->
        <p>Hi</p>
       </div>
@@ -652,7 +958,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
        <h1>I am Kasper</h1>
       </div>
      </div>
-     <div class="clearfix colelem" id="pu4357-4"><!-- group -->
+     <div class="clearfix colelem shared_content" id="pu4357-4" data-content-guid="pu4357-4_content"><!-- group -->
       <div class="clearfix grpelem shared_content" id="u4357-4" data-content-guid="u4357-4_content"><!-- content -->
        <p>I'm</p>
       </div>
@@ -680,6 +986,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <span class="typewrite" data-period="2000" data-type="[ &quot;Designer&quot;, &quot;Programmer&quot;, &quot;Photographer&quot;, &quot;&quot;, &quot;&quot; ]"></span>
 
      </div>
+     <img class="colelem temp_no_img_src" id="u6195-4" alt="Who am i" data-orig-src="images/u6195-4.png?crc=348829891" data-image-width="1262" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
     </div>
     <a class="anchor_item grpelem shared_content" id="some-of-me" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="some-of-me_content"></a>
     <div class="size_fixed shared_content" id="u1056" data-sizePolicy="fixed" data-pintopage="topleft" data-content-guid="u1056_content"><!-- custom html -->
@@ -694,7 +1001,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 			
 			<ul class="textClass">
 <li class="lineClass" id="menuLink1"><a class="linkClass" href="#">Home</a></li>
-<li class="lineClass" id="menuLink1"><a class="linkClass" href="#">About</a></li>
+<li class="lineClass" id="menuLink1"><a class="linkClass" href="#">Photos</a></li>
 <li class="lineClass" id="menuLink1"><a class="linkClass" href="#">Code</a></li>
 <li class="lineClass" id="menuLink1"><a class="linkClass" href="#">Contact</a></li>
 			</ul>
@@ -708,7 +1015,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     <div class="clearfix grpelem" id="ppppu94-4"><!-- column -->
      <div class="clearfix colelem" id="pppu94-4"><!-- group -->
       <div class="clearfix grpelem" id="ppu94-4"><!-- column -->
-       <div class="clearfix colelem" id="pu94-4"><!-- group -->
+       <div class="clearfix colelem shared_content" id="pu94-4" data-content-guid="pu94-4_content"><!-- group -->
         <div class="clearfix grpelem shared_content" id="u94-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u94-4_content"><!-- content -->
          <h1>I am Kasper</h1>
         </div>
@@ -716,7 +1023,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
          <p>Hi</p>
         </div>
        </div>
-       <div class="clearfix colelem" id="pu178"><!-- group -->
+       <div class="clearfix colelem shared_content" id="pu178" data-content-guid="pu178_content"><!-- group -->
         <div class="size_fixed grpelem shared_content" id="u178" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u178_content"><!-- custom html -->
          
 <!-- This Adobe Muse widget was created by the team at MuseFree.com -->
@@ -727,11 +1034,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
          <p>I'm</p>
         </div>
        </div>
-       <a class="nonblock nontext anim_swing size_fixed colelem shared_content" id="u589" href="index.html#some-of-me" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u589_content"><!-- custom html -->
-<!-- This Adobe Muse widget was created by the team at MuseFree.com -->
-<p class="u589">more</p>
- 	</a>
-       <div class="clearfix colelem" id="pu1129"><!-- group -->
+       <div class="clearfix colelem shared_content" id="pu1129" data-content-guid="pu1129_content"><!-- group -->
         <div class="size_fixed grpelem shared_content" id="u1129" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="u1129_content"><!-- custom html -->
          
 <div class="u1129effect amiens">
@@ -753,35 +1056,101 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 
         </div>
        </div>
+       <div class="clearfix colelem shared_content" id="pu589" data-content-guid="pu589_content"><!-- group -->
+        <a class="nonblock nontext anim_swing size_fixed grpelem shared_content" id="u589" href="index.html#some-of-me" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u589_content"><!-- custom html -->
+<!-- This Adobe Muse widget was created by the team at MuseFree.com -->
+<p class="u589">More</p>
+ 	</a>
+        <a class="nonblock nontext anim_swing size_fixed grpelem shared_content" id="u7037" href="index.html#some-of-me" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u7037_content"><!-- custom html -->
+<!-- This Adobe Muse widget was created by the team at MuseFree.com -->
+<p class="u7037">Code</p>
+ 	</a>
+        <a class="nonblock nontext anim_swing size_fixed grpelem shared_content" id="u7062" href="index.html#some-of-me" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u7062_content"><!-- custom html -->
+<!-- This Adobe Muse widget was created by the team at MuseFree.com -->
+<p class="u7062">Photos</p>
+ 	</a>
+       </div>
       </div>
-      <div class="rounded-corners grpelem shared_content" id="u602" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fixedRight" data-content-guid="u602_content"><!-- simple frame -->
+      <div class="rounded-corners grpelem shared_content" id="u602" data-content-guid="u602_content"><!-- simple frame -->
        <div class="fluid_height_spacer"></div>
       </div>
-      <div class="rounded-corners clip_frame grpelem" id="u207" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fixedRight"><!-- image -->
-       <img class="block temp_no_img_src" id="u207_img" data-orig-src="images/img_4645-2-crop-u207.jpg?crc=4122905133" alt="" data-heightwidthratio="1.1630434782608696" data-image-width="552" data-image-height="642" src="images/blank.gif?crc=4208392903"/>
+      <div class="rounded-corners clip_frame grpelem" id="u207"><!-- image -->
+       <img class="block temp_no_img_src" id="u207_img" data-orig-src="images/img_4645-2-crop-u207.jpg?crc=173840101" alt="" data-heightwidthratio="1.1624621594349143" data-image-width="991" data-image-height="1152" src="images/blank.gif?crc=4208392903"/>
       </div>
      </div>
      <div class="browser_width colelem" id="u819-bw">
       <div id="u819"><!-- group -->
        <div class="clearfix" id="u819_align_to_page">
         <div class="rounded-corners clip_frame grpelem" id="u905"><!-- image -->
-         <img class="block temp_no_img_src" id="u905_img" data-orig-src="images/img_4645-2-crop-u905.jpg?crc=3994083607" alt="" data-heightwidthratio="1.4518664047151277" data-image-width="509" data-image-height="739" src="images/blank.gif?crc=4208392903"/>
+         <img class="block temp_no_img_src" id="u905_img" data-orig-src="images/img_4645-2-crop-u905.jpg?crc=4170905822" alt="" data-heightwidthratio="1.4508393285371703" data-image-width="834" data-image-height="1210" src="images/blank.gif?crc=4208392903"/>
         </div>
-        <div class="clearfix grpelem shared_content" id="pu910" data-content-guid="pu910_content"><!-- column -->
-         <div class="rounded-corners colelem shared_content" id="u910" data-content-guid="u910_content"><!-- simple frame --></div>
+        <div class="clearfix grpelem" id="ppu910"><!-- column -->
+         <div class="clearfix colelem" id="pu910"><!-- group -->
+          <div class="rounded-corners grpelem shared_content" id="u910" data-content-guid="u910_content"><!-- simple frame --></div>
+          <img class="grpelem temp_no_img_src" id="u6017-4" alt="Who am i" data-orig-src="images/u6017-4.png?crc=476493089" data-image-width="1262" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+         </div>
          <div class="rounded-corners colelem shared_content" id="u915" data-content-guid="u915_content"><!-- simple frame --></div>
         </div>
        </div>
       </div>
      </div>
-     <div class="clearfix colelem shared_content" id="u1916-4" data-content-guid="u1916-4_content"><!-- content -->
-      <p>Copyright © 2021 Dron3flyv3r. All Rights Reserved</p>
-     </div>
     </div>
-    <div class="verticalspacer" data-offset-top="2240" data-content-above-spacer="2240" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="verticalspacer" data-offset-top="3200" data-content-above-spacer="3200" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="clearfix grpelem shared_content" id="u1916-4" data-content-guid="u1916-4_content"><!-- content -->
+     <p>Copyright © 2021 Dron3flyv3r. All Rights Reserved</p>
+    </div>
    </div>
   </div>
-  <div class="breakpoint" id="bp_1280" data-min-width="933" data-max-width="1280"><!-- responsive breakpoint node -->
+  <div class="breakpoint" id="bp_1920" data-min-width="1281" data-max-width="1920"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
+    <div class="clearfix grpelem temp_no_id" data-orig-id="ppu4331-4"><!-- column -->
+     <span class="clearfix colelem placeholder" data-placeholder-for="pu4331-4_content"><!-- placeholder node --></span>
+     <span class="clearfix colelem placeholder" data-placeholder-for="pu4357-4_content"><!-- placeholder node --></span>
+     <span class="size_fixed colelem placeholder" data-placeholder-for="u4367_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu4390-4"><!-- group -->
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u4390-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u4402-4_content"><!-- placeholder node --></span>
+      <img class="grpelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6195-42.png?crc=327855371" data-image-width="464" data-orig-id="u6195-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     </div>
+     <span class="size_fixed colelem placeholder" data-placeholder-for="u4411_content"><!-- placeholder node --></span>
+    </div>
+    <span class="anchor_item grpelem placeholder" data-placeholder-for="some-of-me_content"><!-- placeholder node --></span>
+    <span class="size_fixed placeholder" data-placeholder-for="u1056_content"><!-- placeholder node --></span>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="ppppu94-4"><!-- column -->
+     <div class="clearfix colelem temp_no_id" data-orig-id="pppu94-4"><!-- group -->
+      <div class="clearfix grpelem temp_no_id" data-orig-id="ppu94-4"><!-- column -->
+       <span class="clearfix colelem placeholder" data-placeholder-for="pu94-4_content"><!-- placeholder node --></span>
+       <span class="clearfix colelem placeholder" data-placeholder-for="pu178_content"><!-- placeholder node --></span>
+       <span class="clearfix colelem placeholder" data-placeholder-for="pu589_content"><!-- placeholder node --></span>
+       <span class="clearfix colelem placeholder" data-placeholder-for="pu1129_content"><!-- placeholder node --></span>
+      </div>
+      <span class="rounded-corners grpelem placeholder" data-placeholder-for="u602_content"><!-- placeholder node --></span>
+      <div class="rounded-corners clip_frame grpelem temp_no_id" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fixedCenter" data-orig-id="u207"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u2072.jpg?crc=281477325" alt="" data-heightwidthratio="1.1630434782608696" data-image-width="552" data-image-height="642" data-orig-id="u207_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+     </div>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u819-bw">
+      <div class="temp_no_id" data-orig-id="u819"><!-- group -->
+       <div class="clearfix temp_no_id" data-orig-id="u819_align_to_page">
+        <div class="rounded-corners clip_frame grpelem temp_no_id" data-orig-id="u905"><!-- image -->
+         <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9052.jpg?crc=3777609765" alt="" data-heightwidthratio="1.4518664047151277" data-image-width="509" data-image-height="739" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
+        </div>
+        <div class="clearfix grpelem temp_no_id" data-orig-id="ppu910"><!-- column -->
+         <div class="clearfix colelem temp_no_id" data-orig-id="pu910"><!-- group -->
+          <span class="rounded-corners grpelem placeholder" data-placeholder-for="u910_content"><!-- placeholder node --></span>
+          <img class="grpelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6017-42.png?crc=4152924196" data-image-width="946" data-orig-id="u6017-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+         </div>
+         <span class="rounded-corners colelem placeholder" data-placeholder-for="u915_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="2149" data-content-above-spacer="2149" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <span class="clearfix grpelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_1280" data-min-width="948" data-max-width="1280"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
     <div class="clearfix grpelem temp_no_id" data-orig-id="ppu94-4"><!-- column -->
      <div class="clearfix colelem temp_no_id" data-orig-id="pu94-4"><!-- group -->
@@ -794,6 +1163,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       <span class="clearfix grpelem placeholder" data-placeholder-for="u4307-4_content"><!-- placeholder node --></span>
      </div>
      <span class="clearfix colelem placeholder" data-placeholder-for="u4428-4_content"><!-- placeholder node --></span>
+     <img class="colelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6017-43.png?crc=3861749861" data-image-width="631" data-orig-id="u6017-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
     </div>
     <div class="clearfix grpelem" id="pu1056"><!-- column -->
      <span class="size_fluid_width colelem placeholder" data-placeholder-for="u1056_content"><!-- placeholder node --></span>
@@ -806,10 +1176,14 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
         <span class="clearfix grpelem placeholder" data-placeholder-for="u4357-4_content"><!-- placeholder node --></span>
        </div>
        <span class="nonblock nontext anim_swing size_fixed colelem placeholder" data-placeholder-for="u589_content"><!-- placeholder node --></span>
+       <div class="clearfix colelem" id="pu7037"><!-- group -->
+        <span class="nonblock nontext anim_swing size_fixed grpelem placeholder" data-placeholder-for="u7037_content"><!-- placeholder node --></span>
+        <span class="nonblock nontext anim_swing size_fixed grpelem placeholder" data-placeholder-for="u7062_content"><!-- placeholder node --></span>
+       </div>
       </div>
       <div class="rounded-corners clearfix grpelem temp_no_id" data-orig-id="u602"><!-- group -->
        <div class="rounded-corners clip_frame clearfix grpelem temp_no_id" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" data-orig-id="u207"><!-- image -->
-        <img class="position_content temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2428x428.jpg?crc=4120931930" alt="" width="428" height="428" data-orig-id="u207_img" src="images/blank.gif?crc=4208392903"/>
+        <img class="position_content temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2428x428.jpg?crc=159487847" alt="" width="428" height="428" data-orig-id="u207_img" src="images/blank.gif?crc=4208392903"/>
        </div>
       </div>
      </div>
@@ -822,18 +1196,23 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
        <div class="clearfix temp_no_id" data-orig-id="u819_align_to_page">
         <span class="anchor_item grpelem placeholder" data-placeholder-for="some-of-me_content"><!-- placeholder node --></span>
         <div class="rounded-corners clip_frame grpelem temp_no_id" data-orig-id="u905"><!-- image -->
-         <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9052.jpg?crc=125155999" alt="" data-heightwidthratio="1.4498834498834499" data-image-width="429" data-image-height="622" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
+         <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9053.jpg?crc=4102627174" alt="" data-heightwidthratio="1.4498834498834499" data-image-width="429" data-image-height="622" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
         </div>
-        <span class="clearfix grpelem placeholder" data-placeholder-for="pu910_content"><!-- placeholder node --></span>
+        <div class="clearfix grpelem temp_no_id" data-orig-id="pu910"><!-- column -->
+         <div class="rounded-corners clearfix colelem temp_no_id" data-orig-id="u910"><!-- group -->
+          <img class="grpelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6195-43.png?crc=3891148499" data-image-width="631" data-orig-id="u6195-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+         </div>
+         <span class="rounded-corners colelem placeholder" data-placeholder-for="u915_content"><!-- placeholder node --></span>
+        </div>
        </div>
       </div>
      </div>
-     <span class="clearfix colelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
     </div>
-    <div class="verticalspacer" data-offset-top="1482" data-content-above-spacer="1482" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="verticalspacer" data-offset-top="1440" data-content-above-spacer="1440" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <span class="clearfix grpelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
    </div>
   </div>
-  <div class="breakpoint" id="bp_932" data-min-width="481" data-max-width="932"><!-- responsive breakpoint node -->
+  <div class="breakpoint" id="bp_947" data-min-width="481" data-max-width="947"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
     <span class="clearfix grpelem placeholder" data-placeholder-for="u4307-4_content"><!-- placeholder node --></span>
     <div class="clearfix grpelem" id="ppu100-4"><!-- column -->
@@ -851,6 +1230,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      </div>
      <span class="clearfix colelem placeholder" data-placeholder-for="u4428-4_content"><!-- placeholder node --></span>
      <span class="size_fluid_width colelem placeholder" data-placeholder-for="u1056_content"><!-- placeholder node --></span>
+     <img class="colelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6017-44.png?crc=3856625911" data-image-width="466" data-orig-id="u6017-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
     </div>
     <span class="anchor_item grpelem placeholder" data-placeholder-for="some-of-me_content"><!-- placeholder node --></span>
     <div class="clearfix grpelem" id="ppu4347-4"><!-- column -->
@@ -866,24 +1246,31 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
        <span class="size_fixed colelem placeholder" data-placeholder-for="u1177_content"><!-- placeholder node --></span>
        <span class="nonblock nontext anim_swing size_fixed colelem placeholder" data-placeholder-for="u589_content"><!-- placeholder node --></span>
       </div>
+      <span class="nonblock nontext anim_swing size_fixed grpelem placeholder" data-placeholder-for="u7062_content"><!-- placeholder node --></span>
       <span class="rounded-corners grpelem placeholder" data-placeholder-for="u602_content"><!-- placeholder node --></span>
       <div class="rounded-corners clip_frame grpelem temp_no_id" data-orig-id="u207"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u2072.jpg?crc=4280063106" alt="" data-heightwidthratio="1.1630434782608696" data-image-width="368" data-image-height="428" data-orig-id="u207_img" src="images/blank.gif?crc=4208392903"/>
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u2073.jpg?crc=4056812226" alt="" data-heightwidthratio="1.1631016042780749" data-image-width="374" data-image-height="435" data-orig-id="u207_img" src="images/blank.gif?crc=4208392903"/>
       </div>
      </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u819"><!-- column -->
-      <div class="clearfix colelem" id="pu905"><!-- group -->
-       <div class="rounded-corners clip_frame grpelem temp_no_id" data-orig-id="u905"><!-- image -->
-        <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9053.jpg?crc=259362381" alt="" data-heightwidthratio="1.4472843450479234" data-image-width="313" data-image-height="453" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
-       </div>
-       <div class="rounded-corners grpelem temp_no_id" data-orig-id="u910"><!-- simple frame -->
-        <div class="fluid_height_spacer"></div>
+     <span class="nonblock nontext anim_swing size_fixed colelem placeholder" data-placeholder-for="u7037_content"><!-- placeholder node --></span>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u819-bw">
+      <div class="temp_no_id" data-orig-id="u819"><!-- column -->
+       <div class="clearfix temp_no_id" data-orig-id="u819_align_to_page">
+        <div class="clearfix colelem" id="pu905"><!-- group -->
+         <div class="rounded-corners clip_frame grpelem temp_no_id" data-orig-id="u905"><!-- image -->
+          <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9054.jpg?crc=3763217946" alt="" data-heightwidthratio="1.449685534591195" data-image-width="318" data-image-height="461" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
+         </div>
+         <div class="rounded-corners grpelem temp_no_id" data-orig-id="u910"><!-- simple frame -->
+          <div class="fluid_height_spacer"></div>
+         </div>
+         <img class="grpelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6195-44.png?crc=464724556" data-image-width="466" data-orig-id="u6195-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+        </div>
+        <span class="rounded-corners colelem placeholder" data-placeholder-for="u915_content"><!-- placeholder node --></span>
        </div>
       </div>
-      <span class="rounded-corners colelem placeholder" data-placeholder-for="u915_content"><!-- placeholder node --></span>
      </div>
     </div>
-    <div class="verticalspacer" data-offset-top="1949" data-content-above-spacer="1949" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="verticalspacer" data-offset-top="1963" data-content-above-spacer="1963" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
     <span class="clearfix grpelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
    </div>
   </div>
@@ -903,14 +1290,21 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <span class="size_fixed colelem placeholder" data-placeholder-for="u4367_content"><!-- placeholder node --></span>
      <span class="clearfix colelem placeholder" data-placeholder-for="u4307-4_content"><!-- placeholder node --></span>
     </div>
-    <span class="size_fluid_width grpelem placeholder" data-placeholder-for="u1056_content"><!-- placeholder node --></span>
-    <div class="rounded-corners clip_frame grpelem temp_no_id" data-orig-id="u905"><!-- image -->
-     <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9054.jpg?crc=28036962" alt="" data-heightwidthratio="1.455" data-image-width="200" data-image-height="291" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu905"><!-- column -->
+     <div class="rounded-corners clip_frame colelem temp_no_id" data-orig-id="u905"><!-- image -->
+      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9055.jpg?crc=255090187" alt="" data-heightwidthratio="1.455" data-image-width="200" data-image-height="291" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
+     </div>
+     <span class="size_fluid_width colelem placeholder" data-placeholder-for="u1056_content"><!-- placeholder node --></span>
     </div>
     <div class="clearfix grpelem" id="pu602"><!-- column -->
      <span class="rounded-corners colelem placeholder" data-placeholder-for="u602_content"><!-- placeholder node --></span>
-     <span class="nonblock nontext anim_swing size_fixed colelem placeholder" data-placeholder-for="u589_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu589"><!-- group -->
+      <span class="nonblock nontext anim_swing size_fixed grpelem placeholder" data-placeholder-for="u589_content"><!-- placeholder node --></span>
+      <span class="nonblock nontext anim_swing size_fixed grpelem placeholder" data-placeholder-for="u7037_content"><!-- placeholder node --></span>
+      <span class="nonblock nontext anim_swing size_fixed grpelem placeholder" data-placeholder-for="u7062_content"><!-- placeholder node --></span>
+     </div>
      <span class="rounded-corners colelem placeholder" data-placeholder-for="u910_content"><!-- placeholder node --></span>
+     <img class="colelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6017-45.png?crc=45904631" data-image-width="236" data-orig-id="u6017-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
     </div>
     <div class="clearfix grpelem" id="ppu4390-4"><!-- column -->
      <div class="clearfix colelem temp_no_id" data-orig-id="pu4390-4"><!-- group -->
@@ -920,7 +1314,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <div class="clearfix colelem" id="pu4411"><!-- group -->
       <span class="size_fixed grpelem placeholder" data-placeholder-for="u4411_content"><!-- placeholder node --></span>
       <div class="rounded-corners clip_frame grpelem temp_no_id" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fixedCenter" data-orig-id="u207"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u2073.jpg?crc=520589246" alt="" data-heightwidthratio="1.1631578947368422" data-image-width="190" data-image-height="221" data-orig-id="u207_img" src="images/blank.gif?crc=4208392903"/>
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u2074.jpg?crc=3843519809" alt="" data-heightwidthratio="1.1631578947368422" data-image-width="190" data-image-height="221" data-orig-id="u207_img" src="images/blank.gif?crc=4208392903"/>
       </div>
       <span class="size_fixed grpelem placeholder" data-placeholder-for="u1129_content"><!-- placeholder node --></span>
       <span class="size_fixed grpelem placeholder" data-placeholder-for="u1177_content"><!-- placeholder node --></span>
@@ -930,12 +1324,15 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       <div class="temp_no_id" data-orig-id="u819"><!-- group -->
        <div class="clearfix temp_no_id" data-orig-id="u819_align_to_page">
         <span class="anchor_item grpelem placeholder" data-placeholder-for="some-of-me_content"><!-- placeholder node --></span>
-        <span class="rounded-corners grpelem placeholder" data-placeholder-for="u915_content"><!-- placeholder node --></span>
+        <div class="clearfix grpelem" id="pu6195-4"><!-- column -->
+         <img class="colelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6195-45.png?crc=4110061307" data-image-width="330" data-orig-id="u6195-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+         <span class="rounded-corners colelem placeholder" data-placeholder-for="u915_content"><!-- placeholder node --></span>
+        </div>
        </div>
       </div>
      </div>
     </div>
-    <div class="verticalspacer" data-offset-top="1178" data-content-above-spacer="1177" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="verticalspacer" data-offset-top="1178" data-content-above-spacer="1255" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
     <span class="clearfix grpelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
    </div>
   </div>
