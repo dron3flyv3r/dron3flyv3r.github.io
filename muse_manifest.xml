@@ -1,17 +1,20 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640638642602">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640642014381">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="4102141956" ref="index"/>
-    <file name="nomq_index.css" crc="4174014134" ref="index"/>
+    <file name="index.css" crc="4234999167" ref="index"/>
+    <file name="nomq_index.css" crc="176426989" ref="index"/>
+    <file name="code.css" crc="131039766" ref="code"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
-    <file name="museutils.js" crc="3939489907" ref="index"/>
-    <file name="whatinput.js" crc="86476730" ref="index"/>
-    <file name="museconfig.js" crc="128606099" ref="index"/>
-    <file name="jquery.watch.js" crc="522499760" ref="index"/>
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:code"/>
+    <file name="museutils.js" crc="3939489907" ref="index:code"/>
+    <file name="whatinput.js" crc="86476730" ref="index:code"/>
+    <file name="museconfig.js" crc="128606099" ref="index:code"/>
+    <file name="jquery.watch.js" crc="522499760" ref="index:code"/>
     <file name="jquery.museresponsive.js" crc="95814420" ref="index"/>
-    <file name="require.js" crc="4177726516" ref="index"/>
+    <file name="require.js" crc="4177726516" ref="index:code"/>
+    <file name="jquery.musemenu.js" crc="4139692962" ref="index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:code"/>
   </folder>
   <folder name="images">
     <file name="img_4645-2-crop-u207.jpg" crc="3909624031" seo="true" ref="index">
@@ -57,5 +60,6 @@
     <file name="u6195-45.png" crc="4110061307" ref="index"/>
     <file name="home-favicon.ico" crc="3863732260" ref="index"/>
   </folder>
-  <file name="index.html" crc="461971780" seo="true" mt="1640638620441" redirect="true"/>
+  <file name="index.html" crc="4058578407" seo="true" mt="1640642002572" redirect="true"/>
+  <file name="code.html" crc="112619268" seo="true" mt="1640641741879" redirect="false"/>
 </manifest>
