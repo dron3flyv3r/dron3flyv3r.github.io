@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640620428651">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640621298834">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="4150366" ref="index"/>
+    <file name="index.css" crc="3831289326" ref="index"/>
     <file name="nomq_index.css" crc="3773783787" ref="index"/>
   </folder>
   <folder name="scripts">
@@ -14,10 +14,10 @@
     <file name="require.js" crc="4177726516" ref="index"/>
   </folder>
   <folder name="images">
-    <file name="img_4645-2-crop-u207.jpg" crc="173840101" seo="true" ref="index">
+    <file name="img_4645-2-crop-u207.jpg" crc="3909624031" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_4645-2-crop-u905.jpg" crc="4170905822" seo="true" ref="index">
+    <file name="img_4645-2-crop-u905.jpg" crc="4020236902" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="img_4645-2428x428.jpg" crc="159487847" seo="true" ref="index">
@@ -26,16 +26,16 @@
     <file name="img_4645-2-crop-u9052.jpg" crc="3777609765" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_4645-2-crop-u2072.jpg" crc="281477325" seo="true" ref="index">
+    <file name="img_4645-2-crop-u2072.jpg" crc="162608942" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_4645-2-crop-u9053.jpg" crc="4102627174" seo="true" ref="index">
+    <file name="img_4645-2-crop-u9053.jpg" crc="429277950" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_4645-2-crop-u2073.jpg" crc="4056812226" seo="true" ref="index">
+    <file name="img_4645-2-crop-u2073.jpg" crc="263291998" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_4645-2-crop-u9054.jpg" crc="3763217946" seo="true" ref="index">
+    <file name="img_4645-2-crop-u9054.jpg" crc="4046248674" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="blank.gif" crc="4208392903" ref="index"/>
@@ -47,14 +47,15 @@
     <file name="u6195-43.png" crc="3891148499" ref="index"/>
     <file name="u6017-44.png" crc="3856625911" ref="index"/>
     <file name="u6195-44.png" crc="464724556" ref="index"/>
-    <file name="img_4645-2-crop-u9055.jpg" crc="255090187" seo="true" ref="index">
+    <file name="img_4645-2-crop-u9055.jpg" crc="3876637826" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="u6017-45.png" crc="45904631" ref="index"/>
-    <file name="img_4645-2-crop-u2074.jpg" crc="3843519809" seo="true" ref="index">
+    <file name="img_4645-2-crop-u2074.jpg" crc="4139947865" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="u6195-45.png" crc="4110061307" ref="index"/>
+    <file name="home-favicon.ico" crc="3863732260" ref="index"/>
   </folder>
-  <file name="index.html" crc="3889347076" seo="true" mt="1640620378858" redirect="true"/>
+  <file name="index.html" crc="178928789" seo="true" mt="1640621171399" redirect="true"/>
 </manifest>
