@@ -1,10 +1,10 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640646606522">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640647352127">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="4234999167" ref="index"/>
-    <file name="nomq_index.css" crc="176426989" ref="index"/>
-    <file name="code.css" crc="3831288839" ref="code"/>
-    <file name="nomq_code.css" crc="3908762659" ref="code"/>
+    <file name="index.css" crc="157865478" ref="index"/>
+    <file name="nomq_index.css" crc="4259347705" ref="index"/>
+    <file name="code.css" crc="503297218" ref="code"/>
+    <file name="nomq_code.css" crc="4182105853" ref="code"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:code"/>
@@ -14,14 +14,14 @@
     <file name="jquery.watch.js" crc="522499760" ref="index:code"/>
     <file name="jquery.museresponsive.js" crc="95814420" ref="index:code"/>
     <file name="require.js" crc="4177726516" ref="index:code"/>
-    <file name="jquery.musemenu.js" crc="4139692962" ref="index"/>
+    <file name="jquery.musemenu.js" crc="4139692962" ref="index:code"/>
     <file name="html5shiv.js" crc="4241844378" ref="index:code"/>
   </folder>
   <folder name="images">
-    <file name="img_4645-2-crop-u207.jpg" crc="3909624031" seo="true" ref="index">
+    <file name="img_4645-2-crop-u207.jpg" crc="173840101" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_4645-2-crop-u905.jpg" crc="4020236902" seo="true" ref="index">
+    <file name="img_4645-2-crop-u905.jpg" crc="4170905822" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="img_4645-2428x428.jpg" crc="159487847" seo="true" ref="index">
@@ -30,16 +30,16 @@
     <file name="img_4645-2-crop-u9052.jpg" crc="3777609765" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_4645-2-crop-u2072.jpg" crc="162608942" seo="true" ref="index">
+    <file name="img_4645-2-crop-u2072.jpg" crc="281477325" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_4645-2-crop-u9053.jpg" crc="429277950" seo="true" ref="index">
+    <file name="img_4645-2-crop-u9053.jpg" crc="4102627174" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_4645-2-crop-u2073.jpg" crc="263291998" seo="true" ref="index">
+    <file name="img_4645-2-crop-u2073.jpg" crc="4056812226" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_4645-2-crop-u9054.jpg" crc="4046248674" seo="true" ref="index">
+    <file name="img_4645-2-crop-u9054.jpg" crc="3763217946" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="blank.gif" crc="4208392903" ref="index:code"/>
@@ -51,17 +51,17 @@
     <file name="u6195-43.png" crc="3891148499" ref="index"/>
     <file name="u6017-44.png" crc="3856625911" ref="index"/>
     <file name="u6195-44.png" crc="464724556" ref="index"/>
-    <file name="img_4645-2-crop-u9055.jpg" crc="3876637826" seo="true" ref="index">
+    <file name="img_4645-2-crop-u9055.jpg" crc="255090187" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="u6017-45.png" crc="45904631" ref="index"/>
-    <file name="img_4645-2-crop-u2074.jpg" crc="4139947865" seo="true" ref="index">
+    <file name="img_4645-2-crop-u2074.jpg" crc="3843519809" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="u6195-45.png" crc="4110061307" ref="index"/>
     <file name="home-favicon.ico" crc="3863732260" ref="index"/>
     <file name="favicon.ico" crc="3863732260" ref="code"/>
   </folder>
-  <file name="index.html" crc="3795088637" seo="true" mt="1640642416073" redirect="true"/>
-  <file name="code.html" crc="3984636226" seo="true" mt="1640646593214" redirect="true"/>
+  <file name="index.html" crc="341539571" seo="true" mt="1640646950309" redirect="true"/>
+  <file name="code.html" crc="499554903" seo="true" mt="1640647342797" redirect="true"/>
 </manifest>
