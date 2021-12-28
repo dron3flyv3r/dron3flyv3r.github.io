@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640729223836">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640729399222">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="4122180985" ref="index"/>
+    <file name="index.css" crc="3880273413" ref="index"/>
     <file name="nomq_index.css" crc="459141226" ref="index"/>
     <file name="code.css" crc="3942556835" ref="code"/>
     <file name="nomq_code.css" crc="257542673" ref="code"/>
@@ -70,6 +70,6 @@
     </file>
     <file name="u6195-46.png" crc="90158432" ref="index"/>
   </folder>
-  <file name="index.html" crc="175605326" seo="true" mt="1640729205341" redirect="true"/>
+  <file name="index.html" crc="3768585489" seo="true" mt="1640729370731" redirect="true"/>
   <file name="code.html" crc="263013944" seo="true" mt="1640729143680" redirect="true"/>
 </manifest>
