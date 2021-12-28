@@ -1,9 +1,9 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640729713433">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640729867674">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="517681149" ref="index"/>
+    <file name="index.css" crc="123621527" ref="index"/>
     <file name="nomq_index.css" crc="3791035776" ref="index"/>
-    <file name="code.css" crc="3942556835" ref="code"/>
+    <file name="code.css" crc="14326871" ref="code"/>
     <file name="nomq_code.css" crc="257542673" ref="code"/>
   </folder>
   <folder name="scripts">
@@ -70,6 +70,6 @@
     </file>
     <file name="u6195-46.png" crc="90158432" ref="index"/>
   </folder>
-  <file name="index.html" crc="3786912879" seo="true" mt="1640729700355" redirect="true"/>
-  <file name="code.html" crc="263013944" seo="true" mt="1640729143680" redirect="true"/>
+  <file name="index.html" crc="311860926" seo="true" mt="1640729841910" redirect="true"/>
+  <file name="code.html" crc="351772178" seo="true" mt="1640729850700" redirect="true"/>
 </manifest>
