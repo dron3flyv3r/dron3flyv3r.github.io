@@ -11,17 +11,17 @@
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "jquery.museresponsive.js", "require.js", "index.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "jquery.musemenu.js", "jquery.museresponsive.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
   
   <link rel="shortcut icon" href="images/home-favicon.ico?crc=3863732260"/>
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=157865478" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=4294225261" id="pagesheet"/>
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
-  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=4259347705" id="nomq_pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=493170055" id="nomq_pagesheet"/>
   <![endif]-->
   <!-- JS includes -->
   <!--[if lt IE 9]>
@@ -29,106 +29,12 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <![endif]-->
   <!-- Other scripts -->
   <script type="text/javascript">
-   (function(c){var b={src:(c.location.protocol=="https:"?"https:":"http:")+"//use.typekit.net/ik/G809iQfJfWWYErdBmuMNZwvkHNUgOhWzlAExzbWm8Bqfe1CJvlYPesJTFQwa52JaFDgLwhwhwcjD5A9kjAwkFh4KZRF8jhbuZ2SXZ2mK5ejkjAI-4KG0-hBDSemkdfolZPUnjWF3ZW4COcu8OYiaikonjWF3ZW4COcu8J6yKScNX-emkSkGHfHVLMsMMeMS6MqGIQWmDZZMglTATR6j.js",scriptTimeout:3000,async:!0},d=c.documentElement,a=setTimeout(function(){d.className=d.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},b.scriptTimeout),f=c.createElement("script"),c=c.getElementsByTagName("script")[0],h=!1,g=null;d.className+=" wf-loading";f.src=b.src;f.async=!0;f.onload=f.onreadystatechange=function(){g=this.readyState;if(!(h||g&&g!="complete"&&g!="loaded")){h=!0;clearTimeout(a);
+   (function(c){var b={src:(c.location.protocol=="https:"?"https:":"http:")+"//use.typekit.net/ik/tUXQ8Tn_-lgjZMuhU2SdBUPuzffZ2KaJsbRqQorn6i6feT9gfVOsXyqPHQ9DFD6kFDS3WDFRFR4cwD88wcBRwRiKjcjDZAFqFAbaFebujRycwcByeKj7OclySag8Sc30dA9C-hBDSemkdfolZPUaiaS0-hBDSemkdfolZPJJj14ziey8S1wK2eZzScF8OWFGjAszikGHfHVLMsMMeMS6MKGHfF75MyMgeMb6MqGIQWmDZZMgqZf0R6j.js",scriptTimeout:3000,async:!0},d=c.documentElement,a=setTimeout(function(){d.className=d.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},b.scriptTimeout),f=c.createElement("script"),c=c.getElementsByTagName("script")[0],h=!1,g=null;d.className+=" wf-loading";f.src=b.src;f.async=!0;f.onload=f.onreadystatechange=function(){g=this.readyState;if(!(h||g&&g!="complete"&&g!="loaded")){h=!0;clearTimeout(a);
 try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
 
 </script>
     <!--HTML Widget code-->
   
-	
-		<style>
-		
-
-		#menu {
-			height: 100%;
-			position: fixed;
-			background-color: #1E1E1E;
-			width: 200px;
-			transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
-			transform: translateX(-100%);
-			left: 60px;
-		}
-
-		#menu.expanded {
-			transform: translateX(0%);
-			left: 0px;
-		}
-
-		.menu-inner {
-			width: 100%;
-			height: 100%;
-			position: relative;
-		}
-
-		#blob {
-			top: 0;
-			z-index: -1;
-			right: 60px;
-			transform: translateX(100%);
-			height: 100%;
-			position: absolute;
-            width: 200px;
-		}
-
-		#blob-path {
-			height: 100%;
-			fill:  #FFD447;
-		}
-
-		.hamburger {
-			right: 20px;
-			position: absolute;
-			width: 20px;
-			height: 20px;
-			margin-top: calc(-20px / 2);	
-		}
-
-		.hamburger .line {
-			width: 100%;
-			height: 4px;
-			background-color: #1E1E1E;
-			position: absolute;
-            border-radius: 20px;
-		}
-
-.hamb{padding-top:12px;}
-        .posterline{
-            display:block;
-            margin: 5px auto 0 auto;
-            width: 60%;
-			height: 2px;
-			background-color: #1E1E1E;
-            border-radius: 20px;
-        }
-
-		.hamburger .line:nth-child(2) {
-			top: 50%;
-			margin-top: calc(-4px / 2);
-		}
-
-		.hamburger .line:nth-child(3) {
-			bottom: 0;
-		}
-
-		.textClass {
-			padding: 0;
-			list-style: none;
-			width: 80%;
-			margin-left: 10%;
-			position: absolute;
-			top: 30px;
-		}
-
-		.textClass .lineClass {
-			color: #FFFFFF;
-			padding: 20px 0;
-		}
-        .linkClass {
-            color: #FFFFFF !important;
-            text-decoration:none !important;
-        }
-        
-</style>
 	
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
@@ -954,15 +860,7 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
 
   <div class="breakpoint active" id="bp_infinity" data-min-width="1921"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox" id="page"><!-- group -->
-    <div class="clearfix grpelem" id="pmenuu7900"><!-- column -->
-     <nav class="MenuBar clearfix colelem" id="menuu7900" data-sizePolicy="fluidWidth" data-pintopage="page_fixedCenter"><!-- horizontal box -->
-      <div class="MenuItemContainer clearfix grpelem" id="u7908"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem" id="u7909" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u7910-4"><!-- content --><p class="shared_content" data-content-guid="u7910-4_0_content">Home</p></div></a>
-      </div>
-      <div class="MenuItemContainer clearfix grpelem" id="u8178"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u8179" href="code.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u8182-4"><!-- content --><p class="shared_content" data-content-guid="u8182-4_0_content">Code</p></div></a>
-      </div>
-     </nav>
+    <div class="clearfix grpelem" id="ppu4331-4"><!-- column -->
      <div class="clearfix colelem shared_content" id="pu4331-4" data-content-guid="pu4331-4_content"><!-- group -->
       <div class="clearfix grpelem shared_content" id="u4331-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u4331-4_content"><!-- content -->
        <p>Hi</p>
@@ -1001,30 +899,7 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
      </div>
      <img class="colelem temp_no_img_src" id="u6195-4" alt="Who am i" data-orig-src="images/u6195-4.png?crc=348829891" data-image-width="1262" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
     </div>
-    <a class="anchor_item grpelem shared_content" id="some-of-me" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="some-of-me_content"></a>
-    <div class="size_fixed shared_content" id="u1056" data-sizePolicy="fixed" data-pintopage="topleft" data-content-guid="u1056_content"><!-- custom html -->
-     
- <div id="menu">
-		<div class="hamburger">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</div>
-		<div class="menu-inner">
-			
-			<ul class="textClass">
-<li class="lineClass" id="menuLink1"><a class="linkClass" href="https://kasperl.me/">Home</a></li>
-<li class="lineClass" id="menuLink1"><a class="linkClass" href="#">Photos</a></li>
-<li class="lineClass" id="menuLink1"><a class="linkClass" href="https://kasperl.me/code">Code</a></li>
-<li class="lineClass" id="menuLink1"><a class="linkClass" href="#">Contact</a></li>
-			</ul>
-		</div>
-		<svg version="1.1" id="blob"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			<path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/>
-		</svg>
-	</div>
-
-    </div>
+    <a class="anchor_item grpelem shared_content" id="whoami" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="whoami_content"></a>
     <div class="clearfix grpelem" id="ppppu94-4"><!-- column -->
      <div class="clearfix colelem" id="pppu94-4"><!-- group -->
       <div class="clearfix grpelem" id="ppu94-4"><!-- column -->
@@ -1070,7 +945,7 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
         </div>
        </div>
        <div class="clearfix colelem shared_content" id="pu589" data-content-guid="pu589_content"><!-- group -->
-        <a class="nonblock nontext anim_swing size_fixed grpelem shared_content" id="u589" href="index.html#some-of-me" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u589_content"><!-- custom html -->
+        <a class="nonblock nontext anim_swing size_fixed grpelem shared_content" id="u589" href="index.html#whoami" data-sizePolicy="fixed" data-pintopage="page_fixedLeft" data-content-guid="u589_content"><!-- custom html -->
 <!-- This Adobe Muse widget was created by the team at MuseFree.com -->
 <p class="u589">More</p>
  	</a>
@@ -1102,12 +977,27 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
         <div class="clearfix grpelem" id="ppu910"><!-- column -->
          <div class="clearfix colelem" id="pu910"><!-- group -->
           <div class="rounded-corners grpelem shared_content" id="u910" data-content-guid="u910_content"><!-- simple frame --></div>
-          <img class="grpelem temp_no_img_src" id="u6017-4" alt="Who am i" data-orig-src="images/u6017-4.png?crc=476493089" data-image-width="1262" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+          <img class="grpelem temp_no_img_src" id="u6017-4" alt="Who am i" data-orig-src="images/u6017-4.png?crc=476493089" data-image-width="1263" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
          </div>
          <div class="rounded-corners colelem shared_content" id="u915" data-content-guid="u915_content"><!-- simple frame --></div>
         </div>
        </div>
       </div>
+     </div>
+    </div>
+    <div class="clearfix grpelem" id="pu9732"><!-- group -->
+     <div id="u9732-wrapper" class="shared_content" data-content-guid="u9732-wrapper_content">
+      <div class="rounded-corners" id="u9732"><!-- simple frame --></div>
+     </div>
+     <div id="menuu7900-wrapper">
+      <nav class="MenuBar rounded-corners clearfix" id="menuu7900"><!-- horizontal box -->
+       <div class="MenuItemContainer clearfix grpelem" id="u7908"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem" id="u7909" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u7910-4"><!-- content --><p class="shared_content" data-content-guid="u7910-4_0_content">Home</p></div></a>
+       </div>
+       <div class="MenuItemContainer clearfix grpelem" id="u8178"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u8179" href="code.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u8182-4"><!-- content --><p class="shared_content" data-content-guid="u8182-4_0_content">Code</p></div></a>
+       </div>
+      </nav>
      </div>
     </div>
     <div class="verticalspacer" data-offset-top="3200" data-content-above-spacer="3200" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
@@ -1118,15 +1008,7 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
   </div>
   <div class="breakpoint" id="bp_1920" data-min-width="1281" data-max-width="1920"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
-    <div class="clearfix grpelem temp_no_id" data-orig-id="pmenuu7900"><!-- column -->
-     <nav class="MenuBar clearfix colelem temp_no_id" data-sizePolicy="fluidWidth" data-pintopage="page_fixedCenter" data-orig-id="menuu7900"><!-- horizontal box -->
-      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u7908"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u7909"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u7910-4"><!-- content --><span class="placeholder" data-placeholder-for="u7910-4_0_content"><!-- placeholder node --></span></div></a>
-      </div>
-      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u8178"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="code.html" data-orig-id="u8179"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u8182-4"><!-- content --><span class="placeholder" data-placeholder-for="u8182-4_0_content"><!-- placeholder node --></span></div></a>
-      </div>
-     </nav>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="ppu4331-4"><!-- column -->
      <span class="clearfix colelem placeholder" data-placeholder-for="pu4331-4_content"><!-- placeholder node --></span>
      <span class="clearfix colelem placeholder" data-placeholder-for="pu4357-4_content"><!-- placeholder node --></span>
      <span class="size_fixed colelem placeholder" data-placeholder-for="u4367_content"><!-- placeholder node --></span>
@@ -1137,8 +1019,7 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
      </div>
      <span class="size_fixed colelem placeholder" data-placeholder-for="u4411_content"><!-- placeholder node --></span>
     </div>
-    <span class="anchor_item grpelem placeholder" data-placeholder-for="some-of-me_content"><!-- placeholder node --></span>
-    <span class="size_fixed placeholder" data-placeholder-for="u1056_content"><!-- placeholder node --></span>
+    <span class="anchor_item grpelem placeholder" data-placeholder-for="whoami_content"><!-- placeholder node --></span>
     <div class="clearfix grpelem temp_no_id" data-orig-id="ppppu94-4"><!-- column -->
      <div class="clearfix colelem temp_no_id" data-orig-id="pppu94-4"><!-- group -->
       <div class="clearfix grpelem temp_no_id" data-orig-id="ppu94-4"><!-- column -->
@@ -1169,21 +1050,26 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
       </div>
      </div>
     </div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu9732"><!-- group -->
+     <span class="placeholder" data-placeholder-for="u9732-wrapper_content"><!-- placeholder node --></span>
+     <div class="temp_no_id" data-orig-id="menuu7900-wrapper">
+      <nav class="MenuBar rounded-corners clearfix temp_no_id" data-orig-id="menuu7900"><!-- horizontal box -->
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u7908"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u7909"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u7910-4"><!-- content --><span class="placeholder" data-placeholder-for="u7910-4_0_content"><!-- placeholder node --></span></div></a>
+       </div>
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u8178"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="code.html" data-orig-id="u8179"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u8182-4"><!-- content --><span class="placeholder" data-placeholder-for="u8182-4_0_content"><!-- placeholder node --></span></div></a>
+       </div>
+      </nav>
+     </div>
+    </div>
     <div class="verticalspacer" data-offset-top="2149" data-content-above-spacer="2149" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
     <span class="clearfix grpelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
    </div>
   </div>
   <div class="breakpoint" id="bp_1280" data-min-width="948" data-max-width="1280"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
-    <div class="clearfix grpelem temp_no_id" data-orig-id="pmenuu7900"><!-- column -->
-     <nav class="MenuBar clearfix colelem temp_no_id" data-sizePolicy="fluidWidth" data-pintopage="page_fixedCenter" data-orig-id="menuu7900"><!-- horizontal box -->
-      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u7908"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u7909"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u7910-4"><!-- content --><span class="placeholder" data-placeholder-for="u7910-4_0_content"><!-- placeholder node --></span></div></a>
-      </div>
-      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u8178"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="code.html" data-orig-id="u8179"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u8182-4"><!-- content --><span class="placeholder" data-placeholder-for="u8182-4_0_content"><!-- placeholder node --></span></div></a>
-      </div>
-     </nav>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="ppu94-4"><!-- column -->
      <div class="clearfix colelem temp_no_id" data-orig-id="pu94-4"><!-- group -->
       <span class="clearfix grpelem placeholder" data-placeholder-for="u94-4_content"><!-- placeholder node --></span>
       <span class="clearfix grpelem placeholder" data-placeholder-for="u4390-4_content"><!-- placeholder node --></span>
@@ -1196,9 +1082,8 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
      <span class="clearfix colelem placeholder" data-placeholder-for="u4428-4_content"><!-- placeholder node --></span>
      <img class="colelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6017-43.png?crc=3861749861" data-image-width="631" data-orig-id="u6017-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
     </div>
-    <div class="clearfix grpelem" id="pu1056"><!-- column -->
-     <span class="size_fluid_width colelem placeholder" data-placeholder-for="u1056_content"><!-- placeholder node --></span>
-     <div class="clearfix colelem" id="ppu4331-4"><!-- group -->
+    <div class="clearfix grpelem" id="pppu4331-4"><!-- column -->
+     <div class="clearfix colelem temp_no_id" data-orig-id="ppu4331-4"><!-- group -->
       <div class="clearfix grpelem temp_no_id" data-orig-id="pu4331-4"><!-- column -->
        <span class="clearfix colelem placeholder" data-placeholder-for="u4331-4_content"><!-- placeholder node --></span>
        <div class="clearfix colelem" id="pu4347-4"><!-- group -->
@@ -1225,7 +1110,7 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
      <div class="browser_width colelem temp_no_id" data-orig-id="u819-bw">
       <div class="temp_no_id" data-orig-id="u819"><!-- group -->
        <div class="clearfix temp_no_id" data-orig-id="u819_align_to_page">
-        <span class="anchor_item grpelem placeholder" data-placeholder-for="some-of-me_content"><!-- placeholder node --></span>
+        <span class="anchor_item grpelem placeholder" data-placeholder-for="whoami_content"><!-- placeholder node --></span>
         <div class="rounded-corners clip_frame grpelem temp_no_id" data-orig-id="u905"><!-- image -->
          <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9053.jpg?crc=4102627174" alt="" data-heightwidthratio="1.4498834498834499" data-image-width="429" data-image-height="622" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
         </div>
@@ -1239,13 +1124,25 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
       </div>
      </div>
     </div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu9732"><!-- group -->
+     <span class="placeholder" data-placeholder-for="u9732-wrapper_content"><!-- placeholder node --></span>
+     <div class="temp_no_id" data-orig-id="menuu7900-wrapper">
+      <nav class="MenuBar rounded-corners clearfix temp_no_id" data-orig-id="menuu7900"><!-- horizontal box -->
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u7908"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u7909"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u7910-4"><!-- content --><span class="placeholder" data-placeholder-for="u7910-4_0_content"><!-- placeholder node --></span></div></a>
+       </div>
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u8178"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="code.html" data-orig-id="u8179"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u8182-4"><!-- content --><span class="placeholder" data-placeholder-for="u8182-4_0_content"><!-- placeholder node --></span></div></a>
+       </div>
+      </nav>
+     </div>
+    </div>
     <div class="verticalspacer" data-offset-top="1442" data-content-above-spacer="1442" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
     <span class="clearfix grpelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
    </div>
   </div>
   <div class="breakpoint" id="bp_947" data-min-width="481" data-max-width="947"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
-    <span class="clearfix grpelem placeholder" data-placeholder-for="u4307-4_content"><!-- placeholder node --></span>
     <div class="clearfix grpelem" id="ppu100-4"><!-- column -->
      <div class="clearfix colelem" id="pu100-4"><!-- group -->
       <span class="clearfix grpelem placeholder" data-placeholder-for="u100-4_content"><!-- placeholder node --></span>
@@ -1258,21 +1155,13 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
      <div class="clearfix colelem temp_no_id" data-orig-id="pu178"><!-- group -->
       <span class="size_fixed grpelem placeholder" data-placeholder-for="u178_content"><!-- placeholder node --></span>
       <span class="size_fixed grpelem placeholder" data-placeholder-for="u4411_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u4307-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u4428-4_content"><!-- placeholder node --></span>
+      <img class="grpelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6017-44.png?crc=3856625911" data-image-width="466" data-orig-id="u6017-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
      </div>
-     <span class="clearfix colelem placeholder" data-placeholder-for="u4428-4_content"><!-- placeholder node --></span>
-     <span class="size_fluid_width colelem placeholder" data-placeholder-for="u1056_content"><!-- placeholder node --></span>
-     <img class="colelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6017-44.png?crc=3856625911" data-image-width="466" data-orig-id="u6017-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
     </div>
-    <span class="anchor_item grpelem placeholder" data-placeholder-for="some-of-me_content"><!-- placeholder node --></span>
-    <div class="clearfix grpelem temp_no_id" data-orig-id="pmenuu7900"><!-- column -->
-     <nav class="MenuBar clearfix colelem temp_no_id" data-sizePolicy="fluidWidth" data-pintopage="page_fixedCenter" data-orig-id="menuu7900"><!-- horizontal box -->
-      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u7908"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u7909"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u7910-4"><!-- content --><span class="placeholder" data-placeholder-for="u7910-4_0_content"><!-- placeholder node --></span></div></a>
-      </div>
-      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u8178"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="code.html" data-orig-id="u8179"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u8182-4"><!-- content --><span class="placeholder" data-placeholder-for="u8182-4_0_content"><!-- placeholder node --></span></div></a>
-      </div>
-     </nav>
+    <span class="anchor_item grpelem placeholder" data-placeholder-for="whoami_content"><!-- placeholder node --></span>
+    <div class="clearfix grpelem" id="ppu4347-4"><!-- column -->
      <div class="clearfix colelem temp_no_id" data-orig-id="pu4347-4"><!-- group -->
       <span class="clearfix grpelem placeholder" data-placeholder-for="u4347-4_content"><!-- placeholder node --></span>
       <span class="clearfix grpelem placeholder" data-placeholder-for="u4331-4_content"><!-- placeholder node --></span>
@@ -1309,49 +1198,42 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
       </div>
      </div>
     </div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu9732"><!-- group -->
+     <span class="placeholder" data-placeholder-for="u9732-wrapper_content"><!-- placeholder node --></span>
+     <div class="temp_no_id" data-orig-id="menuu7900-wrapper">
+      <nav class="MenuBar rounded-corners clearfix temp_no_id" data-orig-id="menuu7900"><!-- horizontal box -->
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u7908"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u7909"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u7910-4"><!-- content --><span class="placeholder" data-placeholder-for="u7910-4_0_content"><!-- placeholder node --></span></div></a>
+       </div>
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u8178"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="code.html" data-orig-id="u8179"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u8182-4"><!-- content --><span class="placeholder" data-placeholder-for="u8182-4_0_content"><!-- placeholder node --></span></div></a>
+       </div>
+      </nav>
+     </div>
+    </div>
     <div class="verticalspacer" data-offset-top="1963" data-content-above-spacer="1963" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
     <span class="clearfix grpelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
    </div>
   </div>
-  <div class="breakpoint" id="bp_480" data-max-width="480"><!-- responsive breakpoint node -->
+  <div class="breakpoint" id="bp_480" data-min-width="321" data-max-width="480"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
-    <div class="clearfix grpelem temp_no_id" data-orig-id="ppu94-4"><!-- column -->
-     <div class="clearfix colelem temp_no_id" data-orig-id="pu94-4"><!-- group -->
-      <span class="clearfix grpelem placeholder" data-placeholder-for="u94-4_content"><!-- placeholder node --></span>
-      <span class="clearfix grpelem placeholder" data-placeholder-for="u100-4_content"><!-- placeholder node --></span>
-      <span class="size_fixed grpelem placeholder" data-placeholder-for="u178_content"><!-- placeholder node --></span>
-     </div>
-     <span class="clearfix colelem placeholder" data-placeholder-for="u4357-4_content"><!-- placeholder node --></span>
-     <div class="clearfix colelem temp_no_id" data-orig-id="pu4347-4"><!-- group -->
-      <span class="clearfix grpelem placeholder" data-placeholder-for="u4347-4_content"><!-- placeholder node --></span>
-      <span class="clearfix grpelem placeholder" data-placeholder-for="u4331-4_content"><!-- placeholder node --></span>
-     </div>
-     <span class="size_fixed colelem placeholder" data-placeholder-for="u4367_content"><!-- placeholder node --></span>
-     <span class="clearfix colelem placeholder" data-placeholder-for="u4307-4_content"><!-- placeholder node --></span>
-    </div>
-    <div class="clearfix grpelem temp_no_id" data-orig-id="pu905"><!-- column -->
-     <div class="rounded-corners clip_frame colelem temp_no_id" data-orig-id="u905"><!-- image -->
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu94-4"><!-- group -->
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u94-4_content"><!-- placeholder node --></span>
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u4347-4_content"><!-- placeholder node --></span>
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u100-4_content"><!-- placeholder node --></span>
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u4331-4_content"><!-- placeholder node --></span>
+     <span class="size_fixed grpelem placeholder" data-placeholder-for="u178_content"><!-- placeholder node --></span>
+     <span class="size_fixed grpelem placeholder" data-placeholder-for="u4367_content"><!-- placeholder node --></span>
+     <span class="rounded-corners grpelem placeholder" data-placeholder-for="u602_content"><!-- placeholder node --></span>
+     <div class="rounded-corners clip_frame grpelem temp_no_id" data-orig-id="u905"><!-- image -->
       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9055.jpg?crc=255090187" alt="" data-heightwidthratio="1.455" data-image-width="200" data-image-height="291" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
      </div>
-     <span class="size_fluid_width colelem placeholder" data-placeholder-for="u1056_content"><!-- placeholder node --></span>
+     <span class="rounded-corners grpelem placeholder" data-placeholder-for="u910_content"><!-- placeholder node --></span>
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u4307-4_content"><!-- placeholder node --></span>
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u4357-4_content"><!-- placeholder node --></span>
+     <img class="grpelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6017-45.png?crc=45904631" data-image-width="236" data-orig-id="u6017-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
     </div>
-    <div class="clearfix grpelem" id="pu602"><!-- column -->
-     <span class="rounded-corners colelem placeholder" data-placeholder-for="u602_content"><!-- placeholder node --></span>
-     <span class="nonblock nontext size_fixed colelem placeholder" data-placeholder-for="u7037_content"><!-- placeholder node --></span>
-     <span class="nonblock nontext anim_swing size_fixed colelem placeholder" data-placeholder-for="u589_content"><!-- placeholder node --></span>
-     <span class="size_fixed colelem placeholder" data-placeholder-for="u7062_content"><!-- placeholder node --></span>
-     <span class="rounded-corners colelem placeholder" data-placeholder-for="u910_content"><!-- placeholder node --></span>
-     <img class="colelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6017-45.png?crc=45904631" data-image-width="236" data-orig-id="u6017-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
-    </div>
-    <div class="clearfix grpelem temp_no_id" data-orig-id="pmenuu7900"><!-- column -->
-     <nav class="MenuBar clearfix colelem temp_no_id" data-sizePolicy="fluidWidth" data-pintopage="page_fixedCenter" data-orig-id="menuu7900"><!-- horizontal box -->
-      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u7908"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u7909"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u7910-4"><!-- content --><span class="placeholder" data-placeholder-for="u7910-4_0_content"><!-- placeholder node --></span></div></a>
-      </div>
-      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u8178"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="code.html" data-orig-id="u8179"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u8182-4"><!-- content --><span class="placeholder" data-placeholder-for="u8182-4_0_content"><!-- placeholder node --></span></div></a>
-      </div>
-     </nav>
+    <div class="clearfix grpelem" id="ppu4390-4"><!-- column -->
      <div class="clearfix colelem temp_no_id" data-orig-id="pu4390-4"><!-- group -->
       <span class="clearfix grpelem placeholder" data-placeholder-for="u4390-4_content"><!-- placeholder node --></span>
       <span class="clearfix grpelem placeholder" data-placeholder-for="u4402-4_content"><!-- placeholder node --></span>
@@ -1365,17 +1247,99 @@ try{Typekit.load(b)}catch(c){}}};c.parentNode.insertBefore(f,c)})(document);
       <span class="size_fixed grpelem placeholder" data-placeholder-for="u1177_content"><!-- placeholder node --></span>
       <span class="size_fixed grpelem placeholder" data-placeholder-for="u1129_content"><!-- placeholder node --></span>
      </div>
-     <span class="anchor_item colelem placeholder" data-placeholder-for="some-of-me_content"><!-- placeholder node --></span>
+     <span class="nonblock nontext anim_swing size_fixed colelem placeholder" data-placeholder-for="u589_content"><!-- placeholder node --></span>
+     <span class="nonblock nontext size_fixed colelem placeholder" data-placeholder-for="u7037_content"><!-- placeholder node --></span>
+     <span class="size_fixed colelem placeholder" data-placeholder-for="u7062_content"><!-- placeholder node --></span>
      <div class="browser_width colelem temp_no_id" data-orig-id="u819-bw">
-      <div class="temp_no_id" data-orig-id="u819"><!-- column -->
+      <div class="temp_no_id" data-orig-id="u819"><!-- group -->
        <div class="clearfix temp_no_id" data-orig-id="u819_align_to_page">
-        <img class="colelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6195-45.png?crc=4110061307" data-image-width="330" data-orig-id="u6195-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
-        <span class="rounded-corners colelem placeholder" data-placeholder-for="u915_content"><!-- placeholder node --></span>
+        <span class="anchor_item grpelem placeholder" data-placeholder-for="whoami_content"><!-- placeholder node --></span>
+        <div class="clearfix grpelem" id="pu6195-4"><!-- column -->
+         <img class="colelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6195-45.png?crc=4110061307" data-image-width="330" data-orig-id="u6195-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+         <span class="rounded-corners colelem placeholder" data-placeholder-for="u915_content"><!-- placeholder node --></span>
+        </div>
        </div>
       </div>
      </div>
     </div>
-    <div class="verticalspacer" data-offset-top="1619" data-content-above-spacer="1619" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu9732"><!-- group -->
+     <span class="placeholder" data-placeholder-for="u9732-wrapper_content"><!-- placeholder node --></span>
+     <div class="temp_no_id" data-orig-id="menuu7900-wrapper">
+      <nav class="MenuBar rounded-corners clearfix temp_no_id" data-orig-id="menuu7900"><!-- horizontal box -->
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u7908"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u7909"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u7910-4"><!-- content --><span class="placeholder" data-placeholder-for="u7910-4_0_content"><!-- placeholder node --></span></div></a>
+       </div>
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u8178"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="code.html" data-orig-id="u8179"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u8182-4"><!-- content --><span class="placeholder" data-placeholder-for="u8182-4_0_content"><!-- placeholder node --></span></div></a>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="1621" data-content-above-spacer="1621" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <span class="clearfix grpelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_320" data-max-width="320"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu94-4"><!-- group -->
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u94-4_content"><!-- placeholder node --></span>
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u4347-4_content"><!-- placeholder node --></span>
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u100-4_content"><!-- placeholder node --></span>
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u4331-4_content"><!-- placeholder node --></span>
+     <span class="size_fixed grpelem placeholder" data-placeholder-for="u178_content"><!-- placeholder node --></span>
+     <span class="size_fixed grpelem placeholder" data-placeholder-for="u4367_content"><!-- placeholder node --></span>
+     <span class="nonblock nontext anim_swing size_fixed grpelem placeholder" data-placeholder-for="u589_content"><!-- placeholder node --></span>
+     <span class="nonblock nontext size_fixed grpelem placeholder" data-placeholder-for="u7037_content"><!-- placeholder node --></span>
+     <span class="size_fixed grpelem placeholder" data-placeholder-for="u7062_content"><!-- placeholder node --></span>
+     <span class="rounded-corners grpelem placeholder" data-placeholder-for="u602_content"><!-- placeholder node --></span>
+     <div class="rounded-corners clip_frame grpelem temp_no_id" data-orig-id="u905"><!-- image -->
+      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u9056.jpg?crc=228989980" alt="" data-heightwidthratio="1.4477611940298507" data-image-width="134" data-image-height="194" data-orig-id="u905_img" src="images/blank.gif?crc=4208392903"/>
+     </div>
+     <span class="rounded-corners grpelem placeholder" data-placeholder-for="u910_content"><!-- placeholder node --></span>
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u4307-4_content"><!-- placeholder node --></span>
+     <span class="clearfix grpelem placeholder" data-placeholder-for="u4357-4_content"><!-- placeholder node --></span>
+     <img class="grpelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6017-46.png?crc=3899351309" data-image-width="157" data-orig-id="u6017-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+    </div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="ppu4390-4"><!-- column -->
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu4390-4"><!-- group -->
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u4390-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u4402-4_content"><!-- placeholder node --></span>
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u4411_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u4428-4_content"><!-- placeholder node --></span>
+     </div>
+     <div class="rounded-corners clip_frame colelem temp_no_id" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fixedCenter" data-orig-id="u207"><!-- image -->
+      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/img_4645-2-crop-u2075.jpg?crc=3969528042" alt="" data-heightwidthratio="1.1574803149606299" data-image-width="127" data-image-height="147" data-orig-id="u207_img" src="images/blank.gif?crc=4208392903"/>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu1177"><!-- group -->
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u1177_content"><!-- placeholder node --></span>
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u1129_content"><!-- placeholder node --></span>
+     </div>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u819-bw">
+      <div class="temp_no_id" data-orig-id="u819"><!-- column -->
+       <div class="clearfix temp_no_id" data-orig-id="u819_align_to_page">
+        <span class="anchor_item colelem placeholder" data-placeholder-for="whoami_content"><!-- placeholder node --></span>
+        <div class="clearfix colelem" id="pu915"><!-- group -->
+         <span class="rounded-corners grpelem placeholder" data-placeholder-for="u915_content"><!-- placeholder node --></span>
+         <img class="grpelem temp_no_id temp_no_img_src" alt="Who am i" data-orig-src="images/u6195-46.png?crc=90158432" data-image-width="220" data-orig-id="u6195-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="pu9732"><!-- group -->
+     <span class="placeholder" data-placeholder-for="u9732-wrapper_content"><!-- placeholder node --></span>
+     <div class="temp_no_id" data-orig-id="menuu7900-wrapper">
+      <nav class="MenuBar rounded-corners clearfix temp_no_id" data-orig-id="menuu7900"><!-- horizontal box -->
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u7908"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u7909"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u7910-4"><!-- content --><span class="placeholder" data-placeholder-for="u7910-4_0_content"><!-- placeholder node --></span></div></a>
+       </div>
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u8178"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="code.html" data-orig-id="u8179"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-orig-id="u8182-4"><!-- content --><span class="placeholder" data-placeholder-for="u8182-4_0_content"><!-- placeholder node --></span></div></a>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="1225" data-content-above-spacer="1225" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
     <span class="clearfix grpelem placeholder" data-placeholder-for="u1916-4_content"><!-- placeholder node --></span>
    </div>
   </div>
@@ -1397,14 +1361,14 @@ var suppressMissingFileError = false
 k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
 g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
 setTimeout(function(){f(!0)},5E3):f()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.watch","jquery.museresponsive"],function(c){var $ = c;$(document).ready(function(){try{
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch","jquery.musemenu","jquery.museresponsive"],function(c){var $ = c;$(document).ready(function(){try{
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
 Muse.Utils.resizeHeight('.browser_width');/* resize height */
 Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.initWidget('.MenuBar', ['#bp_infinity', '#bp_1920', '#bp_1280', '#bp_947', '#bp_480'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity', '#bp_1920', '#bp_1280', '#bp_947', '#bp_480', '#bp_320'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
 Muse.Utils.fullPage('#page');/* 100% height page */
 $( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
@@ -1421,100 +1385,10 @@ var TxtType=function(t,e,i){this.toRotate=e,this.el=t,this.loopNum=0,this.period
 </script>
 	
 <script>
-$(window).load(function(){
-	var height = window.innerHeight,
-    x= 0, y= 200,
-	curveX = 10,
-	curveY = 0,
-	targetX = 0,
-	xitteration = 0,
-	yitteration = 0,
-	menuExpanded = false;
+
+
+</script>
 	
-	blob = $('#blob'),
-	blobPath = $('#blob-path'),
-
-	hamburger = $('.hamburger');
-    
-    $('.lineClass a:empty').parent().hide()
-
-	$(this).on('mousemove', function(e){
-		x = e.pageX;
 		
-		y = e.pageY - $('#menu').offset().top;
-	});
-
-	$('.hamburger, .menu-inner').on('mouseenter', function(){
-		$(this).parent().addClass('expanded');
-		menuExpanded = true;
-	});
-
-	$('.menu-inner').on('mouseleave', function(){
-		menuExpanded = false;
-		$(this).parent().removeClass('expanded');
-	});
-
-	function easeOutExpo(currentIteration, startValue, changeInValue, totalIterations) {
-		return changeInValue * (-Math.pow(2, -10 * currentIteration / totalIterations) + 1) + startValue;
-	}
-
-	var hoverZone = 150;
-	var expandAmount = 20;
-	
-	function svgCurve() {
-		if ((curveX > x-1) && (curveX < x+1) && (y >0)) {
-			xitteration = 0;
-		} else {
-			if (menuExpanded || y<0) {
-				targetX = 0;
-			} else {
-				xitteration = 0;
-				if (x > hoverZone  && (y >0)) {
-					targetX = 0;
-				} else {
-					targetX = -(((60+expandAmount)/100)*(x-hoverZone));
-				}			
-			}
-			xitteration++;
-		}
-
-		if ((curveY > y-1) && (curveY< (y - $('#menu').offset().top ))) {
-			yitteration = 0;
-		} else {
-			yitteration = 0;
-			yitteration++;	
-		}
- 
-		curveX = easeOutExpo(xitteration, curveX, targetX-curveX, 100);
-		curveY = easeOutExpo(yitteration, curveY, y-curveY, 100);
-
-		var anchorDistance = 200;
-		var curviness = anchorDistance - 40;
-
-		var newCurve2 = "M60,"+height+"H0V0h60v"+(curveY-anchorDistance)+"c0,"+curviness+","+curveX+","+curviness+","+curveX+","+anchorDistance+"S60,"+(curveY)+",60,"+(curveY+(anchorDistance*2))+"V"+height+"z";
-
-		blobPath.attr('d', newCurve2);
-
-		blob.width(curveX+60);
-        if(y>20){       
-            hamburger.css('transform', 'translate('+curveX+'px, '+curveY+'px)');
-        } else{
-            hamburger.css('transform', 'translate('+0+'px, '+20+'px)');
-        }
-    $('h2').css('transform', 'translateY('+curveY+'px)');
-		window.requestAnimationFrame(svgCurve);
-
-	}
-
-	window.requestAnimationFrame(svgCurve);
-	
-});
-</script>
-	
-<script>
-
-
-</script>
-	
    </body>
 </html>

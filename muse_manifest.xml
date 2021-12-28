@@ -1,10 +1,10 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640647352127">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640728592267">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="157865478" ref="index"/>
-    <file name="nomq_index.css" crc="4259347705" ref="index"/>
-    <file name="code.css" crc="503297218" ref="code"/>
-    <file name="nomq_code.css" crc="4182105853" ref="code"/>
+    <file name="index.css" crc="4294225261" ref="index"/>
+    <file name="nomq_index.css" crc="493170055" ref="index"/>
+    <file name="code.css" crc="3808777631" ref="code"/>
+    <file name="nomq_code.css" crc="356134614" ref="code"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:code"/>
@@ -61,7 +61,15 @@
     <file name="u6195-45.png" crc="4110061307" ref="index"/>
     <file name="home-favicon.ico" crc="3863732260" ref="index"/>
     <file name="favicon.ico" crc="3863732260" ref="code"/>
+    <file name="img_4645-2-crop-u9056.jpg" crc="228989980" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u6017-46.png" crc="3899351309" ref="index"/>
+    <file name="img_4645-2-crop-u2075.jpg" crc="3969528042" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u6195-46.png" crc="90158432" ref="index"/>
   </folder>
-  <file name="index.html" crc="341539571" seo="true" mt="1640646950309" redirect="true"/>
-  <file name="code.html" crc="499554903" seo="true" mt="1640647342797" redirect="true"/>
+  <file name="index.html" crc="271231367" seo="true" mt="1640728582191" redirect="true"/>
+  <file name="code.html" crc="86504756" seo="true" mt="1640728391032" redirect="true"/>
 </manifest>
