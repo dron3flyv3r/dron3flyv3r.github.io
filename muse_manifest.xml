@@ -1,21 +1,22 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640729963469">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640731796269">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="188010844" ref="index"/>
-    <file name="nomq_index.css" crc="3791035776" ref="index"/>
-    <file name="code.css" crc="4209811941" ref="code"/>
-    <file name="nomq_code.css" crc="257542673" ref="code"/>
+    <file name="index.css" crc="3761319930" ref="index"/>
+    <file name="nomq_index.css" crc="3850448605" ref="index"/>
+    <file name="code.css" crc="4144022758" ref="code"/>
+    <file name="nomq_code.css" crc="4289560124" ref="code"/>
+    <file name="photo.css" crc="131039766" ref="photo"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:code"/>
-    <file name="museutils.js" crc="3939489907" ref="index:code"/>
-    <file name="whatinput.js" crc="86476730" ref="index:code"/>
-    <file name="museconfig.js" crc="128606099" ref="index:code"/>
-    <file name="jquery.watch.js" crc="522499760" ref="index:code"/>
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:code:photo"/>
+    <file name="museutils.js" crc="3939489907" ref="index:code:photo"/>
+    <file name="whatinput.js" crc="86476730" ref="index:code:photo"/>
+    <file name="museconfig.js" crc="128606099" ref="index:code:photo"/>
+    <file name="jquery.watch.js" crc="522499760" ref="index:code:photo"/>
     <file name="jquery.museresponsive.js" crc="95814420" ref="index:code"/>
-    <file name="require.js" crc="4177726516" ref="index:code"/>
+    <file name="require.js" crc="4177726516" ref="index:code:photo"/>
     <file name="jquery.musemenu.js" crc="4139692962" ref="index:code"/>
-    <file name="html5shiv.js" crc="4241844378" ref="index:code"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:code:photo"/>
   </folder>
   <folder name="images">
     <file name="img_4645-2-crop-u207.jpg" crc="173840101" seo="true" ref="index">
@@ -50,7 +51,7 @@
     <file name="u6017-43.png" crc="3861749861" ref="index"/>
     <file name="u6195-43.png" crc="275887965" ref="index"/>
     <file name="u6017-44.png" crc="3856625911" ref="index"/>
-    <file name="u6195-44.png" crc="464724556" ref="index"/>
+    <file name="u6195-44.png" crc="3920992546" ref="index"/>
     <file name="img_4645-2-crop-u9055.jpg" crc="255090187" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
@@ -70,6 +71,7 @@
     </file>
     <file name="u6195-46.png" crc="90158432" ref="index"/>
   </folder>
-  <file name="index.html" crc="174776983" seo="true" mt="1640729949932" redirect="true"/>
-  <file name="code.html" crc="442056036" seo="true" mt="1640729955036" redirect="true"/>
+  <file name="index.html" crc="267263442" seo="true" mt="1640731706103" redirect="true"/>
+  <file name="code.html" crc="4024603668" seo="true" mt="1640731784986" redirect="true"/>
+  <file name="photo.html" crc="40594544" seo="true" mt="1640730213170" redirect="false"/>
 </manifest>
