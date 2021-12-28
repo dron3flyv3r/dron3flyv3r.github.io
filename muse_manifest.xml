@@ -1,12 +1,12 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640734607856">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640735115619">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="index.css" crc="3761319930" ref="index"/>
     <file name="nomq_index.css" crc="3850448605" ref="index"/>
     <file name="code.css" crc="136277383" ref="code"/>
     <file name="nomq_code.css" crc="180733688" ref="code"/>
-    <file name="photo.css" crc="516742545" ref="photo"/>
-    <file name="nomq_photo.css" crc="3786502400" ref="photo"/>
+    <file name="photo.css" crc="3767165046" ref="photo"/>
+    <file name="nomq_photo.css" crc="3979747602" ref="photo"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:code:photo"/>
@@ -62,7 +62,7 @@
     </file>
     <file name="u6195-45.png" crc="4110061307" ref="index"/>
     <file name="home-favicon.ico" crc="3863732260" ref="index"/>
-    <file name="favicon.ico" crc="3863732260" ref="code"/>
+    <file name="favicon.ico" crc="3863732260" ref="code:photo"/>
     <file name="img_4645-2-crop-u9056.jpg" crc="4085131730" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
@@ -71,89 +71,116 @@
       <caption webpage="index" alt=""/>
     </file>
     <file name="u6195-46.png" crc="90158432" ref="index"/>
-    <file name="_mg_5672-crop-u12612.jpg" crc="443930648" seo="true" ref="photo">
+    <file name="_mg_5672-crop-u12612.jpg" crc="364400969" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_4567-crop-u12641.jpg" crc="246049035" seo="true" ref="photo">
+    <file name="img_4567-crop-u12641.jpg" crc="122276058" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_0170-crop-u12635.jpg" crc="61219850" seo="true" ref="photo">
+    <file name="img_0170-crop-u12635.jpg" crc="4073814780" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="_mg_5169-crop-u12647.jpg" crc="3800950015" seo="true" ref="photo">
+    <file name="_mg_5169-crop-u12647.jpg" crc="4134710287" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="_mg_5700-crop-u12615.jpg" crc="356918720" seo="true" ref="photo">
+    <file name="_mg_5700-crop-u12615.jpg" crc="170247309" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="_mg_5675-crop-u12650.jpg" crc="3804340704" seo="true" ref="photo">
+    <file name="_mg_5675-crop-u12650.jpg" crc="4133731813" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_6064 - copy-crop-u12620.jpg" crc="3958766523" seo="true" ref="photo">
+    <file name="img_6064 - copy-crop-u12620.jpg" crc="265865557" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_20210914_214232-crop-u12644.jpg" crc="3789036685" seo="true" ref="photo">
+    <file name="img_20210914_214232-crop-u12644.jpg" crc="3816391942" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_6104 - copy-crop-u12638.jpg" crc="3758779742" seo="true" ref="photo">
+    <file name="img_6104 - copy-crop-u12638.jpg" crc="289045985" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="_mg_5672-crop-u126122.jpg" crc="208915887" seo="true" ref="photo">
+    <file name="_mg_5672-crop-u126122.jpg" crc="431338409" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="_mg_5169-crop-u126472.jpg" crc="342365154" seo="true" ref="photo">
+    <file name="_mg_5169-crop-u126472.jpg" crc="180503196" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_4567-crop-u126412.jpg" crc="338188207" seo="true" ref="photo">
+    <file name="img_4567-crop-u126412.jpg" crc="4217446316" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="_mg_5700-crop-u126152.jpg" crc="395756309" seo="true" ref="photo">
+    <file name="_mg_5700-crop-u126152.jpg" crc="83980141" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_0170-crop-u126352.jpg" crc="3966148567" seo="true" ref="photo">
+    <file name="img_0170-crop-u126352.jpg" crc="3939060335" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="_mg_5675-crop-u126502.jpg" crc="4206239328" seo="true" ref="photo">
+    <file name="_mg_5675-crop-u126502.jpg" crc="471622415" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_6064 - copy-crop-u126202.jpg" crc="3851348469" seo="true" ref="photo">
+    <file name="img_6064 - copy-crop-u126202.jpg" crc="133927200" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_20210914_214232-crop-u126442.jpg" crc="197579621" seo="true" ref="photo">
+    <file name="img_20210914_214232-crop-u126442.jpg" crc="3957951518" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_6104 - copy-crop-u126382.jpg" crc="292607524" seo="true" ref="photo">
+    <file name="img_6104 - copy-crop-u126382.jpg" crc="420592736" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="_mg_5672-crop-u126123.jpg" crc="24354997" seo="true" ref="photo">
+    <file name="_mg_5672-crop-u126123.jpg" crc="104398148" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="_mg_5169-crop-u126473.jpg" crc="96100977" seo="true" ref="photo">
+    <file name="_mg_5169-crop-u126473.jpg" crc="419182745" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_4567-crop-u126413.jpg" crc="222719757" seo="true" ref="photo">
+    <file name="img_4567-crop-u126413.jpg" crc="3945414065" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="_mg_5700-crop-u126153.jpg" crc="287419858" seo="true" ref="photo">
+    <file name="_mg_5700-crop-u126153.jpg" crc="3794534566" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_0170-crop-u126353.jpg" crc="3775442652" seo="true" ref="photo">
+    <file name="img_0170-crop-u126353.jpg" crc="407646210" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="_mg_5675-crop-u126503.jpg" crc="4016259003" seo="true" ref="photo">
+    <file name="_mg_5675-crop-u126503.jpg" crc="363922412" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_6064 - copy-crop-u126203.jpg" crc="3758106652" seo="true" ref="photo">
+    <file name="img_6064 - copy-crop-u126203.jpg" crc="25929063" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_20210914_214232-crop-u126443.jpg" crc="4147124651" seo="true" ref="photo">
+    <file name="img_20210914_214232-crop-u126443.jpg" crc="132006841" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
-    <file name="img_6104 - copy-crop-u126383.jpg" crc="3906494148" seo="true" ref="photo">
+    <file name="img_6104 - copy-crop-u126383.jpg" crc="487370970" seo="true" ref="photo">
+      <caption webpage="photo" alt=""/>
+    </file>
+    <file name="_mg_5672-crop-u126124.jpg" crc="4120418906" seo="true" ref="photo">
+      <caption webpage="photo" alt=""/>
+    </file>
+    <file name="_mg_5169-crop-u126474.jpg" crc="444467143" seo="true" ref="photo">
+      <caption webpage="photo" alt=""/>
+    </file>
+    <file name="img_4567-crop-u126414.jpg" crc="4111846943" seo="true" ref="photo">
+      <caption webpage="photo" alt=""/>
+    </file>
+    <file name="_mg_5700-crop-u126154.jpg" crc="4273885988" seo="true" ref="photo">
+      <caption webpage="photo" alt=""/>
+    </file>
+    <file name="img_0170-crop-u126354.jpg" crc="220674293" seo="true" ref="photo">
+      <caption webpage="photo" alt=""/>
+    </file>
+    <file name="_mg_5675-crop-u126504.jpg" crc="431549183" seo="true" ref="photo">
+      <caption webpage="photo" alt=""/>
+    </file>
+    <file name="img_6064 - copy-crop-u126204.jpg" crc="4232941452" seo="true" ref="photo">
+      <caption webpage="photo" alt=""/>
+    </file>
+    <file name="img_20210914_214232-crop-u126444.jpg" crc="476874229" seo="true" ref="photo">
+      <caption webpage="photo" alt=""/>
+    </file>
+    <file name="img_6104 - copy-crop-u126384.jpg" crc="3831248036" seo="true" ref="photo">
       <caption webpage="photo" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="430520954" seo="true" mt="1640734568857" redirect="true"/>
+  <file name="index.html" crc="219633732" seo="true" mt="1640735002993" redirect="true"/>
   <file name="code.html" crc="4140123383" seo="true" mt="1640734573276" redirect="true"/>
-  <file name="photo.html" crc="4074332559" seo="true" mt="1640734596153" redirect="true"/>
+  <file name="photo.html" crc="341412642" seo="true" mt="1640735096844" redirect="true"/>
 </manifest>
