@@ -1,4 +1,4 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640735115619">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640735456516">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="index.css" crc="3761319930" ref="index"/>
@@ -182,5 +182,5 @@
   </folder>
   <file name="index.html" crc="219633732" seo="true" mt="1640735002993" redirect="true"/>
   <file name="code.html" crc="4140123383" seo="true" mt="1640734573276" redirect="true"/>
-  <file name="photo.html" crc="341412642" seo="true" mt="1640735096844" redirect="true"/>
+  <file name="photo.html" crc="4157624009" seo="true" mt="1640735282088" redirect="true"/>
 </manifest>
