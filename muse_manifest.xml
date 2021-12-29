@@ -1,12 +1,12 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640736347921">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640738732425">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="index.css" crc="4216603642" ref="index"/>
     <file name="nomq_index.css" crc="336596592" ref="index"/>
-    <file name="code.css" crc="136277383" ref="code"/>
+    <file name="code.css" crc="32002728" ref="code"/>
     <file name="nomq_code.css" crc="180733688" ref="code"/>
-    <file name="photo.css" crc="3934216254" ref="photo"/>
-    <file name="nomq_photo.css" crc="207391038" ref="photo"/>
+    <file name="photo.css" crc="3874733300" ref="photo"/>
+    <file name="nomq_photo.css" crc="15410594" ref="photo"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:code:photo"/>
@@ -59,7 +59,7 @@
     </file>
     <file name="u6195-45.png" crc="3966254341" ref="index"/>
     <file name="home-favicon.ico" crc="3863732260" ref="index"/>
-    <file name="favicon.ico" crc="3863732260" ref="code:photo"/>
+    <file name="favicon.ico" crc="3863732260" ref="code"/>
     <file name="img_4645-2-crop-u9056.jpg" crc="287547709" seo="true" ref="index">
       <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
     </file>
@@ -113,7 +113,7 @@
     <file name="_mg_5675-crop-u126502.jpg" crc="4268681700" seo="true" ref="photo">
       <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
     </file>
-    <file name="img_6064 - copy-crop-u126202.jpg" crc="249023097" seo="true" ref="photo">
+    <file name="img_6064 - copy-crop-u126202.jpg" crc="45634839" seo="true" ref="photo">
       <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
     </file>
     <file name="img_20210914_214232-crop-u126442.jpg" crc="4015347991" seo="true" ref="photo">
@@ -140,7 +140,7 @@
     <file name="_mg_5675-crop-u126503.jpg" crc="4072665457" seo="true" ref="photo">
       <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
     </file>
-    <file name="img_6064 - copy-crop-u126203.jpg" crc="4085905085" seo="true" ref="photo">
+    <file name="img_6064 - copy-crop-u126203.jpg" crc="3875846848" seo="true" ref="photo">
       <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
     </file>
     <file name="img_20210914_214232-crop-u126443.jpg" crc="4086349935" seo="true" ref="photo">
@@ -167,7 +167,7 @@
     <file name="_mg_5675-crop-u126504.jpg" crc="3787036221" seo="true" ref="photo">
       <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
     </file>
-    <file name="img_6064 - copy-crop-u126204.jpg" crc="4016439761" seo="true" ref="photo">
+    <file name="img_6064 - copy-crop-u126204.jpg" crc="214299020" seo="true" ref="photo">
       <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
     </file>
     <file name="img_20210914_214232-crop-u126444.jpg" crc="4199296643" seo="true" ref="photo">
@@ -180,7 +180,7 @@
       <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
     </file>
   </folder>
-  <file name="index.html" crc="300877317" seo="true" mt="1640736080203" redirect="true"/>
-  <file name="code.html" crc="4140123383" seo="true" mt="1640734573276" redirect="true"/>
-  <file name="photo.html" crc="78802017" seo="true" mt="1640736343183" redirect="true"/>
+  <file name="index.html" crc="201806583" seo="true" mt="1640738524281" redirect="true"/>
+  <file name="code.html" crc="3891435435" seo="true" mt="1640738524321" redirect="true"/>
+  <file name="photo.html" crc="123978401" seo="true" mt="1640738709288" redirect="true"/>
 </manifest>
