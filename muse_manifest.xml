@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1640740465050">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1641071756524">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="4216603642" ref="index"/>
+    <file name="index.css" crc="3990232458" ref="index"/>
     <file name="nomq_index.css" crc="336596592" ref="index"/>
     <file name="code.css" crc="32002728" ref="code"/>
     <file name="nomq_code.css" crc="180733688" ref="code"/>
@@ -180,7 +180,7 @@
       <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
     </file>
   </folder>
-  <file name="index.html" crc="201806583" seo="true" mt="1640738524281" redirect="true"/>
+  <file name="index.html" crc="4120376085" seo="true" mt="1641071740378" redirect="true"/>
   <file name="code.html" crc="3891435435" seo="true" mt="1640738524321" redirect="true"/>
   <file name="photo.html" crc="3798704035" seo="true" mt="1640740458949" redirect="true"/>
 </manifest>
