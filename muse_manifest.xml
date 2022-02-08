@@ -1,12 +1,12 @@
-<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperl.me" resolutions="1x" timestamp="1641071756524">
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="kasperlarsen.tech" resolutions="1x" timestamp="1644346834000">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="3990232458" ref="index"/>
-    <file name="nomq_index.css" crc="336596592" ref="index"/>
-    <file name="code.css" crc="32002728" ref="code"/>
-    <file name="nomq_code.css" crc="180733688" ref="code"/>
-    <file name="photo.css" crc="4240245310" ref="photo"/>
-    <file name="nomq_photo.css" crc="281714563" ref="photo"/>
+    <file name="code.css" crc="53443737" ref="code"/>
+    <file name="nomq_code.css" crc="4179157569" ref="code"/>
+    <file name="photo.css" crc="4023107221" ref="photo"/>
+    <file name="nomq_photo.css" crc="3954832114" ref="photo"/>
+    <file name="index.css" crc="4039116935" ref="index"/>
+    <file name="nomq_index.css" crc="269165918" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:code:photo"/>
@@ -14,173 +14,173 @@
     <file name="whatinput.js" crc="86476730" ref="index:code:photo"/>
     <file name="museconfig.js" crc="128606099" ref="index:code:photo"/>
     <file name="jquery.watch.js" crc="522499760" ref="index:code:photo"/>
-    <file name="jquery.museresponsive.js" crc="95814420" ref="index:code:photo"/>
-    <file name="require.js" crc="4177726516" ref="index:code:photo"/>
     <file name="jquery.musemenu.js" crc="4139692962" ref="index:code:photo"/>
     <file name="html5shiv.js" crc="4241844378" ref="index:code:photo"/>
+    <file name="jquery.museresponsive.js" crc="95814420" ref="index:code:photo"/>
+    <file name="require.js" crc="4177726516" ref="index:code:photo"/>
   </folder>
   <folder name="images">
-    <file name="img_4645-2-crop-u207.jpg" crc="3924711573" seo="true" ref="index">
-      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_4645-2-crop-u905.jpg" crc="4146439945" seo="true" ref="index">
-      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_4645-2-crop-u9052.jpg" crc="4208811565" seo="true" ref="index">
-      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_4645-2-crop-u2072.jpg" crc="3899312112" seo="true" ref="index">
-      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_4645-2-crop-u9053.jpg" crc="4057504251" seo="true" ref="index">
-      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_4645-2-crop-u2073.jpg" crc="4026341770" seo="true" ref="index">
-      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_4645-2-crop-u9054.jpg" crc="4131462052" seo="true" ref="index">
-      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="blank.gif" crc="4208392903" ref="index:code:photo"/>
+    <file name="home-favicon.ico" crc="3863732260" ref="index"/>
     <file name="u6195-4.png" crc="348829891" ref="index"/>
+    <file name="img_4645-2-crop-u207.png" crc="407481429" seo="true" ref="index">
+      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_4645-2-crop-u905.png" crc="4253883358" seo="true" ref="index">
+      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
+    </file>
     <file name="u6017-4.png" crc="3918697354" ref="index"/>
     <file name="u6195-42.png" crc="4602040" ref="index"/>
+    <file name="img_4645-2-crop-u2072.png" crc="503963354" seo="true" ref="index">
+      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_4645-2-crop-u9052.png" crc="4288705350" seo="true" ref="index">
+      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
+    </file>
     <file name="u6017-42.png" crc="332341146" ref="index"/>
     <file name="u6017-43.png" crc="3861749861" ref="index"/>
-    <file name="u6195-43.png" crc="207305715" ref="index"/>
-    <file name="u6017-44.png" crc="3856625911" ref="index"/>
-    <file name="u6195-44.png" crc="3868510586" ref="index"/>
-    <file name="img_4645-2-crop-u9055.jpg" crc="301661172" seo="true" ref="index">
-      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="u6017-45.png" crc="45904631" ref="index"/>
-    <file name="img_4645-2-crop-u2074.jpg" crc="124059976" seo="true" ref="index">
-      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="u6195-45.png" crc="3966254341" ref="index"/>
-    <file name="home-favicon.ico" crc="3863732260" ref="index"/>
-    <file name="favicon.ico" crc="3863732260" ref="code:photo"/>
-    <file name="img_4645-2-crop-u9056.jpg" crc="287547709" seo="true" ref="index">
-      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="u6017-46.png" crc="3899351309" ref="index"/>
-    <file name="img_4645-2-crop-u2075.jpg" crc="3954454230" seo="true" ref="index">
-      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="u6195-46.png" crc="4226705486" ref="index"/>
-    <file name="_mg_5672-crop-u12612.jpg" crc="3840367800" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_4567-crop-u12641.jpg" crc="3949631477" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_0170-crop-u12635.jpg" crc="4199831396" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5169-crop-u12647.jpg" crc="3804291643" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5700-crop-u12615.jpg" crc="467747072" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5675-crop-u12650.jpg" crc="3996447901" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_6064 - copy-crop-u12620.jpg" crc="4260256896" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_20210914_214232-crop-u12644.jpg" crc="194965350" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_6104 - copy-crop-u12638.jpg" crc="448003218" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5672-crop-u126122.jpg" crc="441507595" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5169-crop-u126472.jpg" crc="389183968" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_4567-crop-u126412.jpg" crc="3837108597" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5700-crop-u126152.jpg" crc="4020299678" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_0170-crop-u126352.jpg" crc="4246360094" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5675-crop-u126502.jpg" crc="4268681700" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_6064 - copy-crop-u126202.jpg" crc="45634839" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_20210914_214232-crop-u126442.jpg" crc="4015347991" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_6104 - copy-crop-u126382.jpg" crc="421550385" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5672-crop-u126123.jpg" crc="199000931" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5169-crop-u126473.jpg" crc="479596100" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_4567-crop-u126413.jpg" crc="196379697" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5700-crop-u126153.jpg" crc="154703818" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_0170-crop-u126353.jpg" crc="3943531723" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5675-crop-u126503.jpg" crc="4072665457" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_6064 - copy-crop-u126203.jpg" crc="3875846848" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_20210914_214232-crop-u126443.jpg" crc="4086349935" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_6104 - copy-crop-u126383.jpg" crc="217745390" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5672-crop-u126124.jpg" crc="509253608" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5169-crop-u126474.jpg" crc="4009212259" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_4567-crop-u126414.jpg" crc="4184669887" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5700-crop-u126154.jpg" crc="89618937" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_0170-crop-u126354.jpg" crc="63922353" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="_mg_5675-crop-u126504.jpg" crc="3787036221" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_6064 - copy-crop-u126204.jpg" crc="214299020" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_20210914_214232-crop-u126444.jpg" crc="4199296643" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
-    <file name="img_6104 - copy-crop-u126384.jpg" crc="329601802" seo="true" ref="photo">
-      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
-    </file>
     <file name="img_4645-2439x439.jpg" crc="4182519861" seo="true" ref="index">
       <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
     </file>
+    <file name="img_4645-2-crop-u9053.png" crc="3943426120" seo="true" ref="index">
+      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="u6195-43.png" crc="207305715" ref="index"/>
+    <file name="u6017-44.png" crc="3856625911" ref="index"/>
+    <file name="img_4645-2-crop-u2073.png" crc="3876752879" seo="true" ref="index">
+      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_4645-2-crop-u9054.png" crc="72296549" seo="true" ref="index">
+      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="u6195-44.png" crc="3868510586" ref="index"/>
+    <file name="img_4645-2-crop-u9055.png" crc="172445500" seo="true" ref="index">
+      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="u6017-45.png" crc="45904631" ref="index"/>
+    <file name="img_4645-2-crop-u2074.png" crc="341685713" seo="true" ref="index">
+      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="u6195-45.png" crc="3966254341" ref="index"/>
+    <file name="img_4645-2-crop-u9056.png" crc="4039877480" seo="true" ref="index">
+      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="u6017-46.png" crc="3899351309" ref="index"/>
+    <file name="img_4645-2-crop-u2075.png" crc="320452040" seo="true" ref="index">
+      <caption webpage="index" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="u6195-46.png" crc="4226705486" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index:code:photo"/>
+    <file name="favicon.ico" crc="3863732260" ref="code"/>
+    <file name="_mg_5672-crop-u12612.png" crc="366147646" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_4567-crop-u12641.png" crc="3986744145" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_0170-crop-u12635.png" crc="4148017758" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5169-crop-u12647.png" crc="3972370698" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5700-crop-u12615.png" crc="340095069" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5675-crop-u12650.png" crc="3787489371" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_6064 - copy-crop-u12620.png" crc="3959712506" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_20210914_214232-crop-u12644.png" crc="4006622035" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_6104 - copy-crop-u12638.png" crc="4292512797" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5672-crop-u126122.png" crc="4227692681" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5169-crop-u126472.png" crc="215531481" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_4567-crop-u126412.png" crc="322419706" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5700-crop-u126152.png" crc="4164367919" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_0170-crop-u126352.png" crc="4042389437" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5675-crop-u126502.png" crc="3985854207" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_6064 - copy-crop-u126202.png" crc="479139142" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_20210914_214232-crop-u126442.png" crc="104282069" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_6104 - copy-crop-u126382.png" crc="3922523271" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5672-crop-u126123.png" crc="74883307" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5169-crop-u126473.png" crc="332583438" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_4567-crop-u126413.png" crc="447020330" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5700-crop-u126153.png" crc="143482606" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_0170-crop-u126353.png" crc="4052923098" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5675-crop-u126503.png" crc="90804755" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_6064 - copy-crop-u126203.png" crc="4192987921" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_20210914_214232-crop-u126443.png" crc="532191413" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_6104 - copy-crop-u126383.png" crc="232481173" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5672-crop-u126124.png" crc="3843645397" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5169-crop-u126474.png" crc="4252416427" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5700-crop-u126154.png" crc="4185056329" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_4567-crop-u126414.png" crc="207654" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_0170-crop-u126354.png" crc="512164870" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="_mg_5675-crop-u126504.png" crc="4281673375" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_6064 - copy-crop-u126204.png" crc="3874340855" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_20210914_214232-crop-u126444.png" crc="4163002420" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
+    <file name="img_6104 - copy-crop-u126384.png" crc="269036755" seo="true" ref="photo">
+      <caption webpage="photo" alt="Photo by Kasper H. Larsen"/>
+    </file>
   </folder>
-  <file name="index.html" crc="4120376085" seo="true" mt="1641071740378" redirect="true"/>
-  <file name="code.html" crc="3891435435" seo="true" mt="1640738524321" redirect="true"/>
-  <file name="photo.html" crc="3798704035" seo="true" mt="1640740458949" redirect="true"/>
+  <file name="index.html" crc="405157022" seo="true" mt="1644346805999" redirect="true"/>
+  <file name="code.html" crc="263262712" seo="true" mt="1644346823588" redirect="true"/>
+  <file name="photo.html" crc="89336046" seo="true" mt="1644341684966" redirect="true"/>
 </manifest>
