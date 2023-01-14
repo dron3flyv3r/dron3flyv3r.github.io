@@ -1,0 +1,39 @@
+.count{
+    width: 100px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.count p{
+    /* center the text */
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 900;
+    color: white;
+}
+
+.count button{
+    /* center the button */
+    display: block;
+    margin: 0 auto;
+
+    /* set the width */
+    width: 100px;
+
+    /* set the height */
+    height: 50px;
+
+    /* set the font size */
+    font-size: 40px;
+
+    border-radius: 25px;
+
+    /* set the background color */
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
