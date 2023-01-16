@@ -1,0 +1,36 @@
+.repos {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.repo{
+    background: linear-gradient(90deg, rgb(70, 97, 246) 0%, rgba(213, 95, 255, 1) 100%);
+    padding: 25px 45px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 10px 10px 0px 0px black;
+}
+
+.repo a{
+    text-decoration: none;
+}
+
+.repo h1{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none !important;
+}
+
+.repo p{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}

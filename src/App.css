@@ -1,39 +1,112 @@
-.count{
-    width: 100px;
-    display: flex;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.count p{
-    /* center the text */
-    text-align: center;
-    font-size: 40px;
+*{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;;
+    padding: 0;
     margin: 0;
-    font-weight: 900;
-    color: white;
 }
 
-.count button{
-    /* center the button */
-    display: block;
-    margin: 0 auto;
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+    margin: 2rem;
+    text-decoration: underline;
+}
 
-    /* set the width */
-    width: 100px;
+.intro{
+    background-color: #1e1e1e;
+    padding: 0 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
 
-    /* set the height */
-    height: 50px;
+.intro img{ 
+    height: 69%;
+    border-radius: 10%;
+    margin-right: 20px;
+    box-shadow: 10px 10px 0px 0px #ffc60c;
+}
 
-    /* set the font size */
-    font-size: 40px;
+.intro h1{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
 
-    border-radius: 25px;
+.intro h2{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffc60c;
+}
+.intro h3{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
-    /* set the background color */
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
+.intro .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.intro .buttons button{
+    background-color: #ffc60c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #1e1e1e;
+}
+
+.intro .buttons button:hover{
+    background-color: #1e1e1e;
+    color: #ffc60c;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.aboute{
+    background-color: #ffc60c;
+    padding: 25px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboute h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+.aboute p{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffc60c;
+    background-color: #1e1e1e;
+    padding: 60px;
+    border-radius: 35px;
 }
