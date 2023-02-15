@@ -3,7 +3,7 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # or whatever branch you want to trigger the action
+      - master # or whatever branch you want to trigger the action
 
 jobs:
   build-and-deploy:
