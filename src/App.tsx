@@ -52,7 +52,7 @@ function App() {
       <div className="intro">
         <img src="https://avatars.githubusercontent.com/u/84443539?s=400&u=ce6998ef41de59c4926832c1c76feaff423b3973&v=4" alt='Kasper H. Larsen' />
         <div>
-          <h1>Hi👋 </h1>
+          <h1>Hi👋</h1>
           <h2>I'm Kasper Larsen</h2>
           <TypeAnimation
             sequence={[
