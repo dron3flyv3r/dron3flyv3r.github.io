@@ -34,3 +34,17 @@
     font-size: 1rem;
     font-weight: 700;
 }
+
+/* give the last item a buttom margin of 2 rem */
+
+.repo:last-child{
+    margin-bottom: 3rem;
+}
+
+/* make it mobil frendly */
+
+@media screen and (max-width: 768px){
+    .repo{
+        width: 60%;
+    }
+}

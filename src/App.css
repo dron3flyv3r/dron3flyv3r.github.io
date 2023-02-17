@@ -112,3 +112,42 @@
     border-radius: 35px;
     max-width: 750px;
 }
+
+/* make if mobil frendly */
+@media screen and (max-width: 800px){
+    svg{
+        width: 100%;
+        height: 80px;
+    }
+    .intro{
+        flex-direction: column;
+        height: 80vh;
+    }
+    .intro img{
+        height: 60%;
+        margin: 0;
+    }
+    .intro h1{
+        font-size: 2rem;
+    }
+    .intro h2{
+        font-size: 2rem;
+    }
+    .intro h3{
+        font-size: 1rem;
+    }
+    .aboute{
+        padding: 25px 15px;
+    }
+    .aboute h1{
+        font-size: 2.5rem;
+    }   
+    .aboute p{
+        padding: 30px;
+        font-size: medium;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+
+}
