@@ -92,7 +92,7 @@ function App() {
       </div>
       <svg id="visual" viewBox="0 0 1920 200" preserveAspectRatio="xMidYMin" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1"><rect x="0" y="0" width="100%" height="200" fill="#ffc60c"></rect><path d="M0 73L45.7 80.2C91.3 87.3 182.7 101.7 274.2 117.3C365.7 133 457.3 150 548.8 154.7C640.3 159.3 731.7 151.7 823 133.5C914.3 115.3 1005.7 86.7 1097 72.3C1188.3 58 1279.7 58 1371.2 68.5C1462.7 79 1554.3 100 1645.8 116.8C1737.3 133.7 1828.7 146.3 1874.3 152.7L1920 159L1920 0L1874.3 0C1828.7 0 1737.3 0 1645.8 0C1554.3 0 1462.7 0 1371.2 0C1279.7 0 1188.3 0 1097 0C1005.7 0 914.3 0 823 0C731.7 0 640.3 0 548.8 0C457.3 0 365.7 0 274.2 0C182.7 0 91.3 0 45.7 0L0 0Z" fill="#1e1e1e" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
       <div className="aboute">
-        <h1>Aboute Me</h1>
+        <h1>About Me</h1>
         <p>My name is Kasper and I'm {age}. I am a programmer and photographer. I am new to the field of AI development,
           but so far I am enjoying it. In addition to programming, I also have experience with graphic design and front-end development.
           Currently, I am learning Flutter to develop mobile apps. <br /> <br />
