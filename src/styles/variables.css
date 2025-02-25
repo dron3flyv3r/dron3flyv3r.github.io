@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;700&display=swap');
+
+:root {
+    --retro-yellow: #ffc60c;
+    --retro-orange: #FF6B35;
+    --retro-brown: #4A4238;
+    --retro-cream: #F7F3E3;
+    --bg-dark: #1e1e1e;
+    --bg-darker: #252525;
+    
+    /* Layout Variables */
+    --content-width-ultra: 2400px;
+    --content-width-wide: 1800px;
+    --section-padding-ultra: 120px;
+    --container-padding: 45px;
+}
+
+* {
+    color: var(--retro-cream);
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease;
+}
