@@ -1,0 +1,39 @@
+.title {
+  font-size: 2.5rem;
+  color: #ffc60c;
+  margin: 2rem 0;
+}
+
+.repos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.repo {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.repo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.repo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #ffc60c;
+  text-transform: capitalize;
+}
+
+.repo p {
+  margin: 0;
+  color: #888;
+  line-height: 1.4;
+}
