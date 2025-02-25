@@ -127,7 +127,7 @@
     }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 650px) {
     .intro {
         padding: 2rem 1rem;
         min-height: unset;

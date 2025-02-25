@@ -364,14 +364,16 @@ function App() {
         >
           My name is Kasper and I'm {age}. I am a programmer and photographer. I am new to the field of AI development,
           but so far I am enjoying it. In addition to programming, I also have experience with graphic design and front-end development.
-          Currently, I am learning Flutter to develop mobile apps. <br /> <br />
+          Currently, I am learning Flutter to develop mobile apps. 
+          <br /><br />
           I've created a <motion.a 
             href="https://aiviz.kasperlarsen.tech" 
             whileHover={{ scale: 1.05 }} 
             style={{ color: '#ffc60c', textDecoration: 'underline' }}
           >Neural Network Visualizer</motion.a> that helps people understand the basics of AI. 
           It's an interactive tool where you can visualize, train, and experiment with Multi-Layer Perceptron (MLP) neural networks. 
-          Perfect for beginners who want to see how non-linear AI models work in real-time! <br /> <br />
+          Perfect for beginners who want to see how non-linear AI models work in real-time! 
+          <br /> <br />
           To contact me, send me an E-mail at <a href="mailto:contact@kasperlarsen.tech">contact@kasperlarsen.tech</a>
         </motion.p>
       </motion.div>

@@ -135,7 +135,7 @@
     .repo {
         width: calc(100% - 2rem);
         min-width: unset;
-        margin: 0;
+        margin: 12px 0;
         transform: none !important;
     }
 
@@ -152,7 +152,7 @@
 
     .repo {
         padding: 20px 25px;
-        margin: 0 0.5rem;
+        margin: 12px 0.5rem;
     }
     
     .repo h1 {

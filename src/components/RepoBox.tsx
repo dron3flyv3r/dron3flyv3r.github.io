@@ -42,14 +42,26 @@ export function RepoBox({ repos }: RepoBoxProps) {
         show: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2
+                staggerChildren: 0.1, // Reduced stagger time for mobile
+                delayChildren: 0.1
             }
         }
     };
     
     const item = {
-        hidden: { opacity: 0, y: 20 },
-        show: { opacity: 1, y: 0 }
+        hidden: { 
+            opacity: 0,
+            y: 20 // Changed to only vertical animation for mobile
+        },
+        show: { 
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: "spring",
+                bounce: 0.2,
+                duration: 0.6
+            }
+        }
     };
 
     return (
@@ -59,7 +71,11 @@ export function RepoBox({ repos }: RepoBoxProps) {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 400 }}
+                transition={{ 
+                    type: "spring", 
+                    stiffness: 400,
+                    damping: 20
+                }}
             >
                 Groovy Projects ({filteredRepos.length})
             </motion.h1>
@@ -68,7 +84,7 @@ export function RepoBox({ repos }: RepoBoxProps) {
                 variants={container}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: true }}
+                viewport={{ once: true, margin: "-50px" }}
             >
                 {filteredRepos.map((repo) => (
                     <motion.div 
@@ -76,14 +92,17 @@ export function RepoBox({ repos }: RepoBoxProps) {
                         className="repo"
                         variants={item}
                         whileHover={{ 
-                            scale: 1.03,
-                            rotate: -1,
-                            transition: { type: "spring", stiffness: 400 }
+                            y: -5,
+                            transition: { 
+                                type: "spring",
+                                stiffness: 300,
+                                damping: 15
+                            }
                         }}
                     >
                         <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
                             <h1>{repo.name.replaceAll("-", " ")}</h1>
-                            <p>{repo.description ?? "No description"}</p>
+                            <p>{repo.description ?? "Far out! No description yet."}</p>
                         </a>
                     </motion.div>
                 ))}
