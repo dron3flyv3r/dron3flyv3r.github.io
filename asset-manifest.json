@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.abb427a2.css",
-    "main.js": "/static/js/main.273f5a0f.js",
-    "static/js/787.84eb7a9a.chunk.js": "/static/js/787.84eb7a9a.chunk.js",
-    "index.html": "/index.html",
-    "main.abb427a2.css.map": "/static/css/main.abb427a2.css.map",
-    "main.273f5a0f.js.map": "/static/js/main.273f5a0f.js.map",
-    "787.84eb7a9a.chunk.js.map": "/static/js/787.84eb7a9a.chunk.js.map"
+    "main.css": "/kasperlarsen.tech/static/css/main.e0a5962c.css",
+    "main.js": "/kasperlarsen.tech/static/js/main.d15ad353.js",
+    "static/js/496.958f9ec9.chunk.js": "/kasperlarsen.tech/static/js/496.958f9ec9.chunk.js",
+    "index.html": "/kasperlarsen.tech/index.html",
+    "main.e0a5962c.css.map": "/kasperlarsen.tech/static/css/main.e0a5962c.css.map",
+    "main.d15ad353.js.map": "/kasperlarsen.tech/static/js/main.d15ad353.js.map",
+    "496.958f9ec9.chunk.js.map": "/kasperlarsen.tech/static/js/496.958f9ec9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abb427a2.css",
-    "static/js/main.273f5a0f.js"
+    "static/css/main.e0a5962c.css",
+    "static/js/main.d15ad353.js"
   ]
 }
