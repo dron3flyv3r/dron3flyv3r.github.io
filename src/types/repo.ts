@@ -3,4 +3,7 @@ export interface Repo {
     description: string | null;
     html_url: string;
     id: number;
+    language?: string;
+    stars?: number;
+    updated_at?: string;
 }
