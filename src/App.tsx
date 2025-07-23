@@ -12,6 +12,51 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   const [activeSection, setActiveSection] = useState('home');
 
+  // Color palette for language tags
+  const languageColors = [
+    { bg: '#3776ab', text: 'white' }, // Python blue
+    { bg: '#f7df1e', text: 'black' }, // JavaScript yellow
+    { bg: '#3178c6', text: 'white' }, // TypeScript blue
+    { bg: '#e34f26', text: 'white' }, // HTML orange
+    { bg: '#1572b6', text: 'white' }, // CSS blue
+    { bg: '#f34b7d', text: 'white' }, // C++ pink
+    { bg: '#00d4aa', text: 'white' }, // Teal
+    { bg: '#ff6b6b', text: 'white' }, // Red
+    { bg: '#4ecdc4', text: 'white' }, // Mint
+    { bg: '#45b7d1', text: 'white' }, // Sky blue
+    { bg: '#96ceb4', text: 'black' }, // Sage green
+    { bg: '#feca57', text: 'black' }, // Orange
+    { bg: '#ff9ff3', text: 'black' }, // Pink
+    { bg: '#54a0ff', text: 'white' }, // Blue
+    { bg: '#5f27cd', text: 'white' }, // Purple
+  ];
+
+  let cacheColors = new Map<string, { bg: string, text: string }>();
+
+  // Function to get consistent color for a language
+  const getLanguageColor = (language: string) => {
+    if (!language) return languageColors[0];
+
+    // Check cache
+    if (cacheColors.has(language)) {
+      return cacheColors.get(language)!;
+    }
+
+    // Create a simple hash of the language name to ensure consistency
+    let hash = 0;
+    for (let i = 0; i < language.length; i++) {
+      const char = language.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash = hash & hash; // Convert to 32-bit integer
+    }
+    
+    // Use absolute value and modulo to get a valid index
+    const colorIndex = Math.abs(hash) % languageColors.length;
+    // Cache the color
+    cacheColors.set(language, languageColors[colorIndex]);
+    return languageColors[colorIndex];
+  };
+
   // Easter eggs state
   const [clickCount, setClickCount] = useState(0);
   const [jukeboxOpen, setJukeboxOpen] = useState(false);
@@ -616,7 +661,13 @@ function App() {
                     <div className="project-header">
                       <h3>{repo.name.replace(/-/g, ' ')}</h3>
                       {repo.language && (
-                        <span className={`language-tag ${repo.language.replace("+", "p").toLowerCase()}`}>
+                        <span 
+                          className="language-tag"
+                          style={{
+                            backgroundColor: getLanguageColor(repo.language).bg,
+                            color: getLanguageColor(repo.language).text
+                          }}
+                        >
                           {repo.language}
                         </span>
                       )}

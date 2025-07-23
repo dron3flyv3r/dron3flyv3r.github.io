@@ -1,7 +1,7 @@
-/* 1950s American Retro Portfolio CSS */
 @charset "UTF-8";
-/* Import Google Fonts with fallbacks for better mobile compatibility */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap&display=fallback');
+/* 1950s American Retro Portfolio CSS */
+/* Import Google Fonts with fallbacks for better mobile compatibility */
 
 /* CSS Custom Properties (Variables) */
 :root {
@@ -708,14 +708,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
-.language-tag.python { background: #3776ab; color: white; }
-.language-tag.javascript { background: #f7df1e; color: black; }
-.language-tag.typescript { background: #3178c6; color: white; }
-.language-tag.html { background: #e34f26; color: white; }
-.language-tag.css { background: #1572b6; color: white; }
-.language-tag.c { background: #a8b9cc; color: black; }
-.language-tag.cpp { background: #f34b7d; color: white; }
 
 .project-description {
   margin-bottom: 20px;
