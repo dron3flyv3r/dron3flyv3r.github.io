@@ -9,15 +9,6 @@
     "updated_at": "2025-07-23T14:41:37Z"
   },
   {
-    "name": "storage",
-    "description": null,
-    "html_url": "https://github.com/dron3flyv3r/storage",
-    "id": 1005206992,
-    "language": null,
-    "stars": 0,
-    "updated_at": "2025-06-19T21:17:49Z"
-  },
-  {
     "name": "NodeSystem-MK2-OpenCV",
     "description": "This is an updated version of my Node based editor. Using the new and improved Node editor.",
     "html_url": "https://github.com/dron3flyv3r/NodeSystem-MK2-OpenCV",
@@ -72,15 +63,6 @@
     "updated_at": "2024-12-12T17:31:09Z"
   },
   {
-    "name": "dron3flyv3r",
-    "description": "This is my profile on GitHub",
-    "html_url": "https://github.com/dron3flyv3r/dron3flyv3r",
-    "id": 507318103,
-    "language": null,
-    "stars": 0,
-    "updated_at": "2024-11-25T11:47:58Z"
-  },
-  {
     "name": "NodeSystem-MK1",
     "description": "This is a simple node-based system that can be implement into almost anything system, with easy to make nodes and QOL features. ",
     "html_url": "https://github.com/dron3flyv3r/NodeSystem-MK1",
@@ -88,24 +70,6 @@
     "language": "Python",
     "stars": 0,
     "updated_at": "2024-10-21T19:38:38Z"
-  },
-  {
-    "name": "SDU-ExsamenRaport2",
-    "description": "This is a computer vision very basic exercise",
-    "html_url": "https://github.com/dron3flyv3r/SDU-ExsamenRaport2",
-    "id": 866369744,
-    "language": "C++",
-    "stars": 0,
-    "updated_at": "2024-10-02T06:13:11Z"
-  },
-  {
-    "name": "SDU-ExsamenRaport1",
-    "description": "This is a computer vision very basic exercise",
-    "html_url": "https://github.com/dron3flyv3r/SDU-ExsamenRaport1",
-    "id": 866369591,
-    "language": "C++",
-    "stars": 0,
-    "updated_at": "2024-10-02T06:12:40Z"
   },
   {
     "name": "Drug-Invaders",

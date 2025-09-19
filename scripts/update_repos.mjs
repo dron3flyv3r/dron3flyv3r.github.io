@@ -12,6 +12,7 @@ import process from 'node:process';
 
 const USER = 'dron3flyv3r';
 const OUTPUT = path.resolve(process.cwd(), 'public', 'repos.json');
+const IGNORED_REPOS = ['dron3flyv3r.github.io', 'storage', 'dron3flyv3r', 'SDU*']; // add repo names here to ignore them
 
 async function fetchAllRepos(user) {
   const perPage = 100; // max
@@ -37,8 +38,15 @@ async function fetchAllRepos(user) {
 }
 
 function transform(repos) {
+  const isIgnored = (name, ignored) => {
+    if (ignored.endsWith('*')) {
+      const prefix = ignored.slice(0, -1);
+      return name.startsWith(prefix);
+    }
+    return name === ignored;
+  };
   return repos
-    .filter(r => !r.fork)
+    .filter(r => !r.fork && !IGNORED_REPOS.some(ignored => isIgnored(r.name, ignored)))
     .map(r => ({
       name: r.name,
       description: r.description,
