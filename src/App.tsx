@@ -220,16 +220,14 @@ function App() {
     };
   }, []);
 
-  // Fetch GitHub repos with caching
+  // Fetch repos from static JSON (updated monthly via GitHub Action)
   useEffect(() => {
-    const fetchRepos = async () => {
+    const fetchStaticRepos = async () => {
       try {
-        // Check if we have cached data
         const cachedRepos = localStorage.getItem('github-repos');
         const cacheTimestamp = localStorage.getItem('github-repos-timestamp');
-        const cacheExpiry = 10 * 60 * 1000; // 10 minutes
-        
-        // Use cached data if it's still valid
+        const cacheExpiry = 24 * 60 * 60 * 1000; // 24 hours
+
         if (cachedRepos && cacheTimestamp) {
           const isExpired = Date.now() - parseInt(cacheTimestamp) > cacheExpiry;
           if (!isExpired) {
@@ -241,34 +239,47 @@ function App() {
 
         setLoading(true);
         setError(null);
-        const res = await fetch("https://api.github.com/users/dron3flyv3r/repos?sort=updated&per_page=30");
-        if (!res.ok) throw new Error('Failed to fetch repositories');
-        const rep = await res.json();
-        const temp: Repo[] = rep
-          .filter((item: any) => !item.fork && item.description) // Filter out forks and repos without descriptions
-          .map((item: any) => ({
-            name: item.name,
-            description: item.description,
-            html_url: item.html_url,
-            id: item.id,
-            language: item.language,
-            stars: item.stargazers_count,
-            updated_at: item.updated_at
-          }));
-        
-        // Cache the results
-        localStorage.setItem('github-repos', JSON.stringify(temp));
+
+        // Raw GitHub URL to static JSON committed in repo
+        const RAW_URL = 'https://raw.githubusercontent.com/dron3flyv3r/dron3flyv3r.github.io/refs/heads/gh-pages/repos.json';
+
+        let data = null;
+        try {
+          const res = await fetch(RAW_URL, { cache: 'no-store' });
+            if (res.ok) {
+              data = await res.json();
+            } else {
+              throw new Error('Raw fetch failed');
+            }
+        } catch {
+          // Fallback to locally served file (dev server / deployed copy)
+          const fallback = await fetch('/repos.json');
+          if (!fallback.ok) throw new Error('Failed to load repositories');
+          data = await fallback.json();
+        }
+
+        if (!Array.isArray(data)) throw new Error('Unexpected repos format');
+
+        const sanitized: Repo[] = data.map((r: any) => ({
+          name: r.name,
+          description: r.description,
+          html_url: r.html_url,
+          id: r.id,
+          language: r.language,
+          stars: r.stars,
+          updated_at: r.updated_at
+        }));
+
+        localStorage.setItem('github-repos', JSON.stringify(sanitized));
         localStorage.setItem('github-repos-timestamp', Date.now().toString());
-        
-        setRepos(temp);
+        setRepos(sanitized);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'An error occurred');
       } finally {
         setLoading(false);
       }
     };
-
-    fetchRepos();
+    fetchStaticRepos();
   }, []);
 
   // Smooth scroll navigation for repos with looping

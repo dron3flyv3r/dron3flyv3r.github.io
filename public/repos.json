@@ -1,0 +1,209 @@
+[
+  {
+    "name": "HW-Images-Class",
+    "description": "This is a meme from the serie silicon valley, where it was hot-dog or not hot-dog. But I made it with Pizza-Not-Pizza",
+    "html_url": "https://github.com/dron3flyv3r/HW-Images-Class",
+    "id": 514697432,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2025-07-23T14:41:37Z"
+  },
+  {
+    "name": "storage",
+    "description": null,
+    "html_url": "https://github.com/dron3flyv3r/storage",
+    "id": 1005206992,
+    "language": null,
+    "stars": 0,
+    "updated_at": "2025-06-19T21:17:49Z"
+  },
+  {
+    "name": "NodeSystem-MK2-OpenCV",
+    "description": "This is an updated version of my Node based editor. Using the new and improved Node editor.",
+    "html_url": "https://github.com/dron3flyv3r/NodeSystem-MK2-OpenCV",
+    "id": 936580368,
+    "language": "Python",
+    "stars": 1,
+    "updated_at": "2025-04-18T18:55:26Z"
+  },
+  {
+    "name": "AI-Visualizer-Python-MK1",
+    "description": null,
+    "html_url": "https://github.com/dron3flyv3r/AI-Visualizer-Python-MK1",
+    "id": 957987064,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2025-04-04T06:52:36Z"
+  },
+  {
+    "name": "Discord-Bot-Python",
+    "description": "This is a discord bot made in python, and it has implemented my meme pizza AI",
+    "html_url": "https://github.com/dron3flyv3r/Discord-Bot-Python",
+    "id": 531597851,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2025-02-25T18:13:58Z"
+  },
+  {
+    "name": "Custom-Notification",
+    "description": "This is a way to get clean custom notification intend of the default ugly one's from the OS of choice.",
+    "html_url": "https://github.com/dron3flyv3r/Custom-Notification",
+    "id": 560605006,
+    "language": "TypeScript",
+    "stars": 2,
+    "updated_at": "2025-02-25T18:13:46Z"
+  },
+  {
+    "name": "MeloTTS",
+    "description": "This is a lightweight version of MeloTTS, that also support my custom models. (It's, unlike the original MeloTTS, only support English)",
+    "html_url": "https://github.com/dron3flyv3r/MeloTTS",
+    "id": 891734891,
+    "language": "Python",
+    "stars": 1,
+    "updated_at": "2025-01-12T19:07:49Z"
+  },
+  {
+    "name": "NodeSystem-MK1-OpenCV",
+    "description": "This is a simple node-based implementation of OpenCV.",
+    "html_url": "https://github.com/dron3flyv3r/NodeSystem-MK1-OpenCV",
+    "id": 872130004,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2024-12-12T17:31:09Z"
+  },
+  {
+    "name": "dron3flyv3r",
+    "description": "This is my profile on GitHub",
+    "html_url": "https://github.com/dron3flyv3r/dron3flyv3r",
+    "id": 507318103,
+    "language": null,
+    "stars": 0,
+    "updated_at": "2024-11-25T11:47:58Z"
+  },
+  {
+    "name": "NodeSystem-MK1",
+    "description": "This is a simple node-based system that can be implement into almost anything system, with easy to make nodes and QOL features. ",
+    "html_url": "https://github.com/dron3flyv3r/NodeSystem-MK1",
+    "id": 872127499,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2024-10-21T19:38:38Z"
+  },
+  {
+    "name": "SDU-ExsamenRaport2",
+    "description": "This is a computer vision very basic exercise",
+    "html_url": "https://github.com/dron3flyv3r/SDU-ExsamenRaport2",
+    "id": 866369744,
+    "language": "C++",
+    "stars": 0,
+    "updated_at": "2024-10-02T06:13:11Z"
+  },
+  {
+    "name": "SDU-ExsamenRaport1",
+    "description": "This is a computer vision very basic exercise",
+    "html_url": "https://github.com/dron3flyv3r/SDU-ExsamenRaport1",
+    "id": 866369591,
+    "language": "C++",
+    "stars": 0,
+    "updated_at": "2024-10-02T06:12:40Z"
+  },
+  {
+    "name": "Drug-Invaders",
+    "description": "A school project, where we made Space-Invaders but with a twist.",
+    "html_url": "https://github.com/dron3flyv3r/Drug-Invaders",
+    "id": 431777275,
+    "language": "Java",
+    "stars": 0,
+    "updated_at": "2024-08-16T00:11:34Z"
+  },
+  {
+    "name": "S.O.P.A-MK3-NLU",
+    "description": "This is a small project focused on the Natural Language Understanding (NLU) of an AI smart system. This component can predict the intent and identify relevant entities or context from a given text prompt.",
+    "html_url": "https://github.com/dron3flyv3r/S.O.P.A-MK3-NLU",
+    "id": 707722807,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2024-07-23T10:35:31Z"
+  },
+  {
+    "name": "Coop-VR-Adminpanel",
+    "description": "This is a small school project. Is is a web admin site where you can overwrite the button functions in our VR-game.",
+    "html_url": "https://github.com/dron3flyv3r/Coop-VR-Adminpanel",
+    "id": 628933567,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2023-04-18T07:50:29Z"
+  },
+  {
+    "name": "Pytorch-Lightning-MNIST---GUI",
+    "description": "This is a small project, where I used Pytorch Lightning to make a digit classification, from the MNIST dataset.",
+    "html_url": "https://github.com/dron3flyv3r/Pytorch-Lightning-MNIST---GUI",
+    "id": 620963699,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2023-03-31T08:09:43Z"
+  },
+  {
+    "name": "Webthon",
+    "description": "A alternative to Kubernetes, based on Python and for simple Python project and self-hosting.",
+    "html_url": "https://github.com/dron3flyv3r/Webthon",
+    "id": 528110866,
+    "language": "HTML",
+    "stars": 1,
+    "updated_at": "2023-01-16T19:34:43Z"
+  },
+  {
+    "name": "Pong",
+    "description": "A school project, where our assignment was the OG Pong game in java.",
+    "html_url": "https://github.com/dron3flyv3r/Pong",
+    "id": 427793549,
+    "language": "Java",
+    "stars": 0,
+    "updated_at": "2023-01-16T19:33:38Z"
+  },
+  {
+    "name": "HW-Pytorch",
+    "description": "Very simple linear regression AI.",
+    "html_url": "https://github.com/dron3flyv3r/HW-Pytorch",
+    "id": 510862017,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2023-01-16T19:31:15Z"
+  },
+  {
+    "name": "react-calculator-hw",
+    "description": "This is my first ever React app.",
+    "html_url": "https://github.com/dron3flyv3r/react-calculator-hw",
+    "id": 571279400,
+    "language": "JavaScript",
+    "stars": 0,
+    "updated_at": "2023-01-16T19:29:57Z"
+  },
+  {
+    "name": "FollowTheRabbit",
+    "description": "This is a challenge give to us from our teacher, it from trustpilot follow the white rabbit.",
+    "html_url": "https://github.com/dron3flyv3r/FollowTheRabbit",
+    "id": 550857020,
+    "language": "Java",
+    "stars": 0,
+    "updated_at": "2023-01-16T19:26:52Z"
+  },
+  {
+    "name": "WLed-Lib",
+    "description": "This is a simple way to control WLed moduls",
+    "html_url": "https://github.com/dron3flyv3r/WLed-Lib",
+    "id": 508331660,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2022-06-28T16:08:22Z"
+  },
+  {
+    "name": "Stabel-Base-Simple-Ai-First",
+    "description": "This is my first Ai made by Stabel Baseline 3 and openais Gym",
+    "html_url": "https://github.com/dron3flyv3r/Stabel-Base-Simple-Ai-First",
+    "id": 487634828,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2022-06-25T21:46:14Z"
+  }
+]
