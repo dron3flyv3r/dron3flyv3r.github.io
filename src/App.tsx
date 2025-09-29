@@ -241,7 +241,7 @@ function App() {
         setError(null);
 
         // Raw GitHub URL to static JSON committed in repo
-        const RAW_URL = 'https://raw.githubusercontent.com/dron3flyv3r/dron3flyv3r.github.io/refs/heads/gh-pages/repos.json';
+        const RAW_URL = 'https://raw.githubusercontent.com/dron3flyv3r/dron3flyv3r.github.io/refs/heads/main/public/repos.json';
 
         let data = null;
         try {
