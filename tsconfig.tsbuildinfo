@@ -1,1 +1,1 @@
-{"root":["./src/App.tsx","./src/index.tsx","./src/main.tsx","./src/repo.tsx","./src/vite-env.d.ts","./src/components/RepoBox.tsx","./src/types/repo.ts"],"version":"5.7.3"}
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/IntentDemo.tsx","./src/types/repo.ts","./src/utils/intentClassifier.ts"],"version":"5.7.3"}

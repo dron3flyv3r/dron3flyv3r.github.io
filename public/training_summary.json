@@ -1,0 +1,29 @@
+{
+  "dataset_config": {
+    "data_path": "data/intents.json",
+    "batch_size": 8,
+    "max_length": 32,
+    "validation_split": 0.2,
+    "seed": 13
+  },
+  "training_config": {
+    "epochs": 60,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "device": "cuda"
+  },
+  "labels": [
+    "greeting",
+    "weather_query",
+    "set_timer",
+    "play_music",
+    "control_lights",
+    "adjust_thermostat",
+    "check_security",
+    "start_vacuum",
+    "set_reminder",
+    "activate_scene",
+    "lock_doors",
+    "check_energy_usage"
+  ]
+}
