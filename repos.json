@@ -1,12 +1,33 @@
 [
   {
+    "name": "tennis-tournament",
+    "description": "Simple Tennis Tournament generator, made with the love from vibe-coding. This was just an experiment. ",
+    "html_url": "https://github.com/dron3flyv3r/tennis-tournament",
+    "id": 1070609267,
+    "language": "TypeScript",
+    "stars": 0,
+    "updated_at": "2025-10-10T23:29:13Z",
+    "homepage": "https://tennis.kasperlarsen.tech"
+  },
+  {
+    "name": "mini-sopa-intent",
+    "description": "Simple intent classification",
+    "html_url": "https://github.com/dron3flyv3r/mini-sopa-intent",
+    "id": 1073929321,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2025-10-10T22:43:52Z",
+    "homepage": null
+  },
+  {
     "name": "webappify",
     "description": "Interactive Fish shell wizard that turns any website into a desktop-ready Linux web app, complete with   launcher, icons, and an optional shared Electron wrapper—one command to package your favorite sites like native applications.",
     "html_url": "https://github.com/dron3flyv3r/webappify",
     "id": 1064730823,
     "language": "Shell",
     "stars": 0,
-    "updated_at": "2025-09-29T06:19:50Z"
+    "updated_at": "2025-09-29T06:19:50Z",
+    "homepage": null
   },
   {
     "name": "HW-Images-Class",
@@ -15,7 +36,8 @@
     "id": 514697432,
     "language": "Python",
     "stars": 0,
-    "updated_at": "2025-07-23T14:41:37Z"
+    "updated_at": "2025-07-23T14:41:37Z",
+    "homepage": null
   },
   {
     "name": "NodeSystem-MK2-OpenCV",
@@ -24,7 +46,8 @@
     "id": 936580368,
     "language": "Python",
     "stars": 1,
-    "updated_at": "2025-04-18T18:55:26Z"
+    "updated_at": "2025-04-18T18:55:26Z",
+    "homepage": null
   },
   {
     "name": "AI-Visualizer-Python-MK1",
@@ -33,7 +56,8 @@
     "id": 957987064,
     "language": "Python",
     "stars": 0,
-    "updated_at": "2025-04-04T06:52:36Z"
+    "updated_at": "2025-04-04T06:52:36Z",
+    "homepage": null
   },
   {
     "name": "Discord-Bot-Python",
@@ -42,7 +66,8 @@
     "id": 531597851,
     "language": "Python",
     "stars": 0,
-    "updated_at": "2025-02-25T18:13:58Z"
+    "updated_at": "2025-02-25T18:13:58Z",
+    "homepage": null
   },
   {
     "name": "Custom-Notification",
@@ -51,7 +76,8 @@
     "id": 560605006,
     "language": "TypeScript",
     "stars": 2,
-    "updated_at": "2025-02-25T18:13:46Z"
+    "updated_at": "2025-02-25T18:13:46Z",
+    "homepage": null
   },
   {
     "name": "MeloTTS",
@@ -60,7 +86,8 @@
     "id": 891734891,
     "language": "Python",
     "stars": 1,
-    "updated_at": "2025-01-12T19:07:49Z"
+    "updated_at": "2025-01-12T19:07:49Z",
+    "homepage": null
   },
   {
     "name": "NodeSystem-MK1-OpenCV",
@@ -69,7 +96,8 @@
     "id": 872130004,
     "language": "Python",
     "stars": 0,
-    "updated_at": "2024-12-12T17:31:09Z"
+    "updated_at": "2024-12-12T17:31:09Z",
+    "homepage": null
   },
   {
     "name": "NodeSystem-MK1",
@@ -78,7 +106,8 @@
     "id": 872127499,
     "language": "Python",
     "stars": 0,
-    "updated_at": "2024-10-21T19:38:38Z"
+    "updated_at": "2024-10-21T19:38:38Z",
+    "homepage": null
   },
   {
     "name": "Drug-Invaders",
@@ -87,7 +116,8 @@
     "id": 431777275,
     "language": "Java",
     "stars": 0,
-    "updated_at": "2024-08-16T00:11:34Z"
+    "updated_at": "2024-08-16T00:11:34Z",
+    "homepage": null
   },
   {
     "name": "S.O.P.A-MK3-NLU",
@@ -96,7 +126,8 @@
     "id": 707722807,
     "language": "Python",
     "stars": 0,
-    "updated_at": "2024-07-23T10:35:31Z"
+    "updated_at": "2024-07-23T10:35:31Z",
+    "homepage": "https://kasperlarsen.tech"
   },
   {
     "name": "Coop-VR-Adminpanel",
@@ -105,7 +136,8 @@
     "id": 628933567,
     "language": "Python",
     "stars": 0,
-    "updated_at": "2023-04-18T07:50:29Z"
+    "updated_at": "2023-04-18T07:50:29Z",
+    "homepage": null
   },
   {
     "name": "Pytorch-Lightning-MNIST---GUI",
@@ -114,7 +146,8 @@
     "id": 620963699,
     "language": "Python",
     "stars": 0,
-    "updated_at": "2023-03-31T08:09:43Z"
+    "updated_at": "2023-03-31T08:09:43Z",
+    "homepage": null
   },
   {
     "name": "Webthon",
@@ -123,7 +156,8 @@
     "id": 528110866,
     "language": "HTML",
     "stars": 1,
-    "updated_at": "2023-01-16T19:34:43Z"
+    "updated_at": "2023-01-16T19:34:43Z",
+    "homepage": null
   },
   {
     "name": "Pong",
@@ -132,7 +166,8 @@
     "id": 427793549,
     "language": "Java",
     "stars": 0,
-    "updated_at": "2023-01-16T19:33:38Z"
+    "updated_at": "2023-01-16T19:33:38Z",
+    "homepage": null
   },
   {
     "name": "HW-Pytorch",
@@ -141,7 +176,8 @@
     "id": 510862017,
     "language": "Python",
     "stars": 0,
-    "updated_at": "2023-01-16T19:31:15Z"
+    "updated_at": "2023-01-16T19:31:15Z",
+    "homepage": null
   },
   {
     "name": "react-calculator-hw",
@@ -150,7 +186,8 @@
     "id": 571279400,
     "language": "JavaScript",
     "stars": 0,
-    "updated_at": "2023-01-16T19:29:57Z"
+    "updated_at": "2023-01-16T19:29:57Z",
+    "homepage": null
   },
   {
     "name": "FollowTheRabbit",
@@ -159,7 +196,8 @@
     "id": 550857020,
     "language": "Java",
     "stars": 0,
-    "updated_at": "2023-01-16T19:26:52Z"
+    "updated_at": "2023-01-16T19:26:52Z",
+    "homepage": null
   },
   {
     "name": "WLed-Lib",
@@ -168,7 +206,8 @@
     "id": 508331660,
     "language": "Python",
     "stars": 0,
-    "updated_at": "2022-06-28T16:08:22Z"
+    "updated_at": "2022-06-28T16:08:22Z",
+    "homepage": null
   },
   {
     "name": "Stabel-Base-Simple-Ai-First",
@@ -177,6 +216,7 @@
     "id": 487634828,
     "language": "Python",
     "stars": 0,
-    "updated_at": "2022-06-25T21:46:14Z"
+    "updated_at": "2022-06-25T21:46:14Z",
+    "homepage": null
   }
 ]
