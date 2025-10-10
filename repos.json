@@ -1,5 +1,14 @@
 [
   {
+    "name": "webappify",
+    "description": "Interactive Fish shell wizard that turns any website into a desktop-ready Linux web app, complete with   launcher, icons, and an optional shared Electron wrapper—one command to package your favorite sites like native applications.",
+    "html_url": "https://github.com/dron3flyv3r/webappify",
+    "id": 1064730823,
+    "language": "Shell",
+    "stars": 0,
+    "updated_at": "2025-09-29T06:19:50Z"
+  },
+  {
     "name": "HW-Images-Class",
     "description": "This is a meme from the serie silicon valley, where it was hot-dog or not hot-dog. But I made it with Pizza-Not-Pizza",
     "html_url": "https://github.com/dron3flyv3r/HW-Images-Class",
