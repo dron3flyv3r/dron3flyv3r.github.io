@@ -34,8 +34,7 @@ function App() {
   const age = Math.floor((new Date().getTime() - new Date(2003, 6, 18).getTime()) / 3.15576e+10);
 
   useEffect(() => {
-    // fetch('https://raw.githubusercontent.com/dron3flyv3r/dron3flyv3r.github.io/refs/heads/main/public/repos.json')
-    fetch('/repos.json')
+    fetch('https://raw.githubusercontent.com/dron3flyv3r/dron3flyv3r.github.io/refs/heads/main/public/repos.json')
       .then(res => res.json())
       .then((data: Repo[]) => {
         setRepos(data);
