@@ -21,13 +21,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Update repos.json
-        run: npm run update:repos
+      - name: Update repos.json with homepage metadata
+        run: node scripts/update_repos.mjs
 
       - name: Commit and push if changed
         run: |

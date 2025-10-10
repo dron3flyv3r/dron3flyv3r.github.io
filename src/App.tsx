@@ -14,15 +14,27 @@ const formatUpdatedAt = (iso?: string): string | null => {
   return `${year}/${month}`;
 };
 
+const normalizeHomepageUrl = (url?: string | null): string | null => {
+  if (!url) return null;
+  const trimmed = url.trim();
+  if (!trimmed) return null;
+  if (/^https?:\/\//i.test(trimmed)) {
+    return trimmed;
+  }
+  return `https://${trimmed}`;
+};
+
 function App() {
   const [repos, setRepos] = useState<Repo[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [shouldRenderDemo, setShouldRenderDemo] = useState(false);
   const demoSectionRef = useRef<HTMLElement | null>(null);
+  const [liveStatuses, setLiveStatuses] = useState<Record<number, 'checking' | 'up' | 'down'>>({});
   const age = Math.floor((new Date().getTime() - new Date(2003, 6, 18).getTime()) / 3.15576e+10);
 
   useEffect(() => {
+    // fetch('https://raw.githubusercontent.com/dron3flyv3r/dron3flyv3r.github.io/refs/heads/main/public/repos.json')
     fetch('/repos.json')
       .then(res => res.json())
       .then((data: Repo[]) => {
@@ -68,6 +80,53 @@ function App() {
 
     return () => observer.disconnect();
   }, [shouldRenderDemo]);
+
+  useEffect(() => {
+    if (repos.length === 0) return;
+
+    let isMounted = true;
+    const controllers: AbortController[] = [];
+
+    repos.slice(0, 6).forEach((repo) => {
+      const homepageUrl = normalizeHomepageUrl(repo.homepage);
+      if (!homepageUrl) return;
+
+      setLiveStatuses((prev) => ({
+        ...prev,
+        [repo.id]: prev[repo.id] ?? 'checking',
+      }));
+
+      const controller = new AbortController();
+      controllers.push(controller);
+
+      const timeoutId = window.setTimeout(() => controller.abort(), 8000);
+
+      fetch(homepageUrl, { method: 'GET' })
+        .then((response) => {
+          console.log("Pinging", homepageUrl, response);
+          
+          if (!isMounted) return;
+          if (!response || response.type === 'opaque' || response.ok) {
+            setLiveStatuses((prev) => ({ ...prev, [repo.id]: 'up' }));
+          } else {
+            setLiveStatuses((prev) => ({ ...prev, [repo.id]: 'down' }));
+          }
+        })
+        .catch(() => {
+          if (isMounted) {
+            setLiveStatuses((prev) => ({ ...prev, [repo.id]: 'down' }));
+          }
+        })
+        .finally(() => {
+          window.clearTimeout(timeoutId);
+        });
+    });
+
+    return () => {
+      isMounted = false;
+      controllers.forEach((controller) => controller.abort());
+    };
+  }, [repos]);
 
   const skills = {
     languages: [
@@ -328,6 +387,11 @@ function App() {
             <div className="projects-grid">
               {repos.slice(0, 6).map((repo) => {
                 const updatedAt = formatUpdatedAt(repo.updated_at);
+                const homepageUrl = normalizeHomepageUrl(repo.homepage);
+                
+                const liveStatus = homepageUrl ? liveStatuses[repo.id] ?? 'checking' : null;
+                console.table([{ name: repo.name, homepage: homepageUrl, updatedAt }]);
+
                 return (
                   <div 
                     key={repo.id} 
@@ -341,7 +405,7 @@ function App() {
                       )}
                     </div>
                     <p className="project-description">
-                      {repo.description || 'No description available'}
+                      {repo.description?.trim() || 'No description available'}
                     </p>
                     {repo.stars !== undefined && repo.stars > 0 && (
                       <div className="project-stats">
@@ -349,6 +413,28 @@ function App() {
                       </div>
                     )}
                     <div className="project-footer">
+                      {homepageUrl && (
+                        liveStatus === 'up' ? (
+                          <a
+                            href={homepageUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="project-live project-live-up"
+                            onClick={(e) => e.stopPropagation()}
+                            aria-label={`Open live site for ${repo.name}`}
+                          >
+                            Live
+                          </a>
+                        ) : liveStatus === 'checking' ? (
+                          <span className="project-live project-live-checking" aria-label="Checking live site status">
+                            Checking…
+                          </span>
+                        ) : (
+                          <span className="project-live project-live-down" aria-label="Live site unavailable">
+                            Down
+                          </span>
+                        )
+                      )}
                       <a 
                         href={repo.html_url} 
                         target="_blank" 

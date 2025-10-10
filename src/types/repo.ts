@@ -6,4 +6,5 @@ export interface Repo {
     language?: string;
     stars?: number;
     updated_at?: string;
+    homepage?: string | null;
 }

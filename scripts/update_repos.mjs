@@ -54,7 +54,8 @@ function transform(repos) {
       id: r.id,
       language: r.language,
       stars: r.stargazers_count,
-      updated_at: r.updated_at
+      updated_at: r.updated_at,
+      homepage: r.homepage && r.homepage.trim().length > 0 ? r.homepage.trim() : null
     }))
     .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
 }
