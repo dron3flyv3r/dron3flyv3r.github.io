@@ -1,5 +1,23 @@
 [
   {
+    "name": "mini-sopa-intent",
+    "description": "Simple intent classification",
+    "html_url": "https://github.com/dron3flyv3r/mini-sopa-intent",
+    "id": 1073929321,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2025-10-10T22:43:52Z"
+  },
+  {
+    "name": "tennis-tournament",
+    "description": null,
+    "html_url": "https://github.com/dron3flyv3r/tennis-tournament",
+    "id": 1070609267,
+    "language": "TypeScript",
+    "stars": 0,
+    "updated_at": "2025-10-06T15:27:13Z"
+  },
+  {
     "name": "webappify",
     "description": "Interactive Fish shell wizard that turns any website into a desktop-ready Linux web app, complete with   launcher, icons, and an optional shared Electron wrapper—one command to package your favorite sites like native applications.",
     "html_url": "https://github.com/dron3flyv3r/webappify",
