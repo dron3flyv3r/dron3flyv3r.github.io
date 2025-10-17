@@ -800,6 +800,17 @@
   margin: 0 auto;
 }
 
+.contact-link {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-secondary);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero-title {

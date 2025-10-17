@@ -30,6 +30,8 @@ function App() {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [shouldRenderDemo, setShouldRenderDemo] = useState(false);
   const demoSectionRef = useRef<HTMLElement | null>(null);
+  const emailRef = useRef<HTMLAnchorElement | null>(null);
+  const heroEmailRef = useRef<HTMLAnchorElement | null>(null);
   const [liveStatuses, setLiveStatuses] = useState<Record<number, 'checking' | 'up' | 'down'>>({});
   const age = Math.floor((new Date().getTime() - new Date(2003, 6, 18).getTime()) / 3.15576e+10);
 
@@ -52,6 +54,23 @@ function App() {
     }, 2000);
 
     return () => window.clearTimeout(timeout);
+  }, []);
+
+  useEffect(() => {
+    const nodes = [emailRef.current, heroEmailRef.current].filter(
+      (node): node is HTMLAnchorElement => Boolean(node)
+    );
+    if (nodes.length === 0) return;
+
+    const encoded = [99, 111, 110, 116, 97, 99, 116, 64, 107, 97, 115, 112, 101, 114, 108, 97, 114, 115, 101, 110, 46, 116, 101, 99, 104];
+    const address = String.fromCharCode(...encoded);
+
+    nodes.forEach((node) => {
+      node.href = `mailto:${address}`;
+      if (node.dataset.showEmail === 'true') {
+        node.textContent = address; // Assemble address at runtime only where we want it visible.
+      }
+    });
   }, []);
 
   useEffect(() => {
@@ -199,6 +218,13 @@ function App() {
                   rel="noopener noreferrer"
                 >
                   LinkedIn
+                </a>
+                <a
+                  className="social-link"
+                  ref={heroEmailRef}
+                  href="#footer-contact"
+                >
+                  Contact
                 </a>
               </div>
             </div>
@@ -463,6 +489,20 @@ function App() {
           <span className="prompt-command">exit</span>
         </div>
         <p>Built with React + TypeScript | Deployed on GitHub Pages</p>
+        <p id="footer-contact">
+          Reach out:
+          {' '}
+          <a
+            ref={emailRef}
+            className="contact-link"
+            data-user="contact"
+            data-domain="kasperlarsen"
+            data-tld="tech"
+            data-show-email="true"
+          >
+            contact [at] kasperlarsen [dot] tech
+          </a>
+        </p>
       </footer>
     </div>
   );
