@@ -1,0 +1,13 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow music files from being indexed
+Disallow: /music/
+
+# Disallow model and data files from being indexed
+Disallow: /model.onnx
+Disallow: /training_summary.json
+
+# Sitemap
+Sitemap: https://dron3flyv3r.github.io/sitemap.xml
