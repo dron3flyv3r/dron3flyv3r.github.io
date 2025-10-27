@@ -10,4 +10,4 @@ Disallow: /model.onnx
 Disallow: /training_summary.json
 
 # Sitemap
-Sitemap: https://dron3flyv3r.github.io/sitemap.xml
+Sitemap: https://kasperlarsen.tech/sitemap.xml
