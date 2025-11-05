@@ -1,5 +1,15 @@
 [
   {
+    "name": "godot-agents-tui",
+    "description": " Rust TUI for training reinforcement learning agents in Godot games. Features real-time metrics, project management, and support for both Stable Baselines3 and RLlib frameworks. Streamlines the entire workflow from training to ONNX export with an intuitive keyboard-driven interface.",
+    "html_url": "https://github.com/dron3flyv3r/godot-agents-tui",
+    "id": 1090591259,
+    "language": "Rust",
+    "stars": 0,
+    "updated_at": "2025-11-05T22:16:00Z",
+    "homepage": null
+  },
+  {
     "name": "tennis-tournament",
     "description": "Simple Tennis Tournament generator, made with the love from vibe-coding. This was just an experiment. ",
     "html_url": "https://github.com/dron3flyv3r/tennis-tournament",
