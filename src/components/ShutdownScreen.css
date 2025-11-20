@@ -1,0 +1,85 @@
+/* Shutdown Screen */
+.shutdown-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: shutdownFadeIn 0.5s ease-out;
+}
+
+@keyframes shutdownFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.shutdown-content {
+    text-align: center;
+    font-family: var(--font-mono);
+    color: #ff5f56;
+}
+
+.shutdown-title {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    letter-spacing: 0.2em;
+    animation: glitch 1s infinite;
+}
+
+.shutdown-message {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xl);
+}
+
+.reboot-btn {
+    background: transparent;
+    border: 1px solid var(--accent-primary);
+    color: var(--accent-primary);
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reboot-btn:hover {
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+    box-shadow: 0 0 20px rgba(0, 212, 170, 0.5);
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}

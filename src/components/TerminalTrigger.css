@@ -1,0 +1,43 @@
+/* Terminal Trigger Button */
+.terminal-trigger {
+    position: fixed;
+    bottom: var(--spacing-lg);
+    right: var(--spacing-lg);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--accent-primary);
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 212, 170, 0.4);
+    cursor: pointer;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.terminal-trigger:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 212, 170, 0.6);
+}
+
+.terminal-trigger:active {
+    transform: scale(0.95);
+}
+
+.terminal-icon {
+    font-family: var(--font-mono);
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--bg-primary);
+}
+
+@media (max-width: 768px) {
+    .terminal-trigger {
+        bottom: var(--spacing-md);
+        right: var(--spacing-md);
+        width: 48px;
+        height: 48px;
+    }
+}

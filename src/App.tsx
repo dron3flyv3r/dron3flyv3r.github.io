@@ -1,6 +1,11 @@
 import { Suspense, lazy, useEffect, useRef, useState } from 'react';
 import { Repo } from './types/repo';
 import './App.css';
+import './components/TerminalTrigger.css';
+import './components/ShutdownScreen.css';
+import NetworkBackground from './components/NetworkBackground';
+import Typewriter from './components/Typewriter';
+import TerminalOverlay from './components/TerminalOverlay';
 
 const loadIntentDemo = () => import('./components/IntentDemo');
 const IntentDemo = lazy(loadIntentDemo);
@@ -33,7 +38,20 @@ function App() {
   const emailRef = useRef<HTMLAnchorElement | null>(null);
   const heroEmailRef = useRef<HTMLAnchorElement | null>(null);
   const [liveStatuses, setLiveStatuses] = useState<Record<number, 'checking' | 'up' | 'down'>>({});
+  const [isTerminalOpen, setIsTerminalOpen] = useState(false);
+  const [isShutdown, setIsShutdown] = useState(false);
   const age = Math.floor((new Date().getTime() - new Date(2003, 6, 18).getTime()) / 3.15576e+10);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === '`' || e.key === '~') {
+        e.preventDefault();
+        setIsTerminalOpen(prev => !prev);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   useEffect(() => {
     fetch('https://raw.githubusercontent.com/dron3flyv3r/dron3flyv3r.github.io/refs/heads/main/public/repos.json')
@@ -122,7 +140,7 @@ function App() {
       fetch(homepageUrl, { method: 'GET' })
         .then((response) => {
           console.log("Pinging", homepageUrl, response);
-          
+
           if (!isMounted) return;
           if (!response || response.type === 'opaque' || response.ok) {
             setLiveStatuses((prev) => ({ ...prev, [repo.id]: 'up' }));
@@ -173,337 +191,373 @@ function App() {
 
   return (
     <div className="app">
-      <header className="terminal-header">
-        <div className="terminal-bar">
-          <div className="terminal-buttons">
-            <span className="terminal-btn close"></span>
-            <span className="terminal-btn minimize"></span>
-            <span className="terminal-btn maximize"></span>
+      {isShutdown ? (
+        <div className="shutdown-screen">
+          <div className="shutdown-content">
+            <h1 className="shutdown-title">SYSTEM HALTED</h1>
+            <p className="shutdown-message">Connection terminated by user.</p>
+            <button className="reboot-btn" onClick={() => setIsShutdown(false)}>
+              INITIALIZE REBOOT SEQUENCE
+            </button>
           </div>
-          <div className="terminal-title">kasper@backend:~$</div>
         </div>
-      </header>
-
-      <main className="container">
-        <section className="hero-section fade-in">
-          <div className="terminal-prompt">
-            <span className="prompt-symbol">$</span>
-            <span className="prompt-command">whoami</span>
-          </div>
-          <div className="hero-content">
-            <div className="hero-text">
-              <h1 className="hero-title">
-                <span className="text-gradient">Kasper Larsen</span>
-              </h1>
-              <p className="hero-subtitle">
-                {age} years old | Robotic Engineering Student
-              </p>
-              <p className="hero-description">
-                Building intelligent systems from the ground up. Specializing in backend infrastructure,
-                AI/ML pipelines, and autonomous decision-making systems.
-              </p>
-              <div className="hero-links">
-                <a
-                  className="social-link"
-                  href="https://github.com/dron3flyv3r"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-                <a
-                  className="social-link"
-                  href="https://www.linkedin.com/in/kasper-horn-larsen-9146a4238/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </a>
-                <a
-                  className="social-link"
-                  ref={heroEmailRef}
-                  href="#footer-contact"
-                >
-                  Contact
-                </a>
+      ) : (
+        <>
+          <NetworkBackground />
+          <TerminalOverlay isOpen={isTerminalOpen} onClose={() => setIsTerminalOpen(false)} />
+          <header className="terminal-header">
+            <div className="terminal-bar">
+              <div className="terminal-buttons">
+                <span className="terminal-btn close" onClick={() => setIsShutdown(true)}></span>
+                <span className="terminal-btn minimize" onClick={() => setIsTerminalOpen(prev => !prev)}></span>
+                <span className="terminal-btn maximize" onClick={() => setIsTerminalOpen(true)}></span>
               </div>
+              <div className="terminal-title">kasper@backend:~$</div>
             </div>
-            <div className="hero-image">
-              <img src="/profile.jpg" alt="Kasper Larsen" className="profile-photo" />
-            </div>
-          </div>
-        </section>
+          </header>
 
-        <section className="about-section fade-in">
-          <div className="terminal-prompt">
-            <span className="prompt-symbol">$</span>
-            <span className="prompt-command">cat aboutme.txt</span>
-          </div>
+          <main className="container">
+            <section className="hero-section fade-in">
+              <div className="terminal-prompt">
+                <span className="prompt-symbol">$</span>
+                <span className="prompt-command">
+                  <Typewriter text="whoami" delay={500} />
+                </span>
+              </div>
+              <div className="hero-content">
+                <div className="hero-text">
+                  <h1 className="hero-title">
+                    <span className="text-gradient">Kasper Larsen</span>
+                  </h1>
+                  <p className="hero-subtitle">
+                    {age} years old | Robotic Engineering Student
+                  </p>
+                  <p className="hero-description">
+                    Building intelligent systems from the ground up. Specializing in backend infrastructure,
+                    AI/ML pipelines, and autonomous decision-making systems.
+                  </p>
+                  <div className="hero-links">
+                    <a
+                      className="social-link"
+                      href="https://github.com/dron3flyv3r"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
+                    <a
+                      className="social-link"
+                      href="https://www.linkedin.com/in/kasper-horn-larsen-9146a4238/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LinkedIn
+                    </a>
+                    <a
+                      className="social-link"
+                      ref={heroEmailRef}
+                      href="#footer-contact"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                </div>
+                <div className="hero-image">
+                  <img src="/profile.jpg" alt="Kasper Larsen" className="profile-photo" />
+                </div>
+              </div>
+            </section>
 
-          <div className="about-content">
-          <p>
-            I'm an engineering student driven by the idea of creating systems that think, learn, and adapt. 
-            My work lives where robotics, artificial intelligence, and software design overlap — building tools that feel alive rather than automated.
-          </p>
-          <p>
-            At the center of that vision is SOPA, a smart assistant built to reason and respond on its own. 
-            I design its logic, train its models, and shape the interactions so it feels cohesive — an ecosystem that understands context instead of following scripts.
-          </p>
-          <p>
-            Whether I’m building autonomous behaviors or experimenting with new interfaces, I’m exploring how intelligence and design can merge into something natural, efficient, and quietly powerful.
-          </p>
-        </div>
+            <section className="about-section fade-in">
+              <div className="terminal-prompt">
+                <span className="prompt-symbol">$</span>
+                <span className="prompt-command">
+                  <Typewriter text="cat aboutme.txt" />
+                </span>
+              </div>
 
-        </section>
+              <div className="about-content">
+                <p>
+                  I'm an engineering student driven by the idea of creating systems that think, learn, and adapt.
+                  My work lives where robotics, artificial intelligence, and software design overlap — building tools that feel alive rather than automated.
+                </p>
+                <p>
+                  At the center of that vision is SOPA, a smart assistant built to reason and respond on its own.
+                  I design its logic, train its models, and shape the interactions so it feels cohesive — an ecosystem that understands context instead of following scripts.
+                </p>
+                <p>
+                  Whether I’m building autonomous behaviors or experimenting with new interfaces, I’m exploring how intelligence and design can merge into something natural, efficient, and quietly powerful.
+                </p>
+              </div>
 
-        <section className="skills-section slide-in-left">
-          <div className="terminal-prompt">
-            <span className="prompt-symbol">$</span>
-            <span className="prompt-command">cat skills.json</span>
-          </div>
-          
-          <div className="skills-grid">
-            <div className="skill-card">
-              <h3 className="skill-title">
-                <span className="skill-icon">💻</span>
-                Languages
-              </h3>
-              <div className="skill-list">
-                {skills.languages.map(lang => (
-                  <div key={lang.name} className="skill-item">
-                    <div className="skill-bar-container">
-                      <div className="skill-name">{lang.name}</div>
-                      <div className="skill-level" style={{ color: lang.color }}>
-                        {lang.level}
+            </section>
+
+            <section className="skills-section slide-in-left">
+              <div className="terminal-prompt">
+                <span className="prompt-symbol">$</span>
+                <span className="prompt-command">
+                  <Typewriter text="cat skills.json" />
+                </span>
+              </div>
+
+              <div className="skills-grid">
+                <div className="skill-card">
+                  <h3 className="skill-title">
+                    <span className="skill-icon">💻</span>
+                    Languages
+                  </h3>
+                  <div className="skill-list">
+                    {skills.languages.map(lang => (
+                      <div key={lang.name} className="skill-item">
+                        <div className="skill-bar-container">
+                          <div className="skill-name">{lang.name}</div>
+                          <div className="skill-level" style={{ color: lang.color }}>
+                            {lang.level}
+                          </div>
+                        </div>
+                        <div className="skill-bar">
+                          <div
+                            className="skill-bar-fill"
+                            style={{
+                              backgroundColor: lang.color,
+                              width: lang.level === 'Expert' ? '100%' :
+                                lang.level === 'Proficient' ? '80%' :
+                                  lang.level === 'Intermediate' ? '60%' :
+                                    lang.level === 'Knowledgeable' ? '20%'
+                                      : '0%'
+                            }}
+                          ></div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="skill-bar">
-                      <div 
-                        className="skill-bar-fill" 
-                        style={{ 
-                          backgroundColor: lang.color,
-                          width: lang.level === 'Expert' ? '100%' :
-                                 lang.level === 'Proficient' ? '80%' :
-                                 lang.level === 'Intermediate' ? '60%' :
-                                 lang.level === 'Knowledgeable' ? '20%'
-                                  : '0%'
-                        }}
-                      ></div>
-                    </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-            </div>
+                </div>
 
-            <div className="skill-card">
-              <h3 className="skill-title">
-                <span className="skill-icon">🛠️</span>
-                DevOps & Tools
-              </h3>
-              <div className="skill-list">
-                {skills.tools.map(tool => (
-                  <div key={tool.name} className="tool-item">
-                    <span className="tool-icon">{tool.icon}</span>
-                    <span className="tool-name">{tool.name}</span>
+                <div className="skill-card">
+                  <h3 className="skill-title">
+                    <span className="skill-icon">🛠️</span>
+                    DevOps & Tools
+                  </h3>
+                  <div className="skill-list">
+                    {skills.tools.map(tool => (
+                      <div key={tool.name} className="tool-item">
+                        <span className="tool-icon">{tool.icon}</span>
+                        <span className="tool-name">{tool.name}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-            </div>
+                </div>
 
-            <div className="skill-card">
-              <h3 className="skill-title">
-                <span className="skill-icon">🧠</span>
-                AI & Machine Learning
-              </h3>
-              <div className="skill-list">
-                {skills.ai.map(item => (
-                  <div key={item.name} className="ai-item">
-                    <span className="ai-icon">{item.icon}</span>
-                    <span className="ai-name">{item.name}</span>
+                <div className="skill-card">
+                  <h3 className="skill-title">
+                    <span className="skill-icon">🧠</span>
+                    AI & Machine Learning
+                  </h3>
+                  <div className="skill-list">
+                    {skills.ai.map(item => (
+                      <div key={item.name} className="ai-item">
+                        <span className="ai-icon">{item.icon}</span>
+                        <span className="ai-name">{item.name}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
+            </section>
 
-        <section className="sopa-section slide-in-right" ref={demoSectionRef}>
-          <div className="terminal-prompt">
-            <span className="prompt-symbol">$</span>
-            <span className="prompt-command">./showcase_sopa.sh</span>
-          </div>
-          
-          <div className="sopa-card">
-            <h2 className="sopa-title">
-              <span className="text-gradient">SOPA</span> - Smart Operational Personal Assistant
-            </h2>
-            <p className="sopa-description">
-              SOPA is an adaptive AI system that connects intelligence, automation, and design into a single ecosystem capable of understanding context, making decisions, and acting autonomously.
-            </p>
-            
-            <div className="sopa-disclaimer">
-              <strong>ℹ️ About this demo:</strong> This showcases a real ONNX-based intent classification system.
-              The model was trained on smart-home SOPA interactions and runs entirely in your browser using ONNX Runtime Web.
-              <ul>
-                <li>Real-time inference with 26MB ONNX model</li>
-                <li>tiktoken tokenization (o200k_base vocabulary)</li>
-                <li>12 intent classes for smart home commands</li>
-                <li>Text normalization and lemmatization preprocessing</li>
-              </ul>
-              <p>
-                Curious about the training pipeline? Explore the full notebooks and scripts at{' '}
-                <a
-                  href="https://github.com/dron3flyv3r/mini-sopa-intent"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  dron3flyv3r/mini-sopa-intent
-                </a>.
-              </p>
-              The full SOPA system extends this with advanced NLU pipelines, reinforcement learning,
-              voice processing, and dynamic behavior trees.
-            </div>
-
-            {shouldRenderDemo ? (
-              <Suspense
-                fallback={
-                  <div className="intent-demo">
-                    <div className="model-loading">
-                      <div className="loading-spinner"></div>
-                      <span>Preparing interactive demo...</span>
-                    </div>
-                  </div>
-                }
-              >
-                <IntentDemo />
-              </Suspense>
-            ) : (
-              <div className="intent-demo intent-demo-placeholder">
-                <p>Interactive intent classifier loads on demand to keep the page fast.</p>
-                <p className="intent-demo-note">Downloads ~26&nbsp;MB ONNX model when activated.</p>
-                <button
-                  className="demo-button"
-                  onClick={() => {
-                    loadIntentDemo();
-                    setShouldRenderDemo(true);
-                  }}
-                >
-                  Load Interactive Demo
-                </button>
+            <section className="sopa-section slide-in-right" ref={demoSectionRef}>
+              <div className="terminal-prompt">
+                <span className="prompt-symbol">$</span>
+                <span className="prompt-command">
+                  <Typewriter text="./showcase_sopa.sh" />
+                </span>
               </div>
-            )}
-          </div>
-        </section>
 
-        <section className="projects-section fade-in">
-          <div className="terminal-prompt">
-            <span className="prompt-symbol">$</span>
-            <span className="prompt-command">git log --all --graph</span>
-          </div>
-          
-          <h2 className="section-title">Recent Projects</h2>
-          
-          {loading ? (
-            <div className="loading">
-              <div className="loading-spinner"></div>
-              <span>Loading repositories...</span>
-            </div>
-          ) : (
-            <div className="projects-grid">
-              {repos.slice(0, 6).map((repo) => {
-                const updatedAt = formatUpdatedAt(repo.updated_at);
-                const homepageUrl = normalizeHomepageUrl(repo.homepage);
-                
-                const liveStatus = homepageUrl ? liveStatuses[repo.id] ?? 'checking' : null;
-                console.table([{ name: repo.name, homepage: homepageUrl, updatedAt }]);
+              <div className="sopa-card">
+                <h2 className="sopa-title">
+                  <span className="text-gradient">SOPA</span> - Smart Operational Personal Assistant
+                </h2>
+                <p className="sopa-description">
+                  SOPA is an adaptive AI system that connects intelligence, automation, and design into a single ecosystem capable of understanding context, making decisions, and acting autonomously.
+                </p>
 
-                return (
-                  <div 
-                    key={repo.id} 
-                    className="project-card"
-                    onClick={() => setSelectedProject(selectedProject === repo.name ? null : repo.name)}
+                <div className="sopa-disclaimer">
+                  <strong>ℹ️ About this demo:</strong> This showcases a real ONNX-based intent classification system.
+                  The model was trained on smart-home SOPA interactions and runs entirely in your browser using ONNX Runtime Web.
+                  <ul>
+                    <li>Real-time inference with 26MB ONNX model</li>
+                    <li>tiktoken tokenization (o200k_base vocabulary)</li>
+                    <li>12 intent classes for smart home commands</li>
+                    <li>Text normalization and lemmatization preprocessing</li>
+                  </ul>
+                  <p>
+                    Curious about the training pipeline? Explore the full notebooks and scripts at{' '}
+                    <a
+                      href="https://github.com/dron3flyv3r/mini-sopa-intent"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      dron3flyv3r/mini-sopa-intent
+                    </a>.
+                  </p>
+                  The full SOPA system extends this with advanced NLU pipelines, reinforcement learning,
+                  voice processing, and dynamic behavior trees.
+                </div>
+
+                {shouldRenderDemo ? (
+                  <Suspense
+                    fallback={
+                      <div className="intent-demo">
+                        <div className="model-loading">
+                          <div className="loading-spinner"></div>
+                          <span>Preparing interactive demo...</span>
+                        </div>
+                      </div>
+                    }
                   >
-                    <div className="project-header">
-                      <h3 className="project-name">{repo.name}</h3>
-                      {repo.language && (
-                        <span className="project-language">{repo.language}</span>
-                      )}
-                    </div>
-                    <p className="project-description">
-                      {repo.description?.trim() || 'No description available'}
-                    </p>
-                    {repo.stars !== undefined && repo.stars > 0 && (
-                      <div className="project-stats">
-                        <span className="project-stars">⭐ {repo.stars}</span>
-                      </div>
-                    )}
-                    <div className="project-footer">
-                      {homepageUrl && (
-                        liveStatus === 'up' ? (
+                    <IntentDemo />
+                  </Suspense>
+                ) : (
+                  <div className="intent-demo intent-demo-placeholder">
+                    <p>Interactive intent classifier loads on demand to keep the page fast.</p>
+                    <p className="intent-demo-note">Downloads ~26&nbsp;MB ONNX model when activated.</p>
+                    <button
+                      className="demo-button"
+                      onClick={() => {
+                        loadIntentDemo();
+                        setShouldRenderDemo(true);
+                      }}
+                    >
+                      Load Interactive Demo
+                    </button>
+                  </div>
+                )}
+              </div>
+            </section>
+
+            <section className="projects-section fade-in">
+              <div className="terminal-prompt">
+                <span className="prompt-symbol">$</span>
+                <span className="prompt-command">
+                  <Typewriter text="git log --all --graph" />
+                </span>
+              </div>
+
+              <h2 className="section-title">Recent Projects</h2>
+
+              {loading ? (
+                <div className="loading">
+                  <div className="loading-spinner"></div>
+                  <span>Loading repositories...</span>
+                </div>
+              ) : (
+                <div className="projects-grid">
+                  {repos.slice(0, 6).map((repo) => {
+                    const updatedAt = formatUpdatedAt(repo.updated_at);
+                    const homepageUrl = normalizeHomepageUrl(repo.homepage);
+
+                    const liveStatus = homepageUrl ? liveStatuses[repo.id] ?? 'checking' : null;
+                    console.table([{ name: repo.name, homepage: homepageUrl, updatedAt }]);
+
+                    return (
+                      <div
+                        key={repo.id}
+                        className="project-card"
+                        onClick={() => setSelectedProject(selectedProject === repo.name ? null : repo.name)}
+                      >
+                        <div className="project-header">
+                          <h3 className="project-name">{repo.name}</h3>
+                          {repo.language && (
+                            <span className="project-language">{repo.language}</span>
+                          )}
+                        </div>
+                        <p className="project-description">
+                          {repo.description?.trim() || 'No description available'}
+                        </p>
+                        {repo.stars !== undefined && repo.stars > 0 && (
+                          <div className="project-stats">
+                            <span className="project-stars">⭐ {repo.stars}</span>
+                          </div>
+                        )}
+                        <div className="project-footer">
+                          {homepageUrl && (
+                            liveStatus === 'up' ? (
+                              <a
+                                href={homepageUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-live project-live-up"
+                                onClick={(e) => e.stopPropagation()}
+                                aria-label={`Open live site for ${repo.name}`}
+                              >
+                                Live
+                              </a>
+                            ) : liveStatus === 'checking' ? (
+                              <span className="project-live project-live-checking" aria-label="Checking live site status">
+                                Checking…
+                              </span>
+                            ) : (
+                              <span className="project-live project-live-down" aria-label="Live site unavailable">
+                                Down
+                              </span>
+                            )
+                          )}
                           <a
-                            href={homepageUrl}
+                            href={repo.html_url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="project-live project-live-up"
+                            className="project-link"
                             onClick={(e) => e.stopPropagation()}
-                            aria-label={`Open live site for ${repo.name}`}
                           >
-                            Live
+                            View on GitHub →
                           </a>
-                        ) : liveStatus === 'checking' ? (
-                          <span className="project-live project-live-checking" aria-label="Checking live site status">
-                            Checking…
-                          </span>
-                        ) : (
-                          <span className="project-live project-live-down" aria-label="Live site unavailable">
-                            Down
-                          </span>
-                        )
-                      )}
-                      <a 
-                        href={repo.html_url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="project-link"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        View on GitHub →
-                      </a>
-                      {updatedAt && (
-                        <span className="project-updated" aria-label={`Last updated ${updatedAt}`}>
-                          {updatedAt}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-        </section>
-      </main>
+                          {updatedAt && (
+                            <span className="project-updated" aria-label={`Last updated ${updatedAt}`}>
+                              {updatedAt}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </section>
+          </main>
 
-      <footer className="footer">
-        <div className="terminal-prompt">
-          <span className="prompt-symbol">$</span>
-          <span className="prompt-command">exit</span>
-        </div>
-        <p>Built with React + TypeScript | Deployed on GitHub Pages</p>
-        <p id="footer-contact">
-          Reach out:
-          {' '}
-          <a
-            ref={emailRef}
-            className="contact-link"
-            data-user="contact"
-            data-domain="kasperlarsen"
-            data-tld="tech"
-            data-show-email="true"
+          <footer className="footer">
+            <div className="terminal-prompt">
+              <span className="prompt-symbol">$</span>
+              <span className="prompt-command">
+                <Typewriter text="exit" />
+              </span>
+            </div>
+            <p>Built with React + TypeScript | Deployed on GitHub Pages</p>
+            <p id="footer-contact">
+              Reach out:
+              {' '}
+              <a
+                ref={emailRef}
+                className="contact-link"
+                data-user="contact"
+                data-domain="kasperlarsen"
+                data-tld="tech"
+                data-show-email="true"
+              >
+                contact [at] kasperlarsen [dot] tech
+              </a>
+            </p>
+          </footer>
+
+          <button
+            className="terminal-trigger"
+            onClick={() => setIsTerminalOpen(true)}
+            aria-label="Open Terminal"
           >
-            contact [at] kasperlarsen [dot] tech
-          </a>
-        </p>
-      </footer>
+            <span className="terminal-icon">_&gt;</span>
+          </button>
+        </>
+      )}
     </div>
   );
 }
