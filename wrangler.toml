@@ -1,0 +1,4 @@
+name = "portfolio-curl"
+main = "workers/curl-worker.js"
+compatibility_date = "2025-11-17"
+placement.mode = "smart"

@@ -1,43 +1,57 @@
 /**
  * Cloudflare Worker to serve a raw text profile for curl requests.
- * 
- * INSTRUCTIONS:
- * 1. Go to Cloudflare Dashboard > Workers & Pages > Create Application > Create Worker.
- * 2. Name it 'portfolio-curl' (or similar).
- * 3. Click 'Deploy'.
- * 4. Click 'Edit code'.
- * 5. Paste this entire file content into the editor (replace existing code).
- * 6. Click 'Deploy' again.
- * 7. Go to your domain (kasperlarsen.tech) in Cloudflare > Workers Routes.
- * 8. Add route: `kasperlarsen.tech/*` -> Service: `portfolio-curl`.
  */
+
+const PROFILE_TEXT = `
+   __ __                             
+  / //_/__ ____dron3flyv3r____ ____ 
+ / ,< / _ \`(_-< _ \\/ -_) __/ // /
+/_/|_|\\_,_/___/ .__/\\__/_/  \\_, / 
+             /_/           /___/  
+
+> Kasper Larsen
+> Robotic Engineering Student | Backend & AI Systems
+
+----------------------------------------
+[ ABOUT ]
+I build intelligent systems that think, learn, and adapt.
+Focusing on the intersection of robotics, AI, and backend infrastructure.
+
+[ SKILLS ]
+Languages:  Python, C++, SQL, TypeScript, Bash
+AI/ML:      PyTorch, RL, NLP, Computer Vision
+Tools:      Linux, Docker, Git, MySQL
+
+[ PROJECTS ]
+* SOPA: Smart Operational Personal Assistant (AI/NLU)
+* dron3flyv3r.github.io: This portfolio (React + Vite)
+... and many more on GitHub.
+
+[ CONTACT ]
+Email:    contact@kasperlarsen.tech
+GitHub:   https://github.com/dron3flyv3r
+LinkedIn: https://www.linkedin.com/in/kasper-horn-larsen-9146a4238/
+Web:      https://kasperlarsen.tech
+
+----------------------------------------
+Run 'curl -L kasperlarsen.tech/card' for this card.
+`;
 
 export default {
     async fetch(request, env, ctx) {
         const userAgent = request.headers.get('User-Agent') || '';
-        const url = new URL(request.url);
 
         // Check if the request is from curl
         if (userAgent.toLowerCase().includes('curl')) {
-            // Fetch the raw text file from your static site
-            // Ensure this URL points to where your curl.txt is hosted
-            const curlUrl = `${url.origin}/curl.txt`;
-
-            const response = await fetch(curlUrl);
-
-            if (response.ok) {
-                const text = await response.text();
-                return new Response(text, {
-                    headers: {
-                        'content-type': 'text/plain; charset=utf-8',
-                        // Add cache control to prevent stale content
-                        'cache-control': 'public, max-age=60',
-                    },
-                });
-            }
+            return new Response(PROFILE_TEXT, {
+                headers: {
+                    'content-type': 'text/plain; charset=utf-8',
+                    'cache-control': 'public, max-age=60',
+                },
+            });
         }
 
-        // If not curl, or if fetch failed, pass the request through to the website
+        // If not curl, pass the request through to the website
         return fetch(request);
     },
 };
