@@ -5,8 +5,18 @@
     "html_url": "https://github.com/dron3flyv3r/godot-agents-tui",
     "id": 1090591259,
     "language": "Rust",
+    "stars": 1,
+    "updated_at": "2025-11-25T17:17:30Z",
+    "homepage": null
+  },
+  {
+    "name": "tanks--rl-agent",
+    "description": null,
+    "html_url": "https://github.com/dron3flyv3r/tanks--rl-agent",
+    "id": 1098368959,
+    "language": "GDScript",
     "stars": 0,
-    "updated_at": "2025-11-05T22:16:00Z",
+    "updated_at": "2025-11-17T15:47:32Z",
     "homepage": null
   },
   {
