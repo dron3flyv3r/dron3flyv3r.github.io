@@ -1,5 +1,5 @@
 import { Suspense, lazy, useEffect, useRef, useState } from 'react';
-import { Repo } from './types/repo';
+import { FeaturedRepo, Repo, TimelineItem } from './types/repo';
 import './App.css';
 import './components/TerminalTrigger.css';
 import './components/ShutdownScreen.css';
@@ -32,6 +32,10 @@ const normalizeHomepageUrl = (url?: string | null): string | null => {
 function App() {
   const [repos, setRepos] = useState<Repo[]>([]);
   const [loading, setLoading] = useState(true);
+  const [featuredRepos, setFeaturedRepos] = useState<FeaturedRepo[]>([]);
+  const [featuredLoading, setFeaturedLoading] = useState(true);
+  const [timeline, setTimeline] = useState<TimelineItem[]>([]);
+  const [timelineLoading, setTimelineLoading] = useState(true);
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [shouldRenderDemo, setShouldRenderDemo] = useState(false);
   const demoSectionRef = useRef<HTMLElement | null>(null);
@@ -53,8 +57,13 @@ function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
+  const useLocalRepoData = import.meta.env.VITE_USE_LOCAL_REPOS === 'true';
+  const repoDataBase = useLocalRepoData
+    ? ''
+    : 'https://raw.githubusercontent.com/dron3flyv3r/dron3flyv3r.github.io/refs/heads/main';
+
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/dron3flyv3r/dron3flyv3r.github.io/refs/heads/main/public/repos.json')
+    fetch(`${repoDataBase}/public/repos.json`)
       .then(res => res.json())
       .then((data: Repo[]) => {
         setRepos(data);
@@ -63,6 +72,32 @@ function App() {
       .catch(err => {
         console.error('Failed to load repos:', err);
         setLoading(false);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch(`${repoDataBase}/public/featured.json`)
+      .then(res => res.json())
+      .then((data: FeaturedRepo[]) => {
+        setFeaturedRepos(data);
+        setFeaturedLoading(false);
+      })
+      .catch(err => {
+        console.error('Failed to load featured repos:', err);
+        setFeaturedLoading(false);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch(`${repoDataBase}/public/timeline.json`)
+      .then(res => res.json())
+      .then((data: TimelineItem[]) => {
+        setTimeline(data);
+        setTimelineLoading(false);
+      })
+      .catch(err => {
+        console.error('Failed to load timeline:', err);
+        setTimelineLoading(false);
       });
   }, []);
 
@@ -118,12 +153,22 @@ function App() {
   }, [shouldRenderDemo]);
 
   useEffect(() => {
-    if (repos.length === 0) return;
+    if (repos.length === 0 && featuredRepos.length === 0) return;
 
     let isMounted = true;
     const controllers: AbortController[] = [];
 
+    const statusTargets = new Map<number, Repo>();
+
+    featuredRepos.forEach((repo) => {
+      statusTargets.set(repo.id, repo);
+    });
+
     repos.slice(0, 6).forEach((repo) => {
+      statusTargets.set(repo.id, repo);
+    });
+
+    statusTargets.forEach((repo) => {
       const homepageUrl = normalizeHomepageUrl(repo.homepage);
       if (!homepageUrl) return;
 
@@ -162,7 +207,7 @@ function App() {
       isMounted = false;
       controllers.forEach((controller) => controller.abort());
     };
-  }, [repos]);
+  }, [repos, featuredRepos]);
 
   const skills = {
     languages: [
@@ -435,6 +480,128 @@ function App() {
               </div>
             </section>
 
+            <section className="timeline-section fade-in">
+              <div className="terminal-prompt">
+                <span className="prompt-symbol">$</span>
+                <span className="prompt-command">
+                  <Typewriter text="cat timeline.json" />
+                </span>
+              </div>
+
+              <h2 className="section-title">Timeline</h2>
+
+              {timelineLoading ? (
+                <div className="loading">
+                  <div className="loading-spinner"></div>
+                  <span>Loading timeline...</span>
+                </div>
+              ) : timeline.length === 0 ? (
+                <div className="timeline-empty">
+                  Timeline not populated yet. Update <code>public/timeline.json</code> in the repo.
+                </div>
+              ) : (
+                <div className="timeline-list">
+                  {timeline.map((item) => (
+                    <article key={`${item.year}-${item.title}`} className="timeline-item">
+                      <div className="timeline-year">{item.year}</div>
+                      <div className="timeline-content">
+                        <h3 className="timeline-title">{item.title}</h3>
+                        <p className="timeline-description">{item.description}</p>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              )}
+            </section>
+
+            <section className="featured-section fade-in">
+              <div className="terminal-prompt">
+                <span className="prompt-symbol">$</span>
+                <span className="prompt-command">
+                  <Typewriter text="cat featured.json" />
+                </span>
+              </div>
+
+              <h2 className="section-title">Featured Work</h2>
+
+              {featuredLoading ? (
+                <div className="loading">
+                  <div className="loading-spinner"></div>
+                  <span>Loading featured repositories...</span>
+                </div>
+              ) : featuredRepos.length === 0 ? (
+                <div className="featured-empty">
+                  No featured repos yet. Add them to <code>data/featured.json</code> and run <code>scripts/update_repos.mjs</code>.
+                </div>
+              ) : (
+                <div className="featured-grid">
+                  {featuredRepos.map((repo) => {
+                    const updatedAt = formatUpdatedAt(repo.updated_at);
+                    const homepageUrl = normalizeHomepageUrl(repo.homepage);
+                    const liveStatus = homepageUrl ? liveStatuses[repo.id] ?? 'checking' : null;
+
+                    return (
+                      <div key={repo.id} className="featured-card">
+                        <div className="project-header">
+                          <h3 className="project-name">{repo.name}</h3>
+                          {repo.language && (
+                            <span className="project-language">{repo.language}</span>
+                          )}
+                        </div>
+                        <p className="project-description">
+                          {repo.blurb?.trim() || repo.description?.trim() || 'No description available'}
+                        </p>
+                        {repo.highlight && (
+                          <div className="featured-highlight">{repo.highlight}</div>
+                        )}
+                        {repo.stars !== undefined && repo.stars > 0 && (
+                          <div className="project-stats">
+                            <span className="project-stars">⭐ {repo.stars}</span>
+                          </div>
+                        )}
+                        <div className="project-footer">
+                          {homepageUrl && (
+                            liveStatus === 'up' ? (
+                              <a
+                                href={homepageUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-live project-live-up"
+                                aria-label={`Open live site for ${repo.name}`}
+                              >
+                                Live
+                              </a>
+                            ) : liveStatus === 'checking' ? (
+                              <span className="project-live project-live-checking" aria-label="Checking live site status">
+                                Checking…
+                              </span>
+                            ) : (
+                              <span className="project-live project-live-down" aria-label="Live site unavailable">
+                                Down
+                              </span>
+                            )
+                          )}
+                          <a
+                            href={repo.html_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="project-link"
+                          >
+                            View on GitHub →
+                          </a>
+                          {updatedAt && (
+                            <span className="project-updated" aria-label={`Last updated ${updatedAt}`}>
+                              {updatedAt}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </section>
+
             <section className="projects-section fade-in">
               <div className="terminal-prompt">
                 <span className="prompt-symbol">$</span>
@@ -523,6 +690,7 @@ function App() {
                 </div>
               )}
             </section>
+
           </main>
 
           <footer className="footer">

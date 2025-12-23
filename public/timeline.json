@@ -1,0 +1,32 @@
+[
+  {
+    "year": "2021",
+    "title": "Hello, World",
+    "description": "The year I started taking programming seriously, building fundamentals in problem-solving and software thinking."
+  },
+  {
+    "year": "2022",
+    "title": "Java, Python, and First AI",
+    "description": "Java was my first primary language, followed by Python. I built my first AI projects and discovered a strong interest in intelligent systems."
+  },
+  {
+    "year": "2023",
+    "title": "The Rise of AI & SOPA",
+    "description": "Marked the beginning of SOPA—my independent, autonomous AI home/smart assistant. Focused on system architecture, intent recognition, and long-running background protocols. Planned as open-source once mature."
+  },
+  {
+    "year": "2024",
+    "title": "Tools, Systems, and SOPA-MK4",
+    "description": "Shifted toward building developer tools and internal frameworks. SOPA-MK4 emphasized modularity, scalability, and cross-platform compatibility. Heavy focus on Linux, automation, and system integration."
+  },
+  {
+    "year": "2025",
+    "title": "Cloud, Web, and Reinforcement Learning",
+    "description": "Expanded into cloud infrastructure and web interfaces to make SOPA accessible anywhere. Deepened work with Reinforcement Learning to move from reactive behavior toward autonomous decision-making."
+  },
+  {
+    "year": "2026",
+    "title": "Autonomy, Robotics, and Intelligence at Scale",
+    "description": "Focused on advanced autonomy: behavior trees, learning-driven decision systems, and robotics integration. Bridging AI, control systems, and real-world interaction."
+  }
+]

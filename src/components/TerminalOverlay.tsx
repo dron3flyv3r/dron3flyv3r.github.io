@@ -22,8 +22,8 @@ const TerminalOverlay: React.FC<TerminalOverlayProps> = ({ isOpen, onClose }) =>
 
     const commands = ['help', 'ls', 'cd', 'cat', 'whoami', 'su', 'clear', 'exit'];
     const fileSystem = {
-        dirs: ['about', 'skills', 'projects', 'sopa'],
-        files: ['contact.txt', 'resume.pdf', 'aboutme.txt', 'skills.json']
+        dirs: ['about', 'skills', 'timeline', 'featured', 'projects', 'sopa'],
+        files: ['contact.txt', 'resume.pdf', 'aboutme.txt', 'skills.json', 'featured.json', 'timeline.json']
     };
 
     useEffect(() => {
@@ -83,6 +83,8 @@ const TerminalOverlay: React.FC<TerminalOverlayProps> = ({ isOpen, onClose }) =>
                     const sectionMap: Record<string, string> = {
                         'about': '.about-section',
                         'skills': '.skills-section',
+                        'timeline': '.timeline-section',
+                        'featured': '.featured-section',
                         'projects': '.projects-section',
                         'sopa': '.sopa-section'
                     };
@@ -115,6 +117,10 @@ const TerminalOverlay: React.FC<TerminalOverlayProps> = ({ isOpen, onClose }) =>
                         output = "I'm an engineering student driven by the idea of creating systems that think, learn, and adapt.";
                     } else if (file === 'skills.json') {
                         output = '{ "languages": ["Python", "C++", "SQL", "TS"], "ai": ["PyTorch", "RL", "NLP"] }';
+                    } else if (file === 'featured.json') {
+                        output = '{ "featured": ["mini-sopa-intent", "godot-agents-tui"] }';
+                    } else if (file === 'timeline.json') {
+                        output = '[{ "year": "2024", "title": "SOPA R&D", "description": "Built intent pipeline + UI." }]';
                     } else {
                         output = `File not found: ${file}`;
                     }

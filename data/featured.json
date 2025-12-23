@@ -1,0 +1,12 @@
+[
+  {
+    "name": "NodeSystem-MK1-OpenCV",
+    "highlight": "openCV, python, imgui",
+    "priority": 50
+  },
+  {
+    "name": "godot-agents-tui",
+    "highlight": "rust, tui, godot-rl",
+    "priority": 5
+  }
+]
