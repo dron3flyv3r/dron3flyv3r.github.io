@@ -1,0 +1,28 @@
+[
+  {
+    "name": "godot-agents-tui",
+    "description": " Rust TUI for training reinforcement learning agents in Godot games. Features real-time metrics, project management, and support for both Stable Baselines3 and RLlib frameworks. Streamlines the entire workflow from training to ONNX export with an intuitive keyboard-driven interface.",
+    "html_url": "https://github.com/dron3flyv3r/godot-agents-tui",
+    "id": 1090591259,
+    "language": "Rust",
+    "stars": 1,
+    "updated_at": "2025-12-21T22:04:36Z",
+    "homepage": null,
+    "blurb": null,
+    "highlight": "rust, tui, godot-rl",
+    "priority": 5
+  },
+  {
+    "name": "NodeSystem-MK1-OpenCV",
+    "description": "This is a simple node-based implementation of OpenCV.",
+    "html_url": "https://github.com/dron3flyv3r/NodeSystem-MK1-OpenCV",
+    "id": 872130004,
+    "language": "Python",
+    "stars": 0,
+    "updated_at": "2024-12-12T17:31:09Z",
+    "homepage": null,
+    "blurb": null,
+    "highlight": "openCV, python, imgui",
+    "priority": 50
+  }
+]

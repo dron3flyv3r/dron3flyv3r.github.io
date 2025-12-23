@@ -5,8 +5,28 @@
     "html_url": "https://github.com/dron3flyv3r/godot-agents-tui",
     "id": 1090591259,
     "language": "Rust",
+    "stars": 1,
+    "updated_at": "2025-12-21T22:04:36Z",
+    "homepage": null
+  },
+  {
+    "name": "tanks--rl-agent",
+    "description": null,
+    "html_url": "https://github.com/dron3flyv3r/tanks--rl-agent",
+    "id": 1098368959,
+    "language": "GDScript",
     "stars": 0,
-    "updated_at": "2025-11-05T22:16:00Z",
+    "updated_at": "2025-12-20T20:37:25Z",
+    "homepage": null
+  },
+  {
+    "name": "adventofcode",
+    "description": "I wanted to learn Rust, so I decided to solve the Advent of Code 2025 puzzles using Rust. This repository contains my solutions for each day's challenges.",
+    "html_url": "https://github.com/dron3flyv3r/adventofcode",
+    "id": 1108755879,
+    "language": "Rust",
+    "stars": 0,
+    "updated_at": "2025-12-02T21:57:16Z",
     "homepage": null
   },
   {
