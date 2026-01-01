@@ -1,5 +1,15 @@
 [
   {
+    "name": "tennis-tournament",
+    "description": "Simple Tennis Tournament generator, made with the love from vibe-coding. This was just an experiment. ",
+    "html_url": "https://github.com/dron3flyv3r/tennis-tournament",
+    "id": 1070609267,
+    "language": "TypeScript",
+    "stars": 0,
+    "updated_at": "2025-12-26T00:10:43Z",
+    "homepage": "https://tennis.kasperlarsen.tech"
+  },
+  {
     "name": "godot-agents-tui",
     "description": " Rust TUI for training reinforcement learning agents in Godot games. Features real-time metrics, project management, and support for both Stable Baselines3 and RLlib frameworks. Streamlines the entire workflow from training to ONNX export with an intuitive keyboard-driven interface.",
     "html_url": "https://github.com/dron3flyv3r/godot-agents-tui",
@@ -28,16 +38,6 @@
     "stars": 0,
     "updated_at": "2025-12-02T21:57:16Z",
     "homepage": null
-  },
-  {
-    "name": "tennis-tournament",
-    "description": "Simple Tennis Tournament generator, made with the love from vibe-coding. This was just an experiment. ",
-    "html_url": "https://github.com/dron3flyv3r/tennis-tournament",
-    "id": 1070609267,
-    "language": "TypeScript",
-    "stars": 0,
-    "updated_at": "2025-10-12T21:22:07Z",
-    "homepage": "https://tennis.kasperlarsen.tech"
   },
   {
     "name": "mini-sopa-intent",
