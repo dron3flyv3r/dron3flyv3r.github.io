@@ -1,13 +1,13 @@
 [
   {
-    "name": "tennis-tournament",
-    "description": "Simple Tennis Tournament generator, made with the love from vibe-coding. This was just an experiment. ",
-    "html_url": "https://github.com/dron3flyv3r/tennis-tournament",
-    "id": 1070609267,
-    "language": "TypeScript",
+    "name": "tanks--rl-agent",
+    "description": null,
+    "html_url": "https://github.com/dron3flyv3r/tanks--rl-agent",
+    "id": 1098368959,
+    "language": "GDScript",
     "stars": 0,
-    "updated_at": "2025-12-26T00:10:43Z",
-    "homepage": "https://tennis.kasperlarsen.tech"
+    "updated_at": "2026-01-06T12:13:05Z",
+    "homepage": null
   },
   {
     "name": "godot-agents-tui",
@@ -16,18 +16,18 @@
     "id": 1090591259,
     "language": "Rust",
     "stars": 1,
-    "updated_at": "2025-12-21T22:04:36Z",
+    "updated_at": "2026-01-04T22:00:37Z",
     "homepage": null
   },
   {
-    "name": "tanks--rl-agent",
-    "description": null,
-    "html_url": "https://github.com/dron3flyv3r/tanks--rl-agent",
-    "id": 1098368959,
-    "language": "GDScript",
+    "name": "tennis-tournament",
+    "description": "Simple Tennis Tournament generator, made with the love from vibe-coding. This was just an experiment. ",
+    "html_url": "https://github.com/dron3flyv3r/tennis-tournament",
+    "id": 1070609267,
+    "language": "TypeScript",
     "stars": 0,
-    "updated_at": "2025-12-20T20:37:25Z",
-    "homepage": null
+    "updated_at": "2025-12-26T00:10:43Z",
+    "homepage": "https://tennis.kasperlarsen.tech"
   },
   {
     "name": "adventofcode",
