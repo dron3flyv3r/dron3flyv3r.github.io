@@ -1,5 +1,35 @@
 [
   {
+    "name": "rl-agent-godot",
+    "description": "RL Agent system with an in-editor trainer. Single/Multi agent system.",
+    "html_url": "https://github.com/dron3flyv3r/rl-agent-godot",
+    "id": 1182347643,
+    "language": null,
+    "stars": 1,
+    "updated_at": "2026-03-31T07:35:53Z",
+    "homepage": null
+  },
+  {
+    "name": "rl-agent-plugin",
+    "description": "An RL Agent system with in-editor training and control. Single-/Multi-agent support.",
+    "html_url": "https://github.com/dron3flyv3r/rl-agent-plugin",
+    "id": 1192593218,
+    "language": "C#",
+    "stars": 1,
+    "updated_at": "2026-03-31T07:35:35Z",
+    "homepage": null
+  },
+  {
+    "name": "CodePin",
+    "description": null,
+    "html_url": "https://github.com/dron3flyv3r/CodePin",
+    "id": 1173469911,
+    "language": "TypeScript",
+    "stars": 0,
+    "updated_at": "2026-03-05T12:14:20Z",
+    "homepage": null
+  },
+  {
     "name": "tanks--rl-agent",
     "description": null,
     "html_url": "https://github.com/dron3flyv3r/tanks--rl-agent",
