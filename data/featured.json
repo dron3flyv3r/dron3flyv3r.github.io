@@ -5,8 +5,8 @@
     "priority": 50
   },
   {
-    "name": "godot-agents-tui",
-    "highlight": "rust, tui, godot-rl",
+    "name": "rl-agent-plugin",
+    "highlight": "godot, c#, reinforcement-learning",
     "priority": 5
   }
 ]
