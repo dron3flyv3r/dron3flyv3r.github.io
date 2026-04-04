@@ -1,12 +1,32 @@
 [
   {
-    "name": "godot-agents-tui",
-    "description": " Rust TUI for training reinforcement learning agents in Godot games. Features real-time metrics, project management, and support for both Stable Baselines3 and RLlib frameworks. Streamlines the entire workflow from training to ONNX export with an intuitive keyboard-driven interface.",
-    "html_url": "https://github.com/dron3flyv3r/godot-agents-tui",
-    "id": 1090591259,
-    "language": "Rust",
+    "name": "rl-agent-godot",
+    "description": "RL Agent system with an in-editor trainer. Single/Multi agent system.",
+    "html_url": "https://github.com/dron3flyv3r/rl-agent-godot",
+    "id": 1182347643,
+    "language": null,
     "stars": 1,
-    "updated_at": "2025-12-21T22:04:36Z",
+    "updated_at": "2026-03-31T07:35:53Z",
+    "homepage": null
+  },
+  {
+    "name": "rl-agent-plugin",
+    "description": "An RL Agent system with in-editor training and control. Single-/Multi-agent support.",
+    "html_url": "https://github.com/dron3flyv3r/rl-agent-plugin",
+    "id": 1192593218,
+    "language": "C#",
+    "stars": 1,
+    "updated_at": "2026-03-31T07:35:35Z",
+    "homepage": null
+  },
+  {
+    "name": "CodePin",
+    "description": null,
+    "html_url": "https://github.com/dron3flyv3r/CodePin",
+    "id": 1173469911,
+    "language": "TypeScript",
+    "stars": 0,
+    "updated_at": "2026-03-05T12:14:20Z",
     "homepage": null
   },
   {
@@ -16,8 +36,28 @@
     "id": 1098368959,
     "language": "GDScript",
     "stars": 0,
-    "updated_at": "2025-12-20T20:37:25Z",
+    "updated_at": "2026-01-06T12:13:05Z",
     "homepage": null
+  },
+  {
+    "name": "godot-agents-tui",
+    "description": " Rust TUI for training reinforcement learning agents in Godot games. Features real-time metrics, project management, and support for both Stable Baselines3 and RLlib frameworks. Streamlines the entire workflow from training to ONNX export with an intuitive keyboard-driven interface.",
+    "html_url": "https://github.com/dron3flyv3r/godot-agents-tui",
+    "id": 1090591259,
+    "language": "Rust",
+    "stars": 1,
+    "updated_at": "2026-01-04T22:00:37Z",
+    "homepage": null
+  },
+  {
+    "name": "tennis-tournament",
+    "description": "Simple Tennis Tournament generator, made with the love from vibe-coding. This was just an experiment. ",
+    "html_url": "https://github.com/dron3flyv3r/tennis-tournament",
+    "id": 1070609267,
+    "language": "TypeScript",
+    "stars": 0,
+    "updated_at": "2025-12-26T00:10:43Z",
+    "homepage": "https://tennis.kasperlarsen.tech"
   },
   {
     "name": "adventofcode",
@@ -28,16 +68,6 @@
     "stars": 0,
     "updated_at": "2025-12-02T21:57:16Z",
     "homepage": null
-  },
-  {
-    "name": "tennis-tournament",
-    "description": "Simple Tennis Tournament generator, made with the love from vibe-coding. This was just an experiment. ",
-    "html_url": "https://github.com/dron3flyv3r/tennis-tournament",
-    "id": 1070609267,
-    "language": "TypeScript",
-    "stars": 0,
-    "updated_at": "2025-10-12T21:22:07Z",
-    "homepage": "https://tennis.kasperlarsen.tech"
   },
   {
     "name": "mini-sopa-intent",

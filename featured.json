@@ -1,15 +1,15 @@
 [
   {
-    "name": "godot-agents-tui",
-    "description": " Rust TUI for training reinforcement learning agents in Godot games. Features real-time metrics, project management, and support for both Stable Baselines3 and RLlib frameworks. Streamlines the entire workflow from training to ONNX export with an intuitive keyboard-driven interface.",
-    "html_url": "https://github.com/dron3flyv3r/godot-agents-tui",
-    "id": 1090591259,
-    "language": "Rust",
+    "name": "rl-agent-plugin",
+    "description": "An RL Agent system with in-editor training and control. Single-/Multi-agent support.",
+    "html_url": "https://github.com/dron3flyv3r/rl-agent-plugin",
+    "id": 1192593218,
+    "language": "C#",
     "stars": 1,
-    "updated_at": "2025-12-21T22:04:36Z",
+    "updated_at": "2026-03-31T07:35:35Z",
     "homepage": null,
     "blurb": null,
-    "highlight": "rust, tui, godot-rl",
+    "highlight": "godot, c#, reinforcement-learning",
     "priority": 5
   },
   {
