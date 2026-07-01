@@ -1,5 +1,15 @@
 [
   {
+    "name": "nvim",
+    "description": null,
+    "html_url": "https://github.com/dron3flyv3r/nvim",
+    "id": 1259045455,
+    "language": "Lua",
+    "stars": 0,
+    "updated_at": "2026-06-08T06:32:50Z",
+    "homepage": null
+  },
+  {
     "name": "tanks--rl-agent",
     "description": null,
     "html_url": "https://github.com/dron3flyv3r/tanks--rl-agent",
